@@ -1,0 +1,29 @@
+.likely__button {
+	position: relative;
+	margin: 0;
+	padding: 1px 4px 1px 0;
+	line-height: inherit;
+	text-decoration: none;
+	outline: 0;
+	cursor: pointer;
+	cursor: inherit;
+	user-select: none;
+	vertical-align: top;
+	text-rendering: optimizelegibility;
+
+	&:empty {
+		display: none;
+	}
+}
+
+.likely-big {
+	.likely__button {
+		padding: 2px 6px 2px 0;
+	}
+}
+
+.likely-small {
+	.likely__button {
+		padding: 2px 3px 2px 0;
+	}
+}

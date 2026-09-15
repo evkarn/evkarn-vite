@@ -1,0 +1,8 @@
+@use '../../variables/general';
+@use '../../variables/grid';
+@use '../../mixins/units';
+@use '../../mixins/adaptive-value';
+
+.card__minimal {
+	font-weight: 500;
+}

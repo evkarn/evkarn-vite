@@ -1,0 +1,30 @@
+{
+	"gap: units.rem()": {
+		"prefix": "gap-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"gap: units.rem($1);"
+		]
+	},
+	"gap-num rem": {
+		"prefix": "gap-num-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"gap: units.rem(\\$gap-num);"
+		]
+	},
+	"row-gap: units.rem()": {
+		"prefix": "row-gap-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"row-gap: units.rem($1);"
+		]
+	},
+	"column-gap: units.rem()": {
+		"prefix": "col-gap-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"column-gap: units.rem($1);"
+		]
+	},
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html
+	lang="ru"
+	itemscope="itemscope"
+	xmlns="http://www.w3.org/1999/xhtml"
+	itemtype="https://schema.org/WebSite"
+>
+@include('src/includes/layouts/head.html', {
+"title": "Заголовок страницы",
+"siteUrl": "https://site.ru",
+"description": "Описание страницы",
+"keywords": "Ключ1, Ключ2",
+"ogImage": "home",
+"css": "styles"
+})
+
+<body
+	class="body body--home"
+	itemscope
+	itemtype="https://schema.org/WebPage"
+>
+	<div class="page-wrapper">
+		@include('src/includes/layouts/counters.html')
+
+		@include('src/includes/layouts/header.html', {"alt": "Логотип"})
+
+		<main class="main">
+			@include('src/includes/sections/intro-home.html')
+		</main>
+
+		@include('src/includes/layouts/footer.html')
+
+		@include('src/includes/elements/go-back-top.html', {"symbol": "↑",})
+	</div>
+
+	<script
+		type="module"
+		src="/js/scripts.js"
+	></script>
+</body>
+
+</html>

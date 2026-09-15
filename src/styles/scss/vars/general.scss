@@ -1,0 +1,19 @@
+@use 'grid' as *;
+@use 'mixins/units';
+
+// Fonts
+$fz: 16;
+
+$font-title: "Oswald", sans-serif;
+$font-text: "Oswald", sans-serif;
+
+$index: calc(1vh + 1vw);
+
+$z-index-header: 3;
+
+// General variables
+$border-width: 1;
+$border-radius: 10;
+
+$outline-width: 1;
+$outline-offset: 2;

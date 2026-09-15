@@ -1,0 +1,8 @@
+{
+	"JSON.parse": {
+		"prefix": "json-parse",
+		"scope": "javascript, typescript",
+		"body": ["const $1 = JSON.parse(JSON.stringigy($2));"],
+		"description": "JSON.parse",
+	},
+}

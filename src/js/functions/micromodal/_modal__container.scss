@@ -1,0 +1,38 @@
+@use "../../variables/general";
+@use "../../variables/grid";
+@use "../../mixins/units";
+@use "../../mixins/adaptive-value";
+
+.modal__container {
+
+	overflow-y: auto;
+	box-sizing: border-box;
+	width: 100%;
+
+	max-width: 560px;
+	max-height: 90vh;
+
+	margin: 10);
+	padding: var(--modal-container-padding);
+	padding-top: calc(var(--modal-container-padding) + var(--modal-close-height) + 1rem);
+
+	background-color: #ffffff;
+
+	border-radius: var(--modal-container-bor-radius);
+}
+
+.modal .modal__container {
+	will-change: transform;
+}
+
+.modal[aria-hidden="false"] {
+	.modal__container {
+		animation: microModalSlideIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+	}
+}
+
+.modal[aria-hidden="true"] {
+	.modal__container {
+		animation: microModalSlideOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+	}
+}

@@ -1,0 +1,25 @@
+@use "comments";
+@use "comment";
+@use "comment__info";
+
+@use "author";
+@use "author__info";
+@use "author__icon";
+@use "author__name";
+@use "author__city";
+
+@use "comment__date";
+
+@use "comment__text-wrap";
+@use "comment__text";
+
+@use "comment__bottom";
+
+@use "comment__body";
+
+@use "comments__more";
+
+@use "review";
+@use "review__btn";
+@use "review__svg";
+@use "review__quantity";

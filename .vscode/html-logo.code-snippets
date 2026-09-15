@@ -1,0 +1,22 @@
+{
+	"Logo": {
+		"prefix": "logo",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<a",
+			"\tclass=\"logo\"",
+			"\thref=\"/\"",
+			">",
+			"\t<img",
+			"\t\tclass=\"logo__image\"",
+			"\t\tsrc=\"assets/svg/sprite-svg/sprite.svg#logo\"",
+			"\t\twidth=\"166\"",
+			"\t\theight=\"30\"",
+			"\t\talt=\"@alt\"",
+			"\t\tdecoding=\"auto\"",
+			"\t>",
+			"</a>",
+		],
+		"description": "Logo",
+	},
+}

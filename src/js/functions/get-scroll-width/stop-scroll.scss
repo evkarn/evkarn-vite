@@ -1,0 +1,9 @@
+.stop-scroll {
+	position: fixed;
+	top: var(--top-position);
+	left: 0;
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+	padding-right: var(--scroll-width);
+}

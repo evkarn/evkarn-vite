@@ -1,0 +1,108 @@
+{
+	// post_meta, term_meta, user_meta, comment_meta, nav_menu_item and theme_options
+	"Get post meta field post meta": {
+		"prefix": "crb-get-field-post-meta",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php",
+			"\t\\$$1 = carbon_get_the_post_meta( '$2' );",
+			"?>",
+		],
+	},
+	"Get post meta field theme options": {
+		"prefix": "crb-get-field-theme-option",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php",
+			"\t\\$$1 = carbon_get_theme_option( '$2' );",
+			"?>",
+		],
+	},
+	"Get field term meta": {
+		"prefix": "crb-get-field-term-meta",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php",
+			"\t\\$$1 = carbon_get_term_meta( '$2' );",
+			"?>",
+		],
+	},
+	"Get img id": {
+		"prefix": "crb-get-img-id",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php",
+			"\t\\$$1 = carbon_get_post_meta(get_the_ID(), '$2');",
+			"?>",
+		],
+	},
+	"Echo field descr": {
+		"prefix": "crb-echo-descr",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php if ( !empty( \\$descr ) ): ?>",
+			"\t<?php echo wp_kses_post( \\$descr ); ?>",
+			"<?php if ( !empty( \\$descr ) ) { echo wp_kses_post( \\$$1 ); } ?>",
+		],
+	},
+	"Echo field": {
+		"prefix": "crb-echo-field",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php if ( !empty( \\$$1 ) ): ?><?php echo wp_kses_post( \\$$1 ); ?><?php endif; ?>",
+		],
+	},
+	"Echo field many lines": {
+		"prefix": "crb-echo-field-many-lines",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php if ( !empty( \\$$1 ) ): ?>",
+			"\t<?php echo \\$$1; ?>",
+			"<?php endif ?>",
+		],
+	},
+	"Echo post meta field img": {
+		"prefix": "crb-echo-img",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php if ( \\$$1 ) { echo wp_get_attachment_image( \\$$1, 'full' ); } ?>",
+		],
+	},
+	"Echo full img width class": {
+		"prefix": "crb-echo-img-with-class",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php if ( \\$$1 ) { echo wp_get_attachment_image( \\$$1, 'full', false, array( 'class' => '$2' ) ); } ?>",
+		],
+	},
+	"Echo complex item": {
+		"prefix": "crb-echo-complex",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php if ( ! empty( \\$$1 ) ): ?>",
+			"\t<?php foreach ( \\$$1 as \\$$2 ): ?>",
+			"\t<li>",
+			"\t\t<?php echo \\$$2['title'] ?>",
+			"\t\t<?php if ( \\$$2['img'] ) { echo wp_get_attachment_image( \\$$2['img'], 'full', false, array( 'class' => 'item__image' ) ); } ?>",
+			"\t</li>",
+			"\t<?php endforeach; ?>",
+			"<?php endif; ?>",
+		]
+	},
+	"Echo field in complex": {
+		"prefix": "crb-echo-complex-field",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php if ( \\$$1['$2'] ) { echo \\$$1['$2']; } ?>",
+		],
+	},
+	"Add tab carbon fields": {
+		"prefix": "crb-add-tab",
+		"scope": "html, php, njk, md",
+		"body": [
+			"->add_tab( __( 'Прессы для объемной штамповки' ), array(",
+			"",
+			"))",
+		],
+	},
+}

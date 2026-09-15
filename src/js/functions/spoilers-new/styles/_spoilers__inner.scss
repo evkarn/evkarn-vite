@@ -1,0 +1,7 @@
+.spoilers__inner>* {
+	padding: 10px 0;
+}
+
+.spoilers.is-active .spoilers__inner {
+	overflow: hidden;
+}

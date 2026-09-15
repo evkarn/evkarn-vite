@@ -1,0 +1,25 @@
+@use 'settings/imports' as *;
+
+.breadcrumbs__item {
+	display: inline-block;
+
+	&:not(:first-child) {
+		&:before {
+			content: '•';
+
+			display: inline-block;
+			margin-right: 8px;
+
+			text-align: center;
+		}
+	}
+
+	&:not(:last-child) {
+	margin-right: 8px;
+}
+
+&:last-child {
+	pointer-events: none;
+	user-select: none;
+}
+}

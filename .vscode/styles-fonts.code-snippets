@@ -1,0 +1,42 @@
+{
+	"Font-family font-title": {
+		"prefix": "ff-text",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"font-family: var(--font-title);",
+		],
+	},
+	"Font-family font-text": {
+		"prefix": "ff-title",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"font-family: var(--font-title);",
+		],
+	},
+	"Font-fase static fonts": {
+		"prefix": "ff-static",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@font-face {",
+			"\tfont-family: $1;",
+			"\tsrc: url('../fonts/$1$2.woff2') format('woff2');",
+			"\tfont-display: swap;",
+			"\tfont-weight: $3;",
+			"\tfont-style: normal;",
+			"}",
+		],
+	},
+	"Font-fase variables fonts": {
+		"prefix": "ff-vf",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@font-face {",
+			"\tfont-family: $1;",
+			"\tsrc: url('../fonts/$1$2.woff2') format('woff2-variations');",
+			"\tsrc: url('../fonts/Manrope-VariableFont.woff2') format('woff2') tech('variations');",
+			"\tfont-display: swap;",
+			"\tfont-weight: $3 $4;",
+			"}",
+		],
+	},
+}

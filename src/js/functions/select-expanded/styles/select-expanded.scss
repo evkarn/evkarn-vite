@@ -1,0 +1,20 @@
+@use "../../variables/general";
+@use "../../variables/grid";
+@use "../../mixins/units";
+@use "../../mixins/fluid-size";
+
+.select-expanded {
+	position: relative;
+	width: 100%;
+
+	max-width: 320px;
+
+	font-weight: 500;
+
+	color: var(--sooty);
+	@include fluid-size.fluid-size-rem(font-size, 14, 16);
+
+	@media (max-width: 400) {
+		max-width: 100%;
+	}
+}

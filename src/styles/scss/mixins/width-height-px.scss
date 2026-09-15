@@ -1,0 +1,9 @@
+@mixin width-height($width, $height) {
+	width: $width + px;
+	height: $height + px;
+
+	@include min-full-hd-em {
+		@include calc-size(width, $width, $width * 2, 1920, 3840, px);
+		@include calc-size(height, $height, $height * 2, 1920, 3840, px);
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"Box-shadow": {
+		"prefix": "box-shadow",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"box-shadow: 0 0 units.rem($1) rgb($2 / 25%);",
+		]
+	},
+}
+

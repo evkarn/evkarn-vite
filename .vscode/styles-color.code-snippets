@@ -1,0 +1,162 @@
+{
+	"color: var()": {
+		"prefix": "color-var",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"color: var($1);"
+		],
+		"description": "color: var()",
+	},
+	"color: currentColor": {
+		"prefix": "color-current",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"color: currentColor;"
+		],
+		"description": "color: currentColor",
+	},
+	"color: var(--text)": {
+		"prefix": "color-var-text",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"color: var(--text);"
+		],
+		"description": "color: var(--text)",
+	},
+	"color: var(--accent)": {
+		"prefix": "color-var-accent",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"color: var(--accent);"
+		],
+		"description": "color: var(--accent)",
+	},
+	"color: var(--accent-dark)": {
+		"prefix": "color-var-accent-dark",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"color: var(--accent-dark);"
+		],
+		"description": "color: var(--accent-dark)",
+	},
+	"color: var(--accent-light)": {
+		"prefix": "color-var-accent-light",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"color: var(--accent-light);"
+		],
+		"description": "color: var(--accent-light)",
+	},
+	"color: var(--lighten)": {
+		"prefix": "color-var-lighten",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"color: var(--lighten);"
+		],
+		"description": "color: var(--lighten)",
+	},
+	"color: var(--darken)": {
+		"prefix": "color-var-darken",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"color: var(--darken);"
+		],
+		"description": "color: var(--darken)",
+	},
+	"color: var(--text-dark)": {
+		"prefix": "color-var-text-dark",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"color: var(--text-dark);"
+		],
+		"description": "color: var(--dark)",
+	},
+	"color: var(--text-light)": {
+		"prefix": "color-var-text-light",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"color: var(--text-light);"
+		],
+		"description": "color: var(--light)",
+	},
+	"color: var(--title-dark)": {
+		"prefix": "color-var-title-dark",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"color: var(--title-dark);"
+		],
+		"description": "color: var(--dark)",
+	},
+	"color: var(--title-light)": {
+		"prefix": "color-var-title-light",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"color: var(--title-light);"
+		],
+		"description": "color: var(--light)",
+	},
+	"color: var(--dark)": {
+		"prefix": "color-var-dark",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"color: var(--dark);"
+		],
+		"description": "color: var(--dark)",
+	},
+	"color: var(--light)": {
+		"prefix": "color-var-light",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"color: var(--light);"
+		],
+		"description": "color: var(--light)",
+	},
+	"rgb($1 $2 $3)": {
+		"prefix": "rgb",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"rgb($1 $2 $3);"
+		],
+		"description": "rgb($1 $2 $3)",
+	},
+	"rgba($1 $2 $3 / $4)": {
+		"prefix": "rgba",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"rgba($1 $2 $3 / $4);"
+		],
+		"description": "rgba($1 $2 $3 / $4)",
+	},
+	"color: rgb($1 $2 $3)": {
+		"prefix": "color-rgb",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"color: rgb($1 $2 $3);"
+		],
+		"description": "color: rgb($1 $2 $3)",
+	},
+	"color: rgba($1 $2 $3 / $4)": {
+		"prefix": "color-rgba",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"color: rgba($1 $2 $3 / $4);"
+		],
+		"description": "color: rgba($1 $2 $3 / $4)",
+	},
+	"background-color: rgb($1 $2 $3)": {
+		"prefix": "bg-color-rgb",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"background-color: rgb($1 $2 $3);"
+		],
+		"description": "background-color: rgb($1 $2 $3)",
+	},
+	"background-color: rgba($1 $2 $3 / $4)": {
+		"prefix": "bg-color-rgba",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"background-color: rgba($1 $2 $3 / $4);"
+		],
+		"description": "background-color: rgba($1 $2 $3 / $4)",
+	},
+}

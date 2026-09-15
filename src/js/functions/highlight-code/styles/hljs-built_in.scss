@@ -1,0 +1,7 @@
+.hljs-built_in {
+	color: var(--hljs-built_in);
+
+	@media screen and (-ms-high-contrast: active) {
+		color: highlight;
+	}
+}

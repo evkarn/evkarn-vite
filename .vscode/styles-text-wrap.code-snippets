@@ -1,0 +1,28 @@
+{
+	"text-wrap": {
+		"prefix": "txt-wrap",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"> * {",
+			"\tmargin: 0;",
+			"",
+			"\t&:not(:last-child) {",
+			"\t\tmargin-bottom: $1;",
+			"",
+			"\t\t@media ( min-width: 1920.96px ) {",
+			"\t\t\t@include calc-size(margin-bottom, $1, $1 * 2, 1920, 3840, px);",
+			"\t\t}",
+			"\t}",
+			"}",
+		],
+		"description": "text-wrap",
+	},
+	"text-wrap mixon": {
+		"prefix": "txt-wrap-mixin",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include txt-wrap($1, $2);"
+		],
+		"description": "text-wrap mixon",
+	},
+}

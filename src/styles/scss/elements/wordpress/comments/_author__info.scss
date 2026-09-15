@@ -1,0 +1,16 @@
+.comments .author__info {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: rem(10);
+
+	@media (min-width: em(1920.96)) {
+		@include calc-size(gap, 10, 20, 1920, 3840, rem);
+	}
+
+	@media (max-width: em(576)) {
+		flex-direction: column;
+		align-items: flex-start;
+		row-gap: 0;
+	}
+}

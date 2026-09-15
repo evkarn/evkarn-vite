@@ -1,0 +1,7 @@
+.likely_visible {
+	opacity: 1;
+}
+
+.likely_visible * {
+	visibility: inherit;
+}

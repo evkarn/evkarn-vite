@@ -1,0 +1,66 @@
+@use "../../variables/general";
+@use "../../variables/grid";
+@use "../../mixins/units";
+@use "../../mixins/adaptive-value";
+
+.checkbox-input {
+	--size: 18px;
+	--bdrs: var(--bdrs);
+
+	appearance: none;
+
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: var(--size);
+	height: var(--size);
+	margin: 0;
+
+	background-color: transparent;
+	border-radius: var(--bdrs);
+
+	&:focus-visible {
+		outline-color: var(--accent);
+		outline-style: dashed;
+		outline-width: var(--outline-width);
+		outline-offset: var(--outline-offset);
+	}
+
+	&:before {
+		content: "";
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+
+		display: block;
+		width: var(--size);
+		height: var(--size);
+
+		margin: auto;
+
+		background-color: var(--checkbox-before-bg-color);
+		border-radius: var(--bdrs);
+
+		opacity: 0;
+
+		cursor: pointer;
+
+		transition: opacity 0.3s ease;
+
+		transform: translate(-50%, -50%);
+
+		will-change: opacity;
+	}
+
+	&:checked {
+		&:before {
+			content: "";
+
+			opacity: 1;
+		}
+	}
+}

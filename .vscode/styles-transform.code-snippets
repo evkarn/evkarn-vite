@@ -1,0 +1,50 @@
+{
+	"Transform-translate-y": {
+		"prefix": "transform-tr-y",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"transform: translateY($1);"
+		],
+		"description": "Transform-translate-y",
+	},
+	"Transform-translate-x": {
+		"prefix": "transform-tr-x",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"transform: translateX($1);"
+		],
+		"description": "Transform-translate-x",
+	},
+	"Transform-translate-3d": {
+		"prefix": "transform-tr-3d",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"transform: translate3d($1, $2, $3);"
+		],
+		"description": "Transform-translate-3d",
+	},
+	"transform: rotate($1deg)": {
+		"prefix": "transform-rot",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"transform: rotate($1deg);"
+		],
+		"description": "transform: rotate($1deg)",
+	},
+	"transform: scale(0)": {
+		"prefix": "transform-scale-0",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"transform: scale(0);"
+		],
+		"description": "transform: scale(0)",
+	},
+	"transform: scale()": {
+		"prefix": "transform-scale",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"transform: scale($1);"
+		],
+		"description": "transform: scale()",
+	},
+}

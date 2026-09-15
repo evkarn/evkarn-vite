@@ -1,0 +1,27 @@
+@use "../units";
+@use "../../variables/general";
+
+@mixin state-link-opacity {
+	@media (any-hover: hover) {
+		&:hover {
+			opacity: 0.7;
+
+			cursor: pointer;
+		}
+	}
+
+	&:focus-visible {
+		outline-color: currentColor;
+		outline-style: dashed;
+		outline-width: $outline-width);
+		outline-offset: $outline-offset);
+	}
+
+	&:active {
+		outline: none;
+
+		opacity: 1;
+	}
+
+	@content;
+}

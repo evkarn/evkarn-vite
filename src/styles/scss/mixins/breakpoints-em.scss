@@ -1,0 +1,205 @@
+// Units - em
+@mixin max-minimal-em {
+	@media (max-width: em($minimal)) {
+		@content;
+	}
+}
+
+@mixin max-mobile-em {
+	@media (max-width: em($mobile)) {
+		@content;
+	}
+}
+
+@mixin max-mobile-plus-em {
+	@media (max-width: em($mobile-plus)) {
+		@content;
+	}
+}
+
+@mixin max-mobile-wga-em {
+	@media (max-width: em($mobile-wga)) {
+		@content;
+	}
+}
+
+@mixin max-tablet-em {
+	@media (max-width: em($tablet)) {
+		@content;
+	}
+}
+
+@mixin max-tablet-plus-em {
+	@media (max-width: em($tablet-plus)) {
+		@content;
+	}
+}
+
+@mixin max-tablet-full-em {
+	@media (max-width: em($tablet-full)) {
+		@content;
+	}
+}
+
+@mixin max-desktop-em {
+	@media (max-width: em($desktop)) {
+		@content;
+	}
+}
+
+@mixin max-desktop-wide-em {
+	@media (max-width: em($desktop-wide)) {
+		@content;
+	}
+}
+
+@mixin max-desktop-hd-em {
+	@media (max-width: em($desktop-hd)) {
+		@content;
+	}
+}
+
+@mixin max-desktop-wide-plus-em {
+	@media (max-width: em($desktop-wide-plus)) {
+		@content;
+	}
+}
+
+@mixin max-desktop-no-nome-em {
+	@media (max-width: em($tablet-full)) {
+		@content;
+	}
+}
+
+@mixin max-desktop-hd-plus-em {
+	@media (max-width: em($tablet-full)) {
+		@content;
+	}
+}
+
+@mixin max-full-hd-em {
+	@media (max-width: em($full-hd)) {
+		@content;
+	}
+}
+
+@mixin max-quad-hd-em {
+	@media (max-width: em($quad-hd)) {
+		@content;
+	}
+}
+
+@mixin max-ultra-hd-em {
+	@media (max-width: em($ultra-hd)) {
+		@content;
+	}
+}
+
+@mixin min-mobile-em {
+	@media (min-width: em($min-mobile)) {
+		@content;
+	}
+}
+
+@mixin min-mobile-plus-em {
+	@media (min-width: em($min-mobile-plus)) {
+		@content;
+	}
+}
+
+@mixin min-mobile-wga-em {
+	@media (min-width: em($min-mobile-wga)) {
+		@content;
+	}
+}
+
+@mixin min-tablet-em {
+	@media (min-width: em($min-tablet)) {
+		@content;
+	}
+}
+
+@mixin min-tablet-plus-em {
+	@media (min-width: em($min-tablet-plus)) {
+		@content;
+	}
+}
+
+@mixin min-tablet-full-em {
+	@media (min-width: em($min-tablet-full)) {
+		@content;
+	}
+}
+
+@mixin min-desktop-em {
+	@media (min-width: em($min-desktop)) {
+		@content;
+	}
+}
+
+@mixin min-desktop-wide-em {
+	@media (min-width: em($min-desktop-wide)) {
+		@content;
+	}
+}
+
+@mixin min-desktop-hd-em {
+	@media (min-width: em($min-desktop-hd)) {
+		@content;
+	}
+}
+
+@mixin min-desktop-wide-plus-em {
+	@media (min-width: em($min-desktop-wide-plus)) {
+		@content;
+	}
+}
+
+@mixin min-desktop-no-nome-em {
+	@media (min-width: em($min-tablet-full)) {
+		@content;
+	}
+}
+
+@mixin min-desktop-hd-plus-em {
+	@media (min-width: em($min-tablet-full)) {
+		@content;
+	}
+}
+
+@mixin min-full-hd-em {
+	@media (min-width: em($min-full-hd)) {
+		@content;
+	}
+}
+
+@mixin min-quad-hd-em {
+	@media (min-width: em($min-quad-hd)) {
+		@content;
+	}
+}
+
+@mixin min-ultra-hd-em {
+	@media (min-width: em($min-ultra-hd)) {
+		@content;
+	}
+}
+
+@mixin mobile-only {
+	@media (min-width: em($minimal)) and (max-width: em($mobile-wga)) {
+		@content;
+	}
+}
+
+@mixin tablet-only {
+	@media (min-width: em($min-tablet)) and (max-width: em($tablet-full)) {
+		@content;
+	}
+}
+
+@mixin hd-only {
+	@media (min-width: em($min-full-hd)) and (max-width: em($min-ultra-hd)) {
+		@content;
+	}
+}
+// End. Units - em

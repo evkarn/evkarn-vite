@@ -1,0 +1,102 @@
+<div class="wrapper">
+	<h1>Звездный рейтинг</h1>
+
+	<form action="#" class="form">
+		<div class="form__item">
+			<div class="form__label">Простой рейтинг (без js)</div>
+
+			<div class="simple-rating">
+				<div class="simple-rating__list">
+					<input
+						class="simple-rating__item"
+						type="radio"
+						value="5"
+						name="simple-rating"
+						id="simple-rating__5"
+					/>
+					<label class="simple-rating__label" for="simple-rating__5"></label>
+
+					<input
+						class="simple-rating__item"
+						type="radio"
+						value="4"
+						name="simple-rating"
+						id="simple-rating__4"
+					/>
+					<label class="simple-rating__label" for="simple-rating__4"></label>
+
+					<input
+						class="simple-rating__item"
+						type="radio"
+						value="3"
+						name="simple-rating"
+						id="simple-rating__3"
+					/>
+					<label class="simple-rating__label" for="simple-rating__3"></label>
+
+					<input
+						class="simple-rating__item"
+						type="radio"
+						value="2"
+						name="simple-rating"
+						id="simple-rating__2"
+					/>
+					<label class="simple-rating__label" for="simple-rating__2"></label>
+
+					<input
+						class="simple-rating__item"
+						type="radio"
+						value="1"
+						name="simple-rating"
+						id="simple-rating__1"
+					/>
+					<label class="simple-rating__label" for="simple-rating__1"></label>
+				</div>
+			</div>
+		</div>
+
+		<div class="form__item">
+			<div class="form__label">Точный рейтинг (js)</div>
+
+			<div class="rating rating--set">
+				<div class="rating__body">
+					<div class="rating__active"></div>
+
+					<div class="rating__list">
+						<input class="rating__item" type="radio" value="1" name="rating" />
+						<input class="rating__item" type="radio" value="2" name="rating" />
+						<input class="rating__item" type="radio" value="3" name="rating" />
+						<input class="rating__item" type="radio" value="4" name="rating" />
+						<input class="rating__item" type="radio" value="5" name="rating" />
+					</div>
+				</div>
+
+				<div class="rating__value">2.6</div>
+			</div>
+		</div>
+
+		<button type="submit" class="form__btn btn">Отправить</button>
+	</form>
+
+	<div class="form">
+		<div class="form__item">
+			<div class="form__label">Точный рейтинг (js + ajax)</div>
+
+			<div class="rating rating--set" data-ajax="true">
+				<div class="rating__body">
+					<div class="rating__active"></div>
+
+					<div class="rating__list">
+						<input class="rating__item" type="radio" value="1" name="rating" />
+						<input class="rating__item" type="radio" value="2" name="rating" />
+						<input class="rating__item" type="radio" value="3" name="rating" />
+						<input class="rating__item" type="radio" value="4" name="rating" />
+						<input class="rating__item" type="radio" value="5" name="rating" />
+					</div>
+				</div>
+
+				<div class="rating__value">2.6</div>
+			</div>
+		</div>
+	</div>
+</div>

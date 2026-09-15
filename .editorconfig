@@ -1,0 +1,40 @@
+# EditorConfig - это замечательно: https://EditorConfig.org
+
+# Файл EditorConfig верхнего уровня
+root = true
+
+
+[*]
+charset = utf-8
+
+# Стиль табов (пробелы или табы)
+indent_style = tab
+
+# Размер каждого таба в пробелах (2 - 2 пробела)
+indent_size = 2
+
+# Переводы строк в стиле Unix с пустой строкой в конце файла
+end_of_line = lf
+
+# Добавление пустой линии в конце файла
+insert_final_newline = false
+
+# Убираем пробелы в конце строк
+trim_trailing_whitespace = true
+
+
+[*.md]
+# Убираем пробелы в конце строк
+trim_trailing_whitespace = false
+
+
+[*.js]
+# Добавление пустой линии в конце файла
+insert_final_newline = true
+
+
+# Но не переформатируем минифицированные JS и CSS файлы.
+[*.min.*]
+indent_style = ignore
+trim_trailing_whitespace = false
+insert_final_newline = ignore

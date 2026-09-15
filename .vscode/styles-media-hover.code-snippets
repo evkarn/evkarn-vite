@@ -1,0 +1,22 @@
+{
+	"Media any-hover": {
+		"prefix": "any-hover-hover",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( any-hover: hover ) {",
+			"\t&:hover {",
+			"\t\t$1",
+			"\t}",
+			"}",
+		],
+	},
+	"Media any-hover none": {
+		"prefix": "any-hover-none",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( any-hover: none ) {",
+			"\t$1",
+			"}",
+		],
+	},
+}

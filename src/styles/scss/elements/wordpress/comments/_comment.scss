@@ -1,0 +1,21 @@
+.comments .comment {
+	display: flex;
+	flex-direction: column;
+	@include calc-size(row-gap, 24, 30, 320, 1920, rem);
+
+	width: 100%;
+
+	padding: rem(12);
+
+	border: rem($bor-width) solid var(--c-border-color);
+	border-radius: rem($bor-rad);
+
+	@media (min-width: em(1920.96)) {
+		@include calc-size(row-gap, 30, 60, 1920, 3840, rem);
+
+		@include calc-size(padding, 12, 23, 1920, 3840, rem);
+
+		@include calc-size(border-width, $bor-width, $bor-width * 2, 1920, 3840, rem);
+		@include calc-size(border-radius, $bor-rad, $bor-rad * 2, 1920, 3840, rem);
+	}
+}

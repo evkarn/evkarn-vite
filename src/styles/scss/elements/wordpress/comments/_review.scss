@@ -1,0 +1,10 @@
+.comments .review {
+	display: flex;
+	align-items: center;
+
+	@include calc-size(column-gap, 15, 25, 320, 1920, rem);
+
+	@media (min-width: em(1920.96)) {
+		@include calc-size(column-gap, 25, 50, 1920, 3840, rem);
+	}
+}

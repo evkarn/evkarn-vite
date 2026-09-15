@@ -1,0 +1,240 @@
+{
+	"Adaptive clamp text viewpor rem": {
+		"prefix": "av-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-rem($1, $2, $3);",
+		]
+	},
+	"Adaptive clamp text viewpor px": {
+		"prefix": "av-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-px($1, $2, $3);",
+		]
+	},
+	"Adaptive value font-size rem": {
+		"prefix": "av-fz-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-rem(font-size, $2, $3);",
+		]
+	},
+	"Adaptive value font-size px": {
+		"prefix": "av-fz-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-px(font-size, $2, $3);",
+		]
+	},
+	"Adaptive value padding rem": {
+		"prefix": "av-pad-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-rem(padding, $2, $3);",
+		]
+	},
+	"Adaptive value padding px": {
+		"prefix": "av-pad-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-px(padding, $2, $3);",
+		]
+	},
+	"Adaptive value padding-top rem": {
+		"prefix": "av-pad-t-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-rem(padding-top, $2, $3);",
+		]
+	},
+	"Adaptive value padding-top px": {
+		"prefix": "av-pad-t-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-px(padding-top, $2, $3);",
+		]
+	},
+	"Adaptive value padding-right rem": {
+		"prefix": "av-pad-r-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-rem(padding-right, $2, $3);",
+		]
+	},
+	"Adaptive value padding-right px": {
+		"prefix": "av-pad-r-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-px(padding-right, $2, $3);",
+		]
+	},
+	"Adaptive value padding-bottom rem": {
+		"prefix": "av-pad-b-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-rem(padding-bottom, $2, $3);",
+		]
+	},
+	"Adaptive value padding-bottom px": {
+		"prefix": "av-pad-b-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-px(padding-bottom, $2, $3);",
+		]
+	},
+	"Adaptive value padding-left rem": {
+		"prefix": "av-pad-l-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-rem(padding-left, $2, $3);",
+		]
+	},
+	"Adaptive value padding-left px": {
+		"prefix": "av-pad-r-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-px(padding-left, $2, $3);",
+		]
+	},
+	"Adaptive value margin rem": {
+		"prefix": "av-mar-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-rem(margin, $2, $3);",
+		]
+	},
+	"Adaptive value margin px": {
+		"prefix": "av-mar-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-px(margin, $2, $3);",
+		]
+	},
+	"Adaptive value margin-top rem": {
+		"prefix": "av-mar-t-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-rem(margin-top, $2, $3);",
+		]
+	},
+	"Adaptive value margin-top px": {
+		"prefix": "av-mar-t-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-px(margin-top, $2, $3);",
+		]
+	},
+	"Adaptive value margin-right rem": {
+		"prefix": "av-mar-r-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-rem(margin-right, $2, $3);",
+		]
+	},
+	"Adaptive value margin-right px": {
+		"prefix": "av-mar-r-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-px(margin-right, $2, $3);",
+		]
+	},
+	"Adaptive value margin-bottom rem": {
+		"prefix": "av-mar-b-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-rem(margin-bottom, $2, $3);",
+		]
+	},
+	"Adaptive value margin-bottom px": {
+		"prefix": "av-mar-b-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-px(margin-bottom, $2, $3);",
+		]
+	},
+	"Adaptive value margin-left rem": {
+		"prefix": "av-mar-l-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-rem(margin-left, $2, $3);",
+		]
+	},
+	"Adaptive value margin-left px": {
+		"prefix": "av-mar-r-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-px(margin-left, $2, $3);",
+		]
+	},
+	"Adaptive value gap rem": {
+		"prefix": "av-gap-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-rem(gap, $2, $3);",
+		]
+	},
+	"Adaptive value gap px": {
+		"prefix": "av-gap-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-px(gap, $2, $3);",
+		]
+	},
+	"Adaptive value row-gap rem": {
+		"prefix": "av-rg-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-rem(row-gap, $2, $3);",
+		]
+	},
+	"Adaptive value row-gap px": {
+		"prefix": "av-rg-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-px(row-gap, $2, $3);",
+		]
+	},
+	"Adaptive value column-gap rem": {
+		"prefix": "av-cg-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-rem(column-gap, $2, $3);",
+		]
+	},
+	"Adaptive value column-gap px": {
+		"prefix": "av-cg-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-px(column-gap, $2, $3);",
+		]
+	},
+	"Adaptive value width rem": {
+		"prefix": "av-width-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-rem(width, $2, $3);",
+		]
+	},
+	"Adaptive value width px": {
+		"prefix": "av-width-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-px(width, $2, $3);",
+		]
+	},
+	"Adaptive value height rem": {
+		"prefix": "av-height-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-rem(height, $2, $3);",
+		]
+	},
+	"Adaptive value height px": {
+		"prefix": "av-height-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include adaptive-value.adaptive-value-px(height, $2, $3);",
+		]
+	},
+}

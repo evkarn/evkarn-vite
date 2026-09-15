@@ -1,0 +1,7 @@
+.hljs-link {
+	color: var(--hljs-link);
+
+	@media screen and (-ms-high-contrast: active) {
+		color: highlight;
+	}
+}

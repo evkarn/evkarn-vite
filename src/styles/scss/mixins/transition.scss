@@ -1,0 +1,7 @@
+@mixin tr($transit-time) {
+	transition: $transit-time ease;
+}
+
+@mixin tr-custom($sense, $transit-time) {
+	transition: $sense $transit-time ease;
+}

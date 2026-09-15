@@ -1,0 +1,156 @@
+{
+	"Fluid clamp text viewpor rem": {
+		"prefix": "fs-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-rem($1, $2, $3);",
+		]
+	},
+	"Fluid value font-size rem": {
+		"prefix": "fs-fz-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-rem(font-size, $1, $2);",
+		]
+	},
+	"Fluid value padding rem": {
+		"prefix": "fs-pad-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-rem(padding, $1, $2);",
+		]
+	},
+	"Fluid value padding-top rem": {
+		"prefix": "fs-pad-t-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-rem(padding-top, $1, $2);",
+		]
+	},
+	"Fluid value padding-right rem": {
+		"prefix": "fs-pad-r-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-rem(padding-right, $1, $2);",
+		]
+	},
+	"Fluid value padding-bottom rem": {
+		"prefix": "fs-pad-b-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-rem(padding-bottom, $1, $2);",
+		]
+	},
+	"Fluid value padding-left rem": {
+		"prefix": "fs-pad-l-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-rem(padding-left, $1, $2);",
+		]
+	},
+	"Fluid value margin rem": {
+		"prefix": "fs-mar-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-rem(margin, $1, $2);",
+		]
+	},
+	"Fluid value margin-top rem": {
+		"prefix": "fs-mar-t-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-rem(margin-top, $1, $2);",
+		]
+	},
+	"Fluid value margin-right rem": {
+		"prefix": "fs-mar-r-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-rem(margin-right, $1, $2);",
+		]
+	},
+	"Fluid value margin-bottom rem": {
+		"prefix": "fs-mar-b-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-rem(margin-bottom, $1, $2);",
+		]
+	},
+	"Fluid value margin-left rem": {
+		"prefix": "fs-mar-l-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-rem(margin-left, $1, $2);",
+		]
+	},
+	"Fluid value gap rem": {
+		"prefix": "fs-gap-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-rem(gap, $1, $2);",
+		]
+	},
+	"Fluid value row-gap rem": {
+		"prefix": "fs-rg-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-rem(row-gap, $1, $2);",
+		]
+	},
+	"Fluid value column-gap rem": {
+		"prefix": "fs-cg-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-rem(column-gap, $1, $2);",
+		]
+	},
+	"Fluid value max-width rem": {
+		"prefix": "fs-max-w-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-rem(max-width, $1, $2);",
+		]
+	},
+	"Fluid value min-width rem": {
+		"prefix": "fs-min-w-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-rem(min-width, $1, $2);",
+		]
+	},
+	"Fluid value width rem": {
+		"prefix": "fs-width-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-rem(width, $1, $2);",
+		]
+	},
+	"Fluid value height rem": {
+		"prefix": "fs-height-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-rem(height, $1, $2);",
+		]
+	},
+	"Fluid value max-height rem": {
+		"prefix": "fs-max-h-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-rem(max-height, $1, $2);",
+		]
+	},
+	"Fluid value min-height rem": {
+		"prefix": "fs-min-h-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-rem(min-height, $1, $2);",
+		]
+	},
+	"Fluid value border-radius rem": {
+		"prefix": "fs-bor-rad-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-rem(border-radius, $1, $2);",
+		]
+	},
+}

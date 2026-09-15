@@ -1,0 +1,44 @@
+@use "../../../mixins/units";
+@use "../../../variables/grid";
+
+.nav--two-level .sub-menu {
+	margin: 0;
+	padding: 0;
+
+	list-style-type: none;
+
+	@media (min-width: units.em(grid.$switch-point)) {
+		position: absolute;
+		top: calc(100% + 15));
+
+		min-width: 200);
+
+		padding: 10);
+
+		border-radius: 4);
+
+		box-shadow: 0 0 8) 0 rgb(0 0 0 / 30%);
+
+		opacity: 0;
+		transition:
+			transform 0.4s cubic-bezier(0.12, 0.57, 0.66, 0.69),
+			opacity 0.4s ease;
+		transform: translate3d(0, 50%, 0);
+		pointer-events: none;
+		user-select: none;
+
+		will-change: transform, opacity;
+
+		&:before {
+			content: "";
+
+			position: absolute;
+			top: -20);
+			left: 0;
+
+			display: block;
+			width: 100%;
+			height: 20);
+		}
+	}
+}

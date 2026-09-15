@@ -1,0 +1,11 @@
+.comments .comment__date {
+	@include calc-size(font-size, 14, 18, 320, 1920, rem);
+
+	white-space: nowrap;
+
+	color: var(--shadow-mountain);
+
+	@media (min-width: em(1920.96)) {
+		@include calc-size(font-size, 18, 36, 1920, 38400, rem);
+	}
+}

@@ -1,0 +1,18 @@
+{
+	// Pointer-events
+	"Pointer-events: none": {
+		"prefix": "pointer-ev-none",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"pointer-events: none;"
+		],
+	},
+	"Pointer-events: auto": {
+		"prefix": "pointer-ev-auto",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"pir-ev-a: auto;"
+		],
+	},
+	// Pointer-events
+}

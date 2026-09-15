@@ -1,0 +1,10 @@
+{
+	// Video
+	"Video html tag": {
+		"prefix": "comment-html",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<!-- -->",
+		],
+	},
+}

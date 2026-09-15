@@ -1,0 +1,44 @@
+{
+	"use general, grid, units": {
+		"prefix": "use-all",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"@use 'settings/imports' as *;",
+		],
+	},
+	"@use": {
+		"prefix": "@use",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"@use './$1';",
+		],
+	},
+	"use units": {
+		"prefix": "use-units",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"@use 'mixins/units';"
+		],
+	},
+	"use ad-txt": {
+		"prefix": "use-fluid-size",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"@use 'mixins/fluid-size';"
+		],
+	},
+	"use grid": {
+		"prefix": "use-grid",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"@use 'vars/grid';"
+		],
+	},
+	"use general": {
+		"prefix": "use-general",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"@use 'vars/general';"
+		],
+	},
+}

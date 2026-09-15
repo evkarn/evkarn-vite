@@ -1,0 +1,16 @@
+.tabs-content {
+	display: none;
+	padding: rem(40) rem(60);
+	background-color: #ffffff;
+
+	@include min-full-hd-em {
+		@include calc-size(padding-top, 40, 80, 1920, 3840, rem);
+		@include calc-size(padding-bottom, 40, 80, 1920, 3840, rem);
+		@include calc-size(padding-right, 60, 120, 1920, 3840, rem);
+		@include calc-size(padding-left, 60, 120, 1920, 3840, rem);
+	}
+}
+
+.tabs__content--active {
+	display: block;
+}

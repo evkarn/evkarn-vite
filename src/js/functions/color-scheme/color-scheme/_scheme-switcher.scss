@@ -1,0 +1,29 @@
+@use "./scheme-switcher__legend";
+@use "./scheme-switcher__radio";
+@use "./scheme-switcher__radio--light";
+@use "./scheme-switcher__radio--auto";
+@use "./scheme-switcher__radio--dark";
+@use "./scheme-switcher__status";
+
+.scheme-switcher {
+	--size: 38px;
+	--padding: 2px;
+
+	position: relative;
+	z-index: 6;
+
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+
+	width: 100%;
+	max-width: calc(var(--size) * 3 + var(--padding) * 2);
+
+	padding: var(--padding);
+
+	border: none;
+}
+
+.scheme-switcher__status {
+	filter: invert(0);
+}

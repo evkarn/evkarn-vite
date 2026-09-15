@@ -1,0 +1,7 @@
+.scheme-switcher__radio--auto {
+	background-image: url('/assets/svg/static/icons/scheme-auto-on.svg');
+
+	&:checked ~ .scheme-switcher__status {
+		background-position: center center;
+	}
+}

@@ -1,0 +1,12 @@
+.progress-line__item {
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+
+	background-color: var(--accent);
+
+	transition: background-color .2s ease, width .2s ease;
+}

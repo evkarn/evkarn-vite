@@ -1,0 +1,9 @@
+.comments .comment__text {
+	&:not(:last-child) {
+		margin-bottom: rem(10);
+
+		@media (min-width: em(1920.96)) {
+			@include calc-size(margin-bottom, 10, 20, 1920, 3840, rem);
+		}
+	}
+}

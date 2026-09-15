@@ -1,0 +1,27 @@
+.select-wrap {
+	position: relative;
+
+	display: inline;
+
+	&:after {
+		content: '›';
+
+		position: absolute;
+		top: 50%;
+		right: 3%;
+
+		display: block;
+
+		transition: rotate 0.3s ease;
+
+		transform: translateY(-50%), rotate(45deg);
+
+		pointer-events: none;
+	}
+}
+
+.select-wrap.is-active {
+	&:after {
+		transform: rotate(180deg);
+	}
+}

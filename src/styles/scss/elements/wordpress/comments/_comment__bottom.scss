@@ -1,0 +1,12 @@
+.comments .comment__bottom {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+	gap: rem(16);
+
+	@media (min-width: em(1920.96)) {
+		@include calc-size(gap, 16, 32, 1920, 3840, rem);
+	}
+}

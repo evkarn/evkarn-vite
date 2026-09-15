@@ -1,0 +1,33 @@
+{
+	"outline-color: transparent": {
+		"prefix": "outl-color-transparent",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"outline-color: transparent;"
+		],
+	},
+	"outline-color: var($1)": {
+		"prefix": "outl-color-var",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"outline-color: var($1);"
+		],
+	},
+	"outline-color: rgba($1outline-color, $2)": {
+		"prefix": "outl-color-rgba",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"outline-color: rgb($1 / $2);"
+		],
+	},
+	"outline all px": {
+		"prefix": "outl-all-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"outline-color: var(--accent);",
+			"outline-style: dashed;",
+			"outline-width: var(--outline-width);",
+			"outline-offset: var(--outline-offset);",
+		],
+	},
+}

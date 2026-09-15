@@ -1,0 +1,13 @@
+@mixin outline($width, $offset) {
+	outline-color: var(--c-accent);
+	outline-style: dashed;
+	outline-width: $width + px;
+	outline-offset: $offset + px;
+
+	@include min-full-hd-em {
+		@include calc-size(outline-width, $width, $width * 2, 1920, 3840, px);
+		@include calc-size(outline-offset, $offset, $offset * 2, 1920, 3840, px);
+	}
+
+	@content;
+}

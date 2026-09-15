@@ -1,0 +1,61 @@
+// Rating-js
+// @use './components/rating-js'
+// End. Rating-js
+
+$star-color: red
+$star-hover-color: orange
+
+.rating
+	display: flex
+	align-items: flex-end
+	font-size: 40px
+	line-height: 0.75
+	transition: opacity .3s ease
+
+.rating.rating--sending
+	opacity: 0.2
+
+.rating.rating--set .rating__active, .rating.rating--set .rating__item
+	cursor: pointer
+
+.rating__body
+	position: relative
+
+	&::before
+		content: "★★★★★"
+		display: block
+
+.rating__active
+	position: absolute
+	width: 0%
+	height: 100%
+	top: 0
+	left: 0
+	overflow: hidden
+
+	&::before
+		content: "★★★★★"
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		color: $star-color
+
+.rating__list
+	display: flex
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+
+.rating__item
+	flex: 0 0 20%
+	height: 100%
+	opacity: 0
+
+.rating__value
+	font-size: 50%
+	line-height: 1
+	padding-left: 10px

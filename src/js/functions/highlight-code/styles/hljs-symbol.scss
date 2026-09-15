@@ -1,0 +1,7 @@
+.hljs-symbol {
+	color: var(--hljs-symbol);
+
+	@media screen and (-ms-high-contrast: active) {
+		color: highlight;
+	}
+}

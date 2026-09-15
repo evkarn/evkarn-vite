@@ -1,0 +1,33 @@
+{
+	// Header
+	"Navigation": {
+		"prefix": "nav",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<nav class=\"header__nav nav\" data-nav>",
+			"\t<ul class=\"menu\" data-menu itemscope itemtype=\"https://schema.org/SiteNavigationElement\">",
+			"\t\t<li class=\"menu-item\" data-menu-item>",
+			"\t\t\t<a class=\"menu-link\" href=\"#\" data-menu-link itemprop=\"url\">",
+			"\t\t\t\tПункт 1",
+			"\t\t\t</a>",
+			"\t\t</li>",
+			"",
+			"\t\t<li class=\"menu-item\" data-menu-item>",
+			"\t\t\t<a class=\"menu-link\" href=\"#\" data-menu-link itemprop=\"url\">",
+			"\t\t\t\tПункт 1",
+			"\t\t\t</a>",
+			"",
+			"\t\t\t<ul class=\"sub-menu\" href=\"#\" data-sub-menu>",
+			"\t\t\t\t<li class=\"menu-item\" data-sub-menu-item>",
+			"\t\t\t\t\t<a class=\"menu-link\" href=\"#\" data-sub-menu-link itemprop=\"url\">",
+			"\t\t\t\t\t\tВнутренний пункт 1",
+			"\t\t\t\t\t</a>",
+			"\t\t\t\t</li>",
+			"\t\t\t</ul>",
+			"\t\t</li>",
+			"\t</ul>",
+			"</nav>",
+		],
+		"description": "Navigation",
+	},
+}

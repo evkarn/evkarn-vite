@@ -1,0 +1,27 @@
+<nav class="breadcrumbs flex" aria-labelledby="my-breadcrumbs">
+	<div class="breadcrumbs__container container">
+		<h2 class="h2 visually-hidden" id="my-breadcrumbs">Меню хлебных крошек</h2>
+
+		<ol
+			class="breadcrumbs__list list-reset"
+			itemscope
+			itemtype="http://schema.org/BreadcrumbList"
+		>
+			<li
+				class="breadcrumbs__item"
+				itemprop="itemListElement"
+				itemscope
+				itemtype="http://schema.org/ListItem"
+			>
+				<a class="breadcrumbs__link" href="/" itemprop="item">
+					<span itemprop="name"> Главная </span>
+				</a>
+
+				<meta itemprop="position" content="1" />
+			</li>
+
+			@loop('src/includes/sections/breadcrumbs/loop-items.html',
+			'./data.json')
+		</ol>
+	</div>
+</nav>

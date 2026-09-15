@@ -1,0 +1,7 @@
+.comment-form__submit {
+	max-width: rem(200);
+
+	@media (min-width: em(1920.96)) {
+		@include calc-size(max-width, 200, 400, 1920, 3840, rem);
+	}
+}

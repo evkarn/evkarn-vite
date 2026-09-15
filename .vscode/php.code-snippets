@@ -1,0 +1,46 @@
+{
+	// post_meta, term_meta, user_meta, comment_meta, nav_menu_item and theme_options
+	"String replace": {
+		"prefix": "php-str-replace",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php str_replace([' ', '(', ')', '-', '—'], '', 'Какая-то строка или переменная'); ?>",
+		],
+	},
+
+	"<?php  ?>": {
+		"prefix": "php_open",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php",
+			"\t$1",
+			"?>",
+		],
+	},
+
+	"<?php  ?> line": {
+		"prefix": "php_open_line",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php $1 ?>",
+		],
+	},
+
+	"php if": {
+		"prefix": "php_if",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php if ( !empty( \\$$1 ) ): ?>",
+			"\t<?php echo \\$$1 ?>",
+			"<?php endif; ?>",
+		],
+	},
+
+	"php endif": {
+		"prefix": "php_endif",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php endif; ?>",
+		],
+	},
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+
+	<body>
+		<button class="button" data-modal-path="modal-one">
+			Открыть модальное окно
+		</button>
+
+		<div class="modals" data-modals>
+			<div class="modals__overlay" data-modals-overlay>
+				<div
+					class="modals__modal modal modal-tag"
+					data-modal-target="modal-one"
+				>
+					<div class="modal__header">
+						<div class="modal__title">Добавить тег</div>
+
+						<div class="modal__close" data-modal-close>&#10006;</div>
+					</div>
+
+					<div class="modal__main modal-main">
+						<div class="modal-main__content">
+							<span class="modal-main__title"> Введите имя тега </span>
+
+							<input class="modal-main__input" type="text" />
+						</div>
+
+						<button class="modal-main__button button button__fill">
+							Добавить
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

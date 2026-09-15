@@ -1,0 +1,11 @@
+@use "../../variables/general";
+@use "../../variables/grid";
+@use "../../mixins/units";
+@use "../../mixins/fluid-size";
+
+.page-nav h2.page-nav__title {
+	font-size: units.rem(16);
+	font-weight: 400;
+	line-height: 1.4;
+	letter-spacing: 0.04em;
+}

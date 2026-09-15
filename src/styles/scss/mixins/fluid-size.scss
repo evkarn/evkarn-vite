@@ -1,0 +1,43 @@
+@use "sass:math";
+
+@use "vars/general" as *;
+@use "vars/grid" as *;
+@use "mixins/units" as *;
+
+// Резиновый размер между min и max значениями на основе viewport
+// @param {Number} $min - Минимальное значение (например, 16px)
+// @param {Number} $max - Максимальное значение (например, 24px)
+// @param {Number} $min-vw [320px] - Минимальная ширина viewport
+// @param {Number} $max-vw [1000px] - Максимальная ширина viewport (по умолчанию 1000px)
+
+@mixin fluid-size-px($property, $min, $max, $min-vw-width: $min-screen, $max-vw-width: $container-width) {
+	$min-px: to-number($min);
+	$max-px: to-number($max);
+	$min-vw-px: strip-unit($min-vw-width);
+	$max-vw-px: strip-unit($max-vw-width);
+
+	$slope: math.div(($max-px - $min-px), ($max-vw-px - $min-vw-px));
+	$intercept: $min-px - $slope * $min-vw-px;
+
+	#{$property}: clamp(#{$min-px * 1px}, #{$intercept * 1px} + #{$slope * 100vw}, #{$max-px * 1px});
+}
+
+@mixin fluid-size-rem($property, $min, $max, $min-vw-width: $min-screen, $max-vw-width: $container-width) {
+	$min-px: to-number($min);
+	$max-px: to-number($max);
+	$min-vw-px: strip-unit($min-vw-width);
+	$max-vw-px: strip-unit($max-vw-width);
+
+	// предполагается, что у вас где-то объявлена переменная $base-font-size: 16; (или $fz)
+	$base-font-size: 16; // или берите из любой вашей глобальной переменной
+
+	$min-rem: math.div($min-px, $base-font-size);
+	$max-rem: math.div($max-px, $base-font-size);
+	$min-vw-rem: math.div($min-vw-px, $base-font-size);
+	$max-vw-rem: math.div($max-vw-px, $base-font-size);
+
+	$slope: math.div(($max-rem - $min-rem), ($max-vw-rem - $min-vw-rem));
+	$intercept: $min-rem - $slope * $min-vw-rem;
+
+	#{$property}: clamp(#{$min-rem * 1rem}, #{$intercept * 1rem} + #{$slope * 100vw}, #{$max-rem * 1rem});
+}

@@ -1,0 +1,25 @@
+@use 'settings/imports' as *;
+
+.h1,
+.h2,
+.h3,
+.h4 {
+	font-family: var(--font-title);
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+
+	color: inherit;
+}
+
+.h1 {
+	@include fluid-size-px(font-size, 36, 54);
+}
+
+.h2 {
+	@include fluid-size-px(font-size, 26, 36);
+}
+
+.h3 {
+	@include fluid-size-px(font-size, 20, 24);
+}

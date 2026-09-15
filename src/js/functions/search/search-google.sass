@@ -1,0 +1,199 @@
+.search-block
+	position: absolute
+	top: var(--header-height)
+	z-index: 20
+
+	pointer-events: none
+
+	opacity: 0
+	
+	transform: scale(0)
+
+	transition: transform .3s ease, opacity .1s ease
+
+.search-block--visible
+	pointer-events: auto
+	
+	opacity: 1
+	
+	transform: scale(1)
+
+.search-block
+	.gsc-control-cse
+		padding: 14px
+		+calc-size(padding, 14, 28, 1920.96, 3840, px)
+
+		background-color: var(--c-body-bg)
+		border: none
+		border-top: 1px solid var(--c-search-border-top)
+
+		@media ( min-width: em(3840.96) )
+			padding: 28px
+
+	form.gsc-search-box
+		padding: 6px
+		+calc-size(padding, 6, 12, 1920.96, 3840, px)
+
+		font-size: 14px
+		+calc-size(font-size, 14, 28, 1920.96, 3840, px)
+
+		margin-bottom: 0
+
+		background-color: var(--c-search-bg)
+		border: none
+		border-radius: var(--border-radius)
+		
+		@media ( min-width: em(2880.96) )
+			border-radius: calc(var(--border-radius) * 2)
+
+		@media ( min-width: em(3840.96) )
+			padding: 12px
+
+			font-size: 28px
+
+	table.gsc-search-box
+		margin-bottom: 0
+		padding: 0
+
+	.gsc-input-box
+		padding: 0
+
+		border: none
+		background-color: var(--c-search-bg)
+
+	.gsib_a
+		padding: 0
+
+	.gsib_b
+		display: none
+
+	.gsc-input
+		min-height: 40px
+		+calc-size(min-height, 40, 80, 1920.96, 3840, px)
+
+		font-size: 16px
+		+calc-size(font-size, 16, 32, 1920.96, 3840, px)
+
+		background: var(--c-search-bg) !important
+		color: var(--c-text)
+
+		@media ( min-width: em(3840.96) )
+			min-height: 80px
+
+			font-size: 32px
+
+	.gsc-search-button-v2
+		display: flex
+		align-items: center
+		justify-content: center
+
+		min-width: 40px
+		min-height: 40px
+		+calc-size(min-width, 40, 80, 1920.96, 3840, px)
+		+calc-size(min-height, 40, 80, 1920.96, 3840, px)
+
+		padding: 0
+		margin: 0
+
+		border: none
+		border-radius: var(--border-radius)
+		background-color: var(--c-valencia)
+
+		transition: background-color .3s ease
+
+		&:hover
+			background-color: var(--c-accent)
+
+		&:active
+			background-color: var(--c-dark-burgundy)
+		
+		@media ( min-width: em(2880.96) )
+			border-radius: calc(var(--border-radius) * 2)
+
+		@media ( min-width: em(3840.96) )
+			min-width: 80px
+			min-height: 80px
+
+		svg
+			width: 16px
+			height: auto
+			+calc-size(width, 16, 32, 1920.96, 3840, px)
+
+			@media ( min-width: em(3840.96) )
+				width: 32px
+
+	.gsc-modal-background-image
+		background-color: var(--c-body-bg)
+
+	.gsc-results-wrapper-overlay
+		height: 70vh
+
+		padding: 40px 20px 20px
+		+calc-size(padding-top, 40, 80, 1920.96, 3840, px)
+		+calc-size(padding-right, 20, 40, 1920.96, 3840, px)
+		+calc-size(padding-bottom, 20, 40, 1920.96, 3840, px)
+		+calc-size(padding-left, 20, 40, 1920.96, 3840, px)
+
+		font-size: 14px
+		+calc-size(font-size, 14, 28, 1920.96, 3840, px)
+
+		background: var(--c-body-bg)
+		box-shadow: 0 3px 10px var(--box-shadow)
+
+		@media ( min-width: em(2880.96) )
+			box-shadow: 0 6px 20px var(--box-shadow)
+
+		@media ( min-width: em(3840.96) )
+			padding: 80px 40px 40px
+
+			font-size: 28px
+
+	.gsc-tabsArea 
+		margin: 12px 0
+		+calc-size(margin-top, 12, 24, 1920.96, 3840, px)
+		+calc-size(margin-bottom, 12, 24, 1920.96, 3840, px)
+
+		border: none
+
+		@media ( min-width: em(3840.96) )
+			margin: 24px 0
+
+	.gsc-tabHeader
+		font-size: 12px
+		+calc-size(font-size, 12, 24, 1920.96, 3840, px)
+
+		@media ( min-width: em(3840.96) )
+			font-size: 24px
+
+	.gsc-webResult.gsc-result
+		padding: 10px 0
+		+calc-size(padding, 10, 20, 1920.96, 3840, px)
+
+		border: none
+
+		@media ( min-width: em(3840.96) )
+			padding: 20px 0
+
+	.gcsc-more-maybe-branding-root
+		display: flex
+		flex-direction: column
+		align-items: center
+		row-gap: 10px
+		+calc-size(row-gap, 10, 20, 1920.96, 3840, px)
+
+		@media ( min-width: em(3840.96) )
+			row-gap: 20px
+
+	.gcsc-more-maybe-branding-box
+		margin: 3px
+		padding: 8px
+		+calc-size(margin, 3, 6, 1920.96, 3840, px)
+		+calc-size(padding, 8, 16, 1920.96, 3840, px)
+
+		border: none
+
+		@media ( min-width: em(3840.96) )
+			margin: 6px
+			padding: 16px
+
+

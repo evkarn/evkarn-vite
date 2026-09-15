@@ -1,0 +1,10 @@
+.comment__info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: rem(20);
+
+	@media (min-width: em(1920.96)) {
+		@include calc-size(gap, 20, 40, 1920, 3840, rem);
+	}
+}

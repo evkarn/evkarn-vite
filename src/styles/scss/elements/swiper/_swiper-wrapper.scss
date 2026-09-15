@@ -1,0 +1,3 @@
+.swiper-wrapper:has(.before-num) {
+	counter-reset: num 0;
+}

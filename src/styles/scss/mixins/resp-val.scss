@@ -1,0 +1,93 @@
+@use 'sass:math';
+@use 'sass:list';
+@use 'sass:map';
+
+// Responsive value
+@mixin calc-size($propName, $minSize, $maxSize, $minWidth, $maxWidth, $units) {
+	@if $units == rem {
+		#{$propName}: calc(
+			#{math.div($minSize, $font-size) +
+				#{$units}} +
+				(#{$maxSize} - #{$minSize}) *
+				(
+					(100vw - #{math.div($minWidth, $font-size) + #{$units}}) /
+						(#{$maxWidth} - #{$minWidth})
+				)
+		);
+	} @else {
+		#{$propName}: calc(
+			#{$minSize +
+				#{$units}} +
+				(#{$maxSize} - #{$minSize}) *
+				((100vw - #{$minWidth + #{$units}}) / (#{$maxWidth} - #{$minWidth}))
+		);
+	}
+}
+
+@mixin calc-size-media(
+  $propName,
+  $minSize,
+  $maxSize,
+  $minWidth,
+  $maxWidth,
+  $units: px
+) {
+  @if $units == rem {
+    $minWidth-em: math.div($minWidth, 16px) * 1em;
+    $maxWidth-em: math.div($maxWidth, 16px) * 1em;
+
+    @media (min-width: #{$minWidth-em}) and (max-width: #{$maxWidth-em}) {
+      /* stylelint-disable-next-line no-invalid-position-declaration */
+      #{$propName}: calc(
+        #{math.div($minSize, 16px)}rem +
+        (#{math.div($maxSize, 16px)} - #{math.div($minSize, 16px)}) *
+        ((100vw - #{$minWidth-em}) / (#{$maxWidth-em} - #{$minWidth-em}))
+      );
+    }
+  } @else {
+    @media (min-width: #{$minWidth}#{$units}) and (max-width: #{$maxWidth}#{$units}) {
+      /* stylelint-disable-next-line no-invalid-position-declaration */
+      #{$propName}: calc(
+        #{$minSize}#{$units} +
+        (#{$maxSize} - #{$minSize}) *
+        ((100vw - #{$minWidth}#{$units}) / (#{$maxWidth} - #{$minWidth}))
+      );
+    }
+  }
+}
+
+@function calc-size-without-property(
+	$minSize,
+	$maxSize,
+	$minWidth,
+	$maxWidth,
+	$units
+) {
+	@if $units == rem {
+		$result: calc(
+			#{math.div($minSize, $font-size) +
+				#{$units}} +
+				(#{$maxSize} - #{$minSize}) *
+				(
+					(100vw - #{math.div($minWidth, $font-size) + #{$units}}) /
+						(#{$maxWidth} - #{$minWidth})
+				)
+		);
+
+		@return $result;
+	} @else {
+		$result: calc(
+			#{$minSize +
+				#{$units}} +
+				(#{$maxSize} - #{$minSize}) *
+				((100vw - #{$minWidth + #{$units}}) / (#{$maxWidth} - #{$minWidth}))
+		);
+
+		@return $result;
+	}
+}
+// End. Responsive value
+
+// Итак, если мы хотим, чтобы элемент был равен 25px, когда ширина браузера равна 500px, и 50px, когда ширина браузера равна 1920px, вся функция будет выглядеть следующим образом:
+
+// calc(25px + (50–25) * ((100vw — 500px) / (1920–500)))

@@ -1,0 +1,15 @@
+.nav--multi-level ul li {
+	display: inline-block;
+}
+
+.nav--multi-level ul li:has(ul) {
+	position: relative;
+
+	@media (any-hover: hover) {
+		&:hover {
+			> ul {
+				transform: rotateX(0deg);
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"animation all": {
+		"prefix": "anim-all",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"animation-name: $1;",
+			"animation-duration: 0.5s;",
+			"animation-iteration-count: infinite; // infinite or number",
+			"animation-direction: normal; // normal, reverse, alternate, alternate-reverse",
+			"animation-timing-function: linear; // ease, ease-in, ease-out, ease-in-out, cubic-bezier(x1, y1, x2, y2), step-start, step-end, steps(количество шагов, положение шага), ",
+			"animation-delay: 0.5s;",
+			"animation-fill-mode: none; // forwards, backwards, both",
+			"animation-direction: normal;",
+		],
+		"description": "animation all",
+	},
+	"animation play-state": {
+		"prefix": "anim-play-state",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"animation-play-state: paused; // play or paused"
+		],
+		"description": "animation play-state",
+	},
+	"animation delay": {
+		"prefix": "anim-delay",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"animation-delay: paused; // play or paused"
+		],
+		"description": "animation delay",
+	},
+}

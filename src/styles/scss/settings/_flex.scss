@@ -1,0 +1,88 @@
+.flex {
+	display: flex;
+}
+
+.inline-flex {
+	display: inline-flex;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.inline-flex-column {
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.flex-column-start {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.flex-column-end {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.flex-column-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.flex-align-center {
+	display: flex;
+	align-items: center;
+}
+
+.inline-flex-align-center {
+	display: inline-flex;
+	align-items: center;
+}
+
+.flex-align-end {
+	display: flex;
+	align-items: flex-end;
+}
+
+.inline-flex-align-end {
+	display: inline-flex;
+	align-items: flex-end;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.inline-flex-center {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-sb {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.flex-grid {
+	--flex-gap: 30px;
+	--flex-els: 3;
+
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--flex-gap);
+
+	> .flex-grid__item {
+		width: calc(
+			(100% - ((var(--flex-els) - 1) * var(--flex-gap))) / (var(--flex-els))
+		);
+	}
+}

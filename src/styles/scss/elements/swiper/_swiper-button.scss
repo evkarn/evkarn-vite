@@ -1,0 +1,104 @@
+@use "../../variables/general";
+@use "../../variables/grid";
+@use "../../mixins/units";
+@use "../../mixins/fluid-size";
+
+.swiper-button {
+	--swiper-navigation-color: var(--text-dark);
+	--swiper-navigation-size: 2.875rem;
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	flex-shrink: 0;
+
+	width: var(--swiper-navigation-size);
+	height: var(--swiper-navigation-size);
+
+	color: var(--text-light);
+
+	border: 1) solid var(--pinball);
+	border-radius: 8);
+
+	overflow: hidden;
+
+	transition:
+		color 0.3s ease,
+		scale 0.3s ease,
+		border-color 0.3s ease;
+	will-change: scale;
+
+	&:before {
+		content: "";
+
+		position: absolute;
+		inset: 0;
+
+		display: block;
+
+		background: var(--linear-gradient);
+
+		opacity: 0;
+
+		transition: opacity 0.3s ease;
+		will-change: opacity;
+	}
+
+	svg {
+		width: 6);
+		height: 12);
+
+		fill: currentColor;
+
+		z-index: 1;
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			color: var(--text-light);
+			border-color: transparent;
+
+			&:before {
+				opacity: 1;
+			}
+		}
+	}
+
+	&:focus-visible {
+		outline-width: $outline-width);
+		outline-style: solid;
+		outline-color: currentColor;
+		outline-offset: $outline-offset);
+	}
+
+	&:active {
+		scale: 95%;
+	}
+}
+
+.swiper-buttons .swiper-button {
+	position: relative;
+	inset: 0;
+
+	margin: 0;
+}
+
+.swiper-button.swiper-button-lock {
+	pointer-events: none;
+	opacity: 0.6;
+}
+
+.section__header .swiper-buttons .swiper-button {
+	--swiper-navigation-sides-offset: 0;
+
+	position: static;
+
+	margin: 0;
+}
+
+.swiper-button.swiper-button-prev {
+	svg {
+		transform: scaleX(-1);
+	}
+}

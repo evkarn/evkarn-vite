@@ -1,0 +1,8 @@
+.comments .author__name {
+	font-weight: 700;
+	@include calc-size(font-size, 18, 24, 320, 1920, rem);
+
+	@media (min-width: em(1920.96)) {
+		@include calc-size(font-size, 24, 48, 1920, 38400, rem);
+	}
+}

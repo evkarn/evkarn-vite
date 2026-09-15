@@ -1,0 +1,49 @@
+@use "../../variables/general";
+@use "../../variables/grid";
+@use "../../mixins/units";
+@use "../../mixins/adaptive-value";
+
+.btn {
+	align-self: flex-start;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: 16) 24);
+
+	font-weight: 600;
+
+	white-space: nowrap;
+	text-align: center;
+
+	color: var(--text-light);
+
+	cursor: pointer;
+
+	transition: background-color 0.3s ease;
+
+	@include adaptive-value.adaptive-value-rem(font-size, 14, 16);
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: var(--accent-light);
+		}
+	}
+
+	&:focus-visible {
+		outline-color: currentColor;
+		outline-style: dashed;
+		outline-width: $outline-width);
+		outline-offset: $outline-offset);
+	}
+
+	&:active {
+		background-color: var(--accent);
+	}
+}
+
+.btn--fill {
+	background-color: var(--accent);
+	border: none;
+	border-radius: $bor-rad);
+}

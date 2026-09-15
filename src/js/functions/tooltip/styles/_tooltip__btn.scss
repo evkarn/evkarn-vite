@@ -1,0 +1,21 @@
+.tooltip__btn {
+	padding: 0;
+	color: #000000;
+	background-color: transparent;
+	border: none;
+	border-bottom: rem($bor-width) dashed currentColor;
+	cursor: pointer;
+
+	@media (min-width: em(1920.96)) {
+		@include calc-size(border-width, $bor-width, $bor-width * 2, 1920, 3840, rem);
+	}
+
+	&:hover,
+	&:focus {
+		+ .tooltip__txt {
+			visibility: visible;
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+}

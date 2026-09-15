@@ -1,0 +1,68 @@
+@use "../../variables/general";
+@use "../../variables/grid";
+@use "../../mixins/units";
+@use "../../mixins/fluid-size";
+
+.page-nav__link {
+	position: relative;
+
+
+	display: flex;
+	color: var(--citrus-splash);
+	padding-left: 0;
+
+	transition:
+		padding-left 0.3s ease,
+		color 0.3s ease,
+		scale 0.3s ease;
+	will-change: scale;
+
+	@media (any-hover: hover) {
+		&:hover {
+			color: var(--accent);
+		}
+	}
+
+	&:focus-visible {
+		outline-width: units.rem(general.$outline-width);
+		outline-style: dashed;
+		outline-color: var(--accent);
+		outline-offset: units.rem(general.$outline-offset);
+	}
+
+	&:active {
+		scale: 95%;
+	}
+
+	&:before {
+		content: "";
+
+		position: absolute;
+		top: units.rem(5);
+		left: 0;
+
+		display: block;
+		width: units.rem(10);
+		height: units.rem(10);
+
+		background: var(--linear-gradient);
+		border-radius: units.rem(2);
+
+		opacity: 0;
+
+		transition:
+			opacity 0.4s ease,
+			color 0.3s ease;
+		will-change: opacity;
+	}
+}
+
+.page-nav__link--is-active {
+	padding-left: units.rem(18);
+
+	color: var(--sooty);
+
+	&:before {
+		opacity: 1;
+	}
+}

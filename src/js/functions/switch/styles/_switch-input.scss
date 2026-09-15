@@ -1,0 +1,63 @@
+.switch-input {
+	appearance: none;
+	flex-shrink: 0;
+
+	position: relative;
+	width: rem(60);
+	height: rem(34);
+
+	white-space: nowrap;
+
+	background-color: var(--island-green);
+
+	border-radius: rem(500);
+
+	cursor: pointer;
+
+	@media (min-width: em(1920.96)) {
+		@include calc-size(width, 60, 120, 1920, 3840, rem);
+		@include calc-size(height, 34, 68, 1920, 3840, rem);
+
+		@include calc-size(border-radius, 500, 1000, 1920, 3840, rem);
+	}
+
+	&:after {
+		content: '';
+
+		position: absolute;
+		top: 50%;
+		left: rem(4);
+
+		display: block;
+		width: rem(26);
+		height: rem(26);
+
+		background-color: var(--c-light);
+
+		border: none;
+		border-radius: 100%;
+
+		cursor: pointer;
+
+		transition: all 0.3s ease;
+
+		transform: translateY(-50%);
+
+		@media (min-width: em(1920.96)) {
+			@include calc-size(left, 4, 8, 1920, 3840, rem);
+
+			@include calc-size(width, 26, 52, 1920, 3840, rem);
+			@include calc-size(height, 26, 52, 1920, 3840, rem);
+		}
+	}
+
+	&:checked {
+		&:after {
+			left: rem(30);
+
+			@media (min-width: em(1920.96)) {
+				@include calc-size(left, 30, 60, 1920, 3840, rem);
+			}
+		}
+	}
+}

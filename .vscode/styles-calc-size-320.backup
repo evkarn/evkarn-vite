@@ -1,0 +1,530 @@
+{
+	"Calc size without property px": {
+		"prefix": "cs-no-prop-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"calc($1px + ($2 - $1) * ((100vw - 320px) / (1920 - 320)))"
+		],
+		"description": "Calc size without property px"
+	},
+	"Calc size without property rem": {
+		"prefix": "cs-no-prop-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"calc(units.rem($1) + ($2 - $1) * ((100vw - units.rem(320)) / (1920 - 320)))"
+		],
+		"description": "Calc size without property rem"
+	},
+	"Calc size rem": {
+		"prefix": "cs-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"$1: calc(units.rem($2) + ($3 - $2) * ((100vw - units.rem(320)) / (1920 - 320)));"
+		],
+		"description": "Calc size rem"
+	},
+	"Calc size px": {
+		"prefix": "cs-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"$1: calc($2px + ($3 - $2) * ((100vw - 320px) / (1920 - 320)));"
+		],
+		"description": "Calc size px"
+	},
+	// Position
+	"Calc size top rem": {
+		"prefix": "cs-top-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"top: calc(units.rem($1) + ($2 - $1) * ((100vw - units.rem(320)) / (1920 - 320)));"
+		],
+		"description": "Calc size top rem"
+	},
+	"Calc size top px": {
+		"prefix": "cs-top-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"top: calc($1px + ($2 - $1) * ((100vw - 320px) / (1920 - 320)));"
+		],
+		"description": "Calc size top px"
+	},
+	"Calc size bottom rem": {
+		"prefix": "cs-bottom-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"bottom: calc(units.rem($1) + ($2 - $1) * ((100vw - units.rem(320)) / (1920 - 320)));"
+		],
+		"description": "Calc size bottom rem"
+	},
+	"Calc size bottom px": {
+		"prefix": "cs-bottom-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"bottom: calc($1px + ($2 - $1) * ((100vw - 320px) / (1920 - 320)));"
+		],
+		"description": "Calc size bottom px"
+	},
+	"Calc size right rem": {
+		"prefix": "cs-right-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"right: calc(units.rem($1) + ($2 - $1) * ((100vw - units.rem(320)) / (1920 - 320)));"
+		],
+		"description": "Calc size right rem"
+	},
+	"Calc size right px": {
+		"prefix": "cs-right-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"right: calc($1px + ($2 - $1) * ((100vw - 320px) / (1920 - 320)));"
+		],
+		"description": "Calc size right px"
+	},
+	"Calc size left rem": {
+		"prefix": "cs-left-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"left: calc(units.rem($1) + ($2 - $1) * ((100vw - units.rem(320)) / (1920 - 320)));"
+		],
+		"description": "Calc size left rem"
+	},
+	"Calc size left px": {
+		"prefix": "cs-left-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"left: calc($1px + ($2 - $1) * ((100vw - 320px) / (1920 - 320)));"
+		],
+		"description": "Calc size left px"
+	},
+	// End. Position
+	// Font-size
+	"Calc size font-size": {
+		"prefix": "cs-fz-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"font-size: calc(units.rem($1) + ($2 - $1) * ((100vw - units.rem(320)) / (1920 - 320)));"
+		],
+		"description": "Calc size font-size"
+	},
+	"Calc size font-size px": {
+		"prefix": "cs-fz-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"font-size: calc($1px + ($2 - $1) * ((100vw - 320px) / (1920 - 320)));"
+		],
+		"description": "Calc size font-size px"
+	},
+	// End. Font-size
+	// Padding
+	"Calc size padding rem": {
+		"prefix": "cs-p-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"padding: calc(units.rem($1) + ($2 - $1) * ((100vw - units.rem(320)) / (1920 - 320)));"
+		],
+		"description": "Calc size padding rem"
+	},
+	"Calc size padding px": {
+		"prefix": "cs-p-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"padding: calc($1px + ($2 - $1) * ((100vw - 320px) / (1920 - 320)));"
+		],
+		"description": "Calc size padding px"
+	},
+	"Calc size padding-top rem": {
+		"prefix": "cs-pt-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"padding-top: calc(units.rem($1) + ($2 - $1) * ((100vw - units.rem(320)) / (1920 - 320)));"
+		],
+		"description": "Calc size padding-top rem"
+	},
+	"Calc size padding-top px": {
+		"prefix": "cs-pt-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"padding-top: calc($1px + ($2 - $1) * ((100vw - 320px) / (1920 - 320)));"
+		],
+		"description": "Calc size padding-top px"
+	},
+	"Calc size padding-bottom rem": {
+		"prefix": "cs-pb-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"padding-bottom: calc(units.rem($1) + ($2 - $1) * ((100vw - units.rem(320)) / (1920 - 320)));"
+		],
+		"description": "Calc size padding-bottom rem"
+	},
+	"Calc size padding-bottom px": {
+		"prefix": "cs-pb-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"padding-bottom: calc($1px + ($2 - $1) * ((100vw - 320px) / (1920 - 320)));"
+		],
+		"description": "Calc size padding-bottom px"
+	},
+	"Calc size padding-right rem": {
+		"prefix": "cs-pr-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"padding-right: calc(units.rem($1) + ($2 - $1) * ((100vw - units.rem(320)) / (1920 - 320)));"
+		],
+		"description": "Calc size padding-right rem"
+	},
+	"Calc size padding-right px": {
+		"prefix": "cs-pr-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"padding-right: calc($1px + ($2 - $1) * ((100vw - 320px) / (1920 - 320)));"
+		],
+		"description": "Calc size padding-right px"
+	},
+	"Calc size padding-left rem": {
+		"prefix": "cs-pl-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"padding-left: calc(units.rem($1) + ($2 - $1) * ((100vw - units.rem(320)) / (1920 - 320)));"
+		],
+		"description": "Calc size padding-left rem"
+	},
+	"Calc size padding-left px": {
+		"prefix": "cs-pl-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"padding-left: calc($1px + ($2 - $1) * ((100vw - 320px) / (1920 - 320)));"
+		],
+		"description": "Calc size padding-left px"
+	},
+	// End. Padding
+	// Margin
+	"Calc size margin rem": {
+		"prefix": "cs-m-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"margin: calc(units.rem($1) + ($2 - $1) * ((100vw - units.rem(320)) / (1920 - 320)));"
+		],
+		"description": "Calc size margin rem"
+	},
+	"Calc size margin px": {
+		"prefix": "cs-m-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"margin: calc($1px + ($2 - $1) * ((100vw - 320px) / (1920 - 320)));"
+		],
+		"description": "Calc size margin px"
+	},
+	"Calc size margin-top rem": {
+		"prefix": "cs-mt-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"margin-top: calc(units.rem($1) + ($2 - $1) * ((100vw - units.rem(320)) / (1920 - 320)));"
+		],
+		"description": "Calc size margin-top rem"
+	},
+	"Calc size margin-top px": {
+		"prefix": "cs-mt-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"margin-top: calc($1px + ($2 - $1) * ((100vw - 320px) / (1920 - 320)));"
+		],
+		"description": "Calc size margin-top px"
+	},
+	"Calc size margin-bottom rem": {
+		"prefix": "cs-mb-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"margin-bottom: calc(units.rem($1) + ($2 - $1) * ((100vw - units.rem(320)) / (1920 - 320)));"
+		],
+		"description": "Calc size margin-bottom rem"
+	},
+	"Calc size margin-bottom px": {
+		"prefix": "cs-mb-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"margin-bottom: calc($1px + ($2 - $1) * ((100vw - 320px) / (1920 - 320)));"
+		],
+		"description": "Calc size margin-bottom px"
+	},
+	"Calc size margin-right rem": {
+		"prefix": "cs-mr-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"margin-right: calc(units.rem($1) + ($2 - $1) * ((100vw - units.rem(320)) / (1920 - 320)));"
+		],
+		"description": "Calc size margin-right rem"
+	},
+	"Calc size margin-right px": {
+		"prefix": "cs-mr-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"margin-right: calc($1px + ($2 - $1) * ((100vw - 320px) / (1920 - 320)));"
+		],
+		"description": "Calc size margin-right px"
+	},
+	"Calc size margin-left rem": {
+		"prefix": "cs-ml-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"margin-left: calc(units.rem($1) + ($2 - $1) * ((100vw - units.rem(320)) / (1920 - 320)));"
+		],
+		"description": "Calc size margin-left rem"
+	},
+	"Calc size margin-left px": {
+		"prefix": "cs-ml-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"margin-left: calc($1px + ($2 - $1) * ((100vw - 320px) / (1920 - 320)));"
+		],
+		"description": "Calc size margin-left px"
+	},
+	// End. Margin
+	// Width
+	"Calc size width rem": {
+		"prefix": "cs-w-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"width: calc(units.rem($1) + ($2 - $1) * ((100vw - units.rem(320)) / (1920 - 320)));"
+		],
+		"description": "Calc size width rem"
+	},
+	"Calc size width px": {
+		"prefix": "cs-w-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"width: calc($1px + ($2 - $1) * ((100vw - 320px) / (1920 - 320)));"
+		],
+		"description": "Calc size width px"
+	},
+	"Calc size max-width rem": {
+		"prefix": "cs-maxW-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"max-width: calc(units.rem($1) + ($2 - $1) * ((100vw - units.rem(320)) / (1920 - 320)));"
+		],
+		"description": "Calc size max-width rem"
+	},
+	"Calc size max-width px": {
+		"prefix": "cs-maxW-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"max-width: calc($1px + ($2 - $1) * ((100vw - 320px) / (1920 - 320)));"
+		],
+		"description": "Calc size max-width px"
+	},
+	"Calc size min-width rem": {
+		"prefix": "cs-minW-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"min-width: calc(units.rem($1) + ($2 - $1) * ((100vw - units.rem(320)) / (1920 - 320)));"
+		],
+		"description": "Calc size min-width rem"
+	},
+	"Calc size min-width px": {
+		"prefix": "cs-minW-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"min-width: calc($1px + ($2 - $1) * ((100vw - 320px) / (1920 - 320)));"
+		],
+		"description": "Calc size min-width px"
+	},
+	// End. Width
+	// Height
+	"Calc size height rem": {
+		"prefix": "cs-height-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"height: calc(units.rem($1) + ($2 - $1) * ((100vw - units.rem(320)) / (1920 - 320)));"
+		],
+		"description": "Calc size width rem"
+	},
+	"Calc size height px": {
+		"prefix": "cs-height-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"height: calc($1px + ($2 - $1) * ((100vw - 320px) / (1920 - 320)));"
+		],
+		"description": "Calc size height px"
+	},
+	"Calc size min-height rem": {
+		"prefix": "cs-minH-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"min-width: calc(units.rem($1) + ($2 - $1) * ((100vw - units.rem(320)) / (1920 - 320)));"
+		],
+		"description": "Calc size min-height rem"
+	},
+	"Calc size min-height px": {
+		"prefix": "cs-minH-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"min-height: calc($1px + ($2 - $1) * ((100vw - 320px) / (1920 - 320)));"
+		],
+		"description": "Calc size min-height px"
+	},
+	"Calc size max-height rem": {
+		"prefix": "cs-maxH-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"max-height: calc(units.rem($1) + ($2 - $1) * ((100vw - units.rem(320)) / (1920 - 320)));"
+		],
+		"description": "Calc size max-height rem"
+	},
+	"Calc size max-height px": {
+		"prefix": "cs-maxH-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"max-height: calc($1px + ($2 - $1) * ((100vw - 320px) / (1920 - 320)));"
+		],
+		"description": "Calc size max-height px"
+	},
+	// End. Heihgt
+	// Gap
+	"Calc size gap rem": {
+		"prefix": "cs-gap-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"gap: calc(units.rem($1) + ($2 - $1) * ((100vw - units.rem(320)) / (1920 - 320)));"
+		],
+		"description": "Calc size gap rem"
+	},
+	"Calc size gap px": {
+		"prefix": "cs-gap-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"gap: calc($1px + ($2 - $1) * ((100vw - 320px) / (1920 - 320)));"
+		],
+		"description": "Calc size gap px"
+	},
+	"Calc size gap-num rem": {
+		"prefix": "cs-gap-num-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"@include calc-size(gap, \\$gap-num, \\$gap-num * 2, 320, 1920, rem);"
+		],
+		"description": "Calc size gap-num rem"
+	},
+	"Calc size gap-num px": {
+		"prefix": "cs-gap-num-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"@include calc-size(gap, \\$gap-num, \\$gap-num * 2, 320, 1920, px);"
+		],
+		"description": "Calc size gap-num px"
+	},
+	"Calc size column-gap rem": {
+		"prefix": "cs-col-gap-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"column-gap: calc(units.rem($1) + ($2 - $1) * ((100vw - units.rem(320)) / (1920 - 320)));"
+		],
+		"description": "Calc size column-gap rem"
+	},
+	"Calc size column-gap px": {
+		"prefix": "cs-cg-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"column-gap: calc($1px + ($2 - $1) * ((100vw - 320px) / (1920 - 320)));"
+		],
+		"description": "Calc size column-gap px"
+	},
+	"Calc size row-gap rem": {
+		"prefix": "cs-row-gap-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"row-gap: calc(units.rem($1) + ($2 - $1) * ((100vw - units.rem(320)) / (1920 - 320)));"
+		],
+		"description": "Calc size row-gap rem"
+	},
+	"Calc size row-gap px": {
+		"prefix": "cs-row-gap-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"row-gap: calc($1px + ($2 - $1) * ((100vw - 320px) / (1920 - 320)));"
+		],
+		"description": "Calc size row-gap px"
+	},
+	// End. Gap
+	// Border
+	"Calc size border-radius rem": {
+		"prefix": "cs-bor-r-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"border-radius: calc(units.rem($1) + ($2 - $1) * ((100vw - units.rem(320)) / (1920 - 320)));"
+		],
+		"description": "Calc size border-radius rem"
+	},
+	"Calc size border-radius px": {
+		"prefix": "cs-bor-r-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"border-radius: calc($1px + ($2 - $1) * ((100vw - 320px) / (1920 - 320)));"
+		],
+		"description": "Calc size border-radius px"
+	},
+	"Calc-size border-width rem": {
+		"prefix": "cs-bor-w-sm-r",
+		"body": [
+			"border-width: calc(units.rem($1) + ($2 - $1) * ((100vw - units.rem(320)) / (1920 - 320)));"
+		],
+		"description": "Border-width calc-size rem"
+	},
+	"Calc-size border-width px": {
+		"prefix": "cs-bor-w-sm-p",
+		"body": [
+			"border-width: calc($1px + ($2 - $1) * ((100vw - 320px) / (1920 - 320)));"
+		],
+		"description": "Border-width calc-size px"
+	},
+	// End. Border calc-size
+	// Outline calc-size
+	"Calc size outline-width outline-offset": {
+		"prefix": "cs-outl-w-o-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"@include calc-size(outline-width, \\$outline-width, \\$outline-width * 2, 320, 1920, rem);",
+			"@include calc-size(outline-offset, \\$outline-offset, \\$outline-offset * 2, 320, 1920, rem);"
+		],
+		"description": "Calc size outline-width outline-offset"
+	},
+	"Calc size outline-width outline-offset px": {
+		"prefix": "cs-outl-w-o-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"@include calc-size(outline-width, \\$outline-width, \\$outline-width * 2, 320, 1920, px);",
+			"@include calc-size(outline-offset, \\$outline-offset, \\$outline-offset * 2, 320, 1920, px);"
+		],
+		"description": "Calc size outline-width outline-offset px"
+	},
+	"Calc size outline-offset rem": {
+		"prefix": "cs-outl-off-sm-r",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"@include calc-size(outline-offset, \\$outline-offset, \\$outline-offset * 2, 320, 1920, rem);"
+		],
+		"description": "Calc size outline-offset rem"
+	},
+	"Calc size outline-offset px": {
+		"prefix": "cs-outl-off-sm-p",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"@include calc-size(outline-offset, \\$outline-offset, \\$outline-offset * 2, 320, 1920, px);"
+		],
+		"description": "Calc size outline-offset px"
+	},
+	"outline-width calc-size rem": {
+		"prefix": "cs-outl-w-sm-r",
+		"body": [
+			"@include calc-size(outline-width, \\$outline-width, \\$outline-width * 2, 320, 1920, rem);"
+		],
+		"description": "outline-width calc-size rem"
+	},
+	"outline-width calc-size px": {
+		"prefix": "cs-outl-w-sm-p",
+		"body": [
+			"@include calc-size(outline-width, \\$outline-width, \\$outline-width * 2, 320, 1920, px);"
+		],
+		"description": "outline-width calc-size px"
+	}
+	// End. Outline calc-size
+}

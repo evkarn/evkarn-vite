@@ -1,0 +1,7 @@
+.hljs-number {
+	color: var(--hljs-number);
+
+	@media screen and (-ms-high-contrast: active) {
+		color: highlight;
+	}
+}

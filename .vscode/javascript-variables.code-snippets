@@ -1,0 +1,43 @@
+{
+	"var = document.querySelector('')": {
+		"prefix": "qsVar",
+		"scope": "javascript, typescript",
+		"body": ["var $1 = document?.querySelector('$2');"],
+		"description": "var = document.querySelector('')",
+	},
+
+	"const = document.querySelector('')": {
+		"prefix": "qsConst",
+		"scope": "javascript, typescript",
+		"body": ["const $1 = document?.querySelector('$2');"],
+		"description": "const = document.querySelector('')",
+	},
+
+	"let = document.querySelector('')": {
+		"prefix": "qsLet",
+		"scope": "javascript, typescript",
+		"body": ["let $1 = document?.querySelector('$2');"],
+		"description": "let = document.querySelector('')",
+	},
+
+	"var = document.querySelectorAll('')": {
+		"prefix": "qsaVar",
+		"scope": "javascript, typescript",
+		"body": ["var $1 = document?.querySelectorAll('$2');"],
+		"description": "var = document.querySelectorAll('')",
+	},
+
+	"const = document.querySelectorAll('')": {
+		"prefix": "qsaConst",
+		"scope": "javascript, typescript",
+		"body": ["const $1 = document?.querySelectorAll('$2');"],
+		"description": "const = document.querySelectorAll('')",
+	},
+
+	"let = document.querySelectorAll('')": {
+		"prefix": "qsaLet",
+		"scope": "javascript, typescript",
+		"body": ["let $1 = document?.querySelectorAll('$2');"],
+		"description": "let = document.querySelectorAll('')",
+	},
+}

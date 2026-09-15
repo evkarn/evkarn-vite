@@ -1,0 +1,26 @@
+.scheme-switcher__radio {
+	appearance: none;
+
+	width: var(--size);
+	height: var(--size);
+
+	margin: 0;
+
+	background-position: center;
+	background-size: calc(var(--size) - 6px);
+	background-repeat: no-repeat;
+
+	transition: filter .1s ease;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&:focus-visible~.scheme-switcher__status {
+		box-shadow: 0 0 0 2px black;
+	}
+}
+
+.scheme-switcher__radio {
+	filter: invert(0);
+}

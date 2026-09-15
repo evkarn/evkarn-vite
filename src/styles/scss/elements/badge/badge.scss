@@ -1,0 +1,24 @@
+@use 'settings/imports' as *;
+
+.badge {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: 6px 10px;
+
+	font-size: 14px;
+	line-height: 1.2;
+	text-align: center;
+
+	background-color: var(--badge-bg);
+	border-radius: var(--bdrs);
+
+	transition:
+		background-color 0.3s ease,
+		color 0.3s ease;
+}

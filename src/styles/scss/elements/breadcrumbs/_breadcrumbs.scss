@@ -1,0 +1,14 @@
+@use "./breadcrumbs__item";
+@use "./breadcrumbs__link";
+
+.breadcrumbs {
+	padding-top: calc(var(--gap) + var(--header-height));
+	padding-bottom: var(--gap);
+
+	font-size: 20px;
+
+	font-weight: 600;
+	line-height: 1.2;
+
+	color: var(--dark);
+}

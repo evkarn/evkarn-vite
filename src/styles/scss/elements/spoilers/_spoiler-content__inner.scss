@@ -1,0 +1,7 @@
+.spoiler-content__inner > * {
+	margin: 0;
+
+	&:not(:last-child) {
+		margin-bottom: 20px;
+	}
+}

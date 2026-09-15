@@ -1,0 +1,11 @@
+{
+	"sass.loadPaths": [
+		"./src",
+		"./src/styles",
+		"./src/components",
+		"./node_modules"
+	],
+	"files.associations": {
+		"*.scss": "scss"
+	}
+}

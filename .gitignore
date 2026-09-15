@@ -1,0 +1,43 @@
+# Зависимости
+node_modules/
+vendor/
+.pip-modules/
+
+# Сборки и артефакты
+dist/
+build/
+out/
+_site/
+*.exe
+*.dll
+*.so
+*.dylib
+*.zip
+
+# Секреты (данные FTP/SSH для деплоя)
+.env
+.env.local
+
+# Кэш и временные файлы
+.cache/
+.tmp/
+temp/
+tmp/
+
+# Файлы IDE
+*.swp
+*.swo
+
+# Логи
+*.log
+logs/
+
+# Окружение
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Операционные системы
+.DS_Store
+Thumbs.db
+desktop.ini

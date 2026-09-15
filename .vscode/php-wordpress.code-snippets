@@ -1,0 +1,187 @@
+{
+	"Is home page": {
+		"prefix": "wp-is-home",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php if ( is_front_page() ): ?>",
+			"\tздесь писать код",
+			"<?php else: ?>",
+			"\tздесь писать код",
+			"<?phpendif;?>",
+		],
+	},
+
+	"Body class": {
+		"prefix": "wp-body-class",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php body_class( 'body' ); ?>",
+		],
+	},
+
+	"Home url": {
+		"prefix": "wp-home-url",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php echo esc_url( home_url('/') ); ?>",
+		],
+	},
+
+	"Bloginfo": {
+		"prefix": "wp-site-name",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php bloginfo( 'name' ); ?>",
+		],
+	},
+
+	"Charset": {
+		"prefix": "wp-site-charset",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php bloginfo( 'charset' ); ?>",
+		],
+	},
+
+	"Html attr lang": {
+		"prefix": "wp-html-lang-attr",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php language_attributes(); ?>",
+		],
+	},
+
+	"Parent theme path": {
+		"prefix": "wp-theme-parent-path",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php echo get_template_directory_uri(); ?>",
+		],
+	},
+
+	"Current theme path": {
+		"prefix": "wp-theme-path",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php echo get_stylesheet_directory_uri(); ?>",
+		],
+	},
+
+	"Get template part": {
+		"prefix": "wp-get-temp-part",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php get_template_part( 'template-parts/counters' ); ?>",
+		],
+	},
+
+	"Get template sections": {
+		"prefix": "wp-get-temp-sec",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php get_template_part( 'template-sections/$1' ); ?>",
+		],
+	},
+
+	"Convert to Utf-8": {
+		"prefix": "wp-convert-to-utf8",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php idn_to_utf8( $1, IDNA_DEFAULT, INTL_IDNA_VARIANT_UTS46 ); ?>",
+		],
+	},
+
+	"Remove contain-intrinsic-size": {
+		"prefix": "wp-remove-contain-intrinsic-size",
+		"scope": "html, php, njk, md",
+		"body": [
+			"remove_action( 'wp_head', 'wp_print_auto_sizes_contain_css_fix', 1 );",
+		],
+	},
+
+	"Вывод шорткода на страницу шаблона": {
+		"prefix": "wp-echo-do-shortcode",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php echo do_shortcode( '$1' ); ?>",
+		],
+	},
+
+	"Фильтрация трейлинг слэшев": {
+		"prefix": "wp-filter-trailing-slash",
+		"scope": "html, php, njk, md",
+		"body": [
+			"add_filter( 'wp_kses_allowed_html', function( \\$tags ) {",
+			"\tforeach (['img', 'br', 'hr', 'input', 'meta', 'link'] as \\$tag) {",
+			"\t\tif (isset(\\$tags[\\$tag])) {",
+			"\t\t\tunset(\\$tags[\\$tag]['slash']);",
+			"\t\t}",
+			"\t}",
+			"\treturn \\$tags;",
+			"} );",
+		],
+	},
+
+	"Добавление стилей для админки вордпресс": {
+		"prefix": "wp-add-styles-for-admin-panel",
+		"scope": "html, php, njk, md",
+		"body": [
+			"function my_admin_style() {",
+			"\t wp_enqueue_style('admin-styles', get_stylesheet_directory_uri().'/my-admin.css');",
+			"}",
+			"add_action( 'admin_enqueue_scripts', 'my_admin_style' );",
+		],
+	},
+
+	"Поменять Адрес сайта (URL) в настройках сайта через wp-config.php": {
+		"prefix": "wp-site-url-wp-config",
+		"scope": "html, php, njk, md",
+		"body": [
+			"define( 'WP_SITEURL', 'https://ваш-новый-адрес.com' );",
+		],
+	},
+//
+
+	"Поменять Адрес сайта (URL) в настройках сайта через functions.php": {
+		"prefix": "wp-site-url-functions-php",
+		"scope": "html, php, njk, md",
+		"body": [
+			"update_option( 'siteurl', 'https://ваш-новый-адрес.com' );",
+		],
+	},
+
+	"Поменять Адрес WordPress (URL) в настройках сайта через wp-config.php": {
+		"prefix": "wp-home-url-wp-config",
+		"scope": "html, php, njk, md",
+		"body": [
+			"define( 'WP_HOME', 'https://ваш-новый-адрес.com' );",
+		],
+	},
+
+
+	"Поменять Адрес WordPress (URL) в настройках сайта — поменять через functions.php": {
+		"prefix": "wp-home-url-functions-php",
+		"scope": "html, php, njk, md",
+		"body": [
+			"update_option( 'siteurl', 'https://ваш-новый-адрес.com' );",
+		],
+	},
+
+	"Вывод атрибута lang для html": {
+		"prefix": "wp-attr-lang",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php language_attributes(); ?>",
+		],
+	},
+
+	"Вывод данных массива": {
+		"prefix": "wp-print-array-data",
+		"scope": "html, php, njk, md",
+		"body": [
+			"echo '<pre>'; print_r(\\$$1); echo '</pre>';",
+		],
+	},
+
+
+}

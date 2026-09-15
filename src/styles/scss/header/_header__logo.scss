@@ -1,0 +1,6 @@
+@use 'settings/imports' as *;
+
+.header__logo {
+	flex-shrink: 0;
+	z-index: $z-index-header + 1;
+}

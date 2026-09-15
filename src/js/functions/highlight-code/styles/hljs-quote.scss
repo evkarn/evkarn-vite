@@ -1,0 +1,7 @@
+.hljs-quote {
+	color: var(--hljs-quote);
+
+	@media screen and (-ms-high-contrast: active) {
+		color: highlight;
+	}
+}

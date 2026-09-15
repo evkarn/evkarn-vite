@@ -1,0 +1,48 @@
+@use "../../variables/general";
+@use "../../variables/grid";
+@use "../../mixins/units";
+@use "../../mixins/fluid-size";
+
+.pagination__element {
+	width: 46);
+	height: 46);
+
+	font-size: 20);
+
+	text-align: center;
+
+	color: var(--sooty);
+
+	border: $bor-width) solid var(--sooty);
+	border-radius: 8);
+}
+
+span.pagination__element {
+	pointer-events: none;
+	user-select: none;
+}
+
+a.pagination__element {
+	border-color: transparent;
+
+	transition:
+		color 0.3s ease,
+		border-color 0.3s ease;
+
+	@media (any-hover: hover) {
+		&:hover {
+			color: var(--accent);
+		}
+	}
+
+	&:focus-visible {
+		outline-color: var(--accent);
+		outline-style: dashed;
+		outline-width: $outline-width);
+		outline-offset: $outline-offset);
+	}
+
+	&:active {
+		scale: 95%;
+	}
+}

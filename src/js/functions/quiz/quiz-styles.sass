@@ -1,0 +1,203 @@
+// Quiz
+// @use './_components/quiz'
+// End. Quiz
+
+.page__quiz
+	.header__inner
+		padding: 0
+
+.quiz
+	padding: 50px 200px
+
+	.progress
+		position: relative
+		max-width: 313px
+
+	.line
+		position: absolute
+		display: block
+		height: 2px
+		top: 50%
+		left: 0
+		right: 0
+		transform: translateY(-50%)
+		background-color: #e5e4e1
+		max-width: 313px
+
+	.line__body
+		position: absolute
+		top: 0
+		left: 0
+		height: 2px
+		background: #eb3d35
+		transition: width .3s ease
+
+	.progress__list
+		display: flex
+		align-items: center
+		position: relative
+
+	.progress__item
+		display: flex
+		align-items: center
+		justify-content: center
+		border-radius: 50%
+		flex: 0 0 50px
+		width: 50px
+		height: 50px
+		border: 2px solid #e5e4e1
+		background: #fff
+		transition: background .6s ease
+		&:not(:last-child)
+			margin-right: 100px
+
+	.progress__item.progress__item--active
+		background: #eb3d35
+		border: transparent
+		path
+			fill: #fff
+			transition: all .6s ease
+
+	.item
+		display: none
+		&.item--active
+			display: block
+
+	.finish
+		display: none
+
+	.item__header
+		max-width: 600px
+
+	.item__img
+		width: 100px
+		height: 100px
+		margin-top: 60px
+
+	.item__title
+		margin-top: 60px
+		font-weight: 500
+		font-size: 50px
+		line-height: rem(56)
+		color: #051655
+
+	.item__descr
+		font-size: rem(20)
+		line-height: 1.2
+		color: #747887
+		margin-top: 10px
+
+	.content__title
+		margin-top: 40px
+
+	.content__list
+		display: grid
+		grid-template-columns: 1fr 1fr 1fr
+		grid-template-rows: 1fr 1fr
+		grid-gap: 20px
+
+	.content__item
+		position: relative
+		display: flex
+		align-items: center
+		flex: 0 1 360px
+		max-width: 360px
+		margin: 20px 0 0 0
+		padding: 10px 25px 10px 10px
+		background: #f3f6f9
+		@media ( any-hover: hover )
+			&:hover
+				cursor: pointer
+
+	.radio__input
+		display: none
+
+		&:checked ~
+			.radio__imitation:after
+				transform: scale(1)
+			.radio__border
+				opacity: 1
+
+	.radio__icon
+		width: 60px
+		height: 60px
+		display: flex
+		align-items: center
+		justify-content: center
+		background: #fff
+		padding: 10px
+		img, svg
+			width: auto
+			height: 40px
+
+	.radio__text
+		font-weight: 500
+		font-size: rem(20)
+		line-height: 1.2
+		color: #051655
+		margin: 0 60px 0 20px
+
+	.radio__imitation
+		width: 30px
+		height: 30px
+		border-radius: 100%
+		border: 1px solid #eb3d35
+		position: absolute
+		top: 50%
+		right: 25px
+		transform: translateY(-50%)
+		&:after
+			content: ""
+			--size: 20px
+			display: block
+			position: absolute
+			top: calc(50% - var(--size)/2)
+			left: calc(50% - var(--size)/2)
+			width: var(--size)
+			height: var(--size)
+			transform: scale(0)
+			transition: transform .4s ease
+			border-radius: 100%
+			background: #eb3d35
+
+	.radio__border
+		border: 1px solid #eb3d35
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		opacity: 0
+		transition: opacity .4s ease
+
+	.quiz__nav-buttons
+		margin-top: 60px
+
+	.quiz__nav-button
+		border: 1px solid
+		padding: 18px 50px
+		font-weight: 500
+		font-size: 22px
+		line-height: 24px
+		transition: color 0.3s ease, background-color 0.3s ease
+
+	.nav-button__prev
+		background-color: #fff
+		color: #051655
+		@media ( any-hover: hover )
+			&:hover
+				background-color: #051655
+				color: #fff
+
+	.nav-button__next
+		background-color: #eb3d35
+		color: #fff
+		@media ( any-hover: hover )
+			&:hover
+				background-color: #fff
+				color: #eb3d35
+
+	.nav-button__prev.nav-button__disabled
+		pointer-events: none
+		color: gray
+		border-color: gray

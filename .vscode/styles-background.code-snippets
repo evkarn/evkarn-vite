@@ -1,0 +1,62 @@
+{
+	"background-color: var()": {
+		"prefix": "bgc-var",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"background-color: var($1);"
+		],
+	},
+	"background-color: transparent": {
+		"prefix": "bgc-trt",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"background-color: transparent;"
+		],
+	},
+	"background-color: var(--accent)": {
+		"prefix": "bgc-accent",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"background-color: var(--accent);"
+		],
+	},
+	"background-color: var(--dark)": {
+		"prefix": "bgc-dark",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"background-color: var(--dark);"
+		],
+	},
+	"background-color: var(--light)": {
+		"prefix": "bgc-light",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"background-color: var(--light);"
+		],
+	},
+	"background all": {
+		"prefix": "bg-all",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"background-image: url('$1');",
+			"background-position: center;",
+			"background-size: cover;",
+			"background-repeat: no-repeat;",
+			"background-color: var($2);",
+		],
+	},
+	"background image-set": {
+		"prefix": "bg-img-set",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"background-image: image-set(",
+			"\turl(\"../images/$1.webp\") type(\"image/webp\") 1x,",
+			"\turl(\"../images/$1@2x.webp\") type(\"image/webp\") 2x,",
+			"\turl(\"../images/$1.avif\") type(\"image/avif\") 1x,",
+			"\turl(\"../images/$1@2x.avif\") type(\"image/avif\") 2x,",
+			"\turl(\"../images/$1.jpg\") type(\"image/jpg\") 1x,",
+			"\turl(\"../images/$1@2x.jpg\") type(\"image/jpg\") 2x",
+			");",
+		],
+	},
+}

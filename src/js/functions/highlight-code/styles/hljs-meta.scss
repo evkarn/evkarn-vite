@@ -1,0 +1,7 @@
+.hljs-meta {
+	color: var(--hljs-meta);
+
+	@media screen and (-ms-high-contrast: active) {
+		color: highlight;
+	}
+}

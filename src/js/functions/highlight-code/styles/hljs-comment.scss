@@ -1,0 +1,7 @@
+.hljs-comment {
+	color: var(--hljs-comment);
+
+	@media screen and (-ms-high-contrast: active) {
+		color: highlight;
+	}
+}

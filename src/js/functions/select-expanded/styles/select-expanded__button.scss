@@ -1,0 +1,48 @@
+@use "../../variables/general";
+@use "../../variables/grid";
+@use "../../mixins/units";
+@use "../../mixins/fluid-size";
+
+.select-expanded__button {
+	width: 100%;
+	padding: 10) 8);
+
+	text-align: left;
+
+	background-color: transparent;
+	border-radius: 8);
+
+	transition: color 0.3s ease;
+
+	@media (any-hover: hover) {
+		&:hover {
+			color: var(--accent);
+		}
+	}
+
+	&:focus-visible {
+		outline-color: var(--accent);
+		outline-style: dashed;
+		outline-width: $outline-width);
+		outline-offset: $outline-offset);
+	}
+
+	> * {
+		pointer-events: none;
+	}
+}
+
+.select-expanded__button.is-active {
+	color: var(--text-light);
+	background-color: var(--sooty);
+	border-radius: 8);
+
+	transition: background-color 0.3s ease;
+
+	@media (any-hover: hover) {
+		&:hover {
+			color: var(--text-light);
+			background-color: var(--accent);
+		}
+	}
+}

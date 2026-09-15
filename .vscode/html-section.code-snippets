@@ -1,0 +1,97 @@
+{
+	"Section": {
+		"prefix": "sec",
+		"scope": "html, php, njk, md, astro",
+		"body": [
+			"<section class=\"$1 section\" id=\"$1\" aria-labelledby=\"$1-title\">",
+			"\t<div class=\"$1__container container\">",
+			"\t\t$2",
+			"\t</div>",
+			"</section>",
+		]
+	},
+	"Section width header": {
+		"prefix": "sec-with-header",
+		"scope": "html, php, njk, md, astro",
+		"body": [
+			"<section class=\"$1 section\" id=\"$1\" aria-labelledby=\"$1-title\">",
+			"\t<div class=\"$1__container container\">",
+			"\t\t<header class=\"$1__header section__header flex-column\">",
+			"\t\t\t<h2 class=\"$1__section-title h2 section__title\" id=\"$1-title\">",
+			"\t\t\t\t$2",
+			"\t\t\t</h2>",
+			"\t\t</header>",
+			"\t</div>",
+			"</section>",
+		]
+	},
+	"Section header": {
+		"prefix": "sec-header",
+		"scope": "html, php, njk, md, astro",
+		"body": [
+			"<header class=\"$1__header section__header flex-column\">",
+			"\t<h2 class=\"$1__section-title h2 section__title\" id=\"$1-title\">",
+			"\t\t$2",
+			"\t</h2>",
+			"</header>",
+		]
+	},
+	"Section description": {
+		"prefix": "sec-descr",
+		"scope": "html, php, njk, md, astro",
+		"body": [
+			"<div class=\"$1__section-descr section__descr txt-wrap\">",
+			"\t<p>",
+			"\t\t$1",
+			"\t</p>",
+			"</div>",
+		]
+	},
+	"Section width header, title, descr, main": {
+		"prefix": "sec-with-all",
+		"scope": "html, php, njk, md, astro",
+		"body": [
+			"<section class=\"$1 section\" id=\"$1\" aria-labelledby=\"$1-title\">",
+			"\t<div class=\"$1__container container\">",
+			"\t\t<header class=\"$1__header section__header flex-column\">",
+			"\t\t\t<h2 class=\"$1__section-title h2 section__title\" id=\"$1-title\">",
+			"\t\t\t\t$2",
+			"\t\t\t</h2>",
+			"\t\t\t",
+			"\t\t\t<div class=\"$1__section-descr section__descr txt-wrap\">",
+			"\t\t\t\t<p>",
+			"\t\t\t\t\t",
+			"\t\t\t\t</p>",
+			"\t\t\t</div>",
+			"\t\t</header>",
+			"",
+			"\t\t<div class=\"$1__main\">",
+			"\t\t\t",
+			"\t\t</div>",
+			"\t</div>",
+			"</section>",
+		]
+	},
+
+	"Section width header, title, descr": {
+		"prefix": "sec-with-title-descr",
+		"scope": "html, php, njk, md, astro",
+		"body": [
+			"<section class=\"$1 section\" id=\"$1\" aria-labelledby=\"$1-title\">",
+			"\t<div class=\"$1__container container\">",
+			"\t\t<header class=\"section__header flex-column\">",
+			"\t\t\t<h2 class=\"$1__section-title h2 section__title\">",
+			"\t\t\t\t$2",
+			"\t\t\t</h2>",
+			"\t\t\t",
+			"\t\t\t<div class=\"$1__section-descr section__descr txt-wrap\">",
+			"\t\t\t\t<p>",
+			"\t\t\t\t\t",
+			"\t\t\t\t</p>",
+			"\t\t\t</div>",
+			"\t\t</header>",
+			"\t</div>",
+			"</section>",
+		]
+	},
+}

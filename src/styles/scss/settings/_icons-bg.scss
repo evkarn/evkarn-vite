@@ -1,0 +1,11 @@
+@use '../mixins/units';
+
+.icon-bg-80 {
+	background-size: 80px 80px;
+	background-repeat: no-repeat;
+}
+
+.icon-bg-24 {
+	background-size: 24px 24px;
+	background-repeat: no-repeat;
+}

@@ -1,0 +1,124 @@
+[data-selects]
+	display: flex
+	align-items: flex-start
+	justify-content: space-between
+	flex-wrap: wrap
+	gap: rem(8)
+
+	[data-select-body]
+		display: flex
+		flex-direction: column
+		max-width: 100%
+		margin: 0
+
+		position: relative
+
+		border: none
+
+	[data-select-title]
+		display: flex
+		align-items: center
+		justify-content: space-between
+		gap: rem(12)
+		min-width: 216px
+
+		padding: rem(16) rem(12)
+
+		line-height: 1
+
+		position: relative
+
+		border: none
+		border-radius: var(--border-radius)
+		background-color: var(--c-white)
+		color: var(--c-gray)
+		cursor: pointer
+
+		transition: all .3s ease, margin-bottom .3s ease
+
+		> *
+			pointer-events: none
+
+		&.active
+			border-radius: var(--border-radius) var(--border-radius) 0 0
+
+			.select__icon
+				transform: rotate(180deg)
+				
+		&.is-active-title
+			.select__text
+				color: var(--c-dark)
+
+	.select__icon
+		font-size: rem(8)
+
+		color: var(--c-light)
+
+		transition: transform .3s ease
+
+	.select__text
+		color: var(--c-gray)
+
+	.custom-select__text
+		text-align: left
+		text-transform: capitalize
+
+	.custom-select__arrow
+		margin-left: 18px
+
+	[data-select-options]
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		align-items: center
+		width: 100%
+		max-height: 288px
+
+		margin: 0 auto
+
+		position: absolute
+		top: calc(var(--select-button-height))
+		left: 0
+		z-index: 3
+
+		border: none
+		border-radius: 0 0 var(--border-radius) var(--border-radius)
+		background-color: var(--c-white)
+		list-style-type: none
+		overflow-y: auto
+		opacity: 0
+		
+		pointer-events: none
+		visibility: hidden
+
+		transform: scale(0)
+
+		transition: opacity .3s ease, transform .3s ease
+
+	[data-select-options].active
+		opacity: 1
+
+		pointer-events: auto
+		visibility: visible
+
+		transform: scale(1)
+
+	[data-select-option]
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		justify-content: center
+		padding: rem(12) rem(16)
+		flex: 1 1 100%
+		max-width: 100%
+		width: 100%
+		margin: 0 auto
+		min-height: 48px
+
+		cursor: pointer
+		color: #000
+
+		transition: color .3s ease, background-color .3s ease
+
+	[data-select-button]
+		line-height: 1.2

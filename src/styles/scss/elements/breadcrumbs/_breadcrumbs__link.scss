@@ -1,0 +1,24 @@
+@use 'settings/imports' as *;
+
+.breadcrumbs__link {
+	transition: color 0.3s ease;
+
+	@media (any-hover: hover) {
+		&:hover {
+			color: var(--accent);
+
+			cursor: pointer;
+		}
+	}
+
+	&:active {
+		color: var(--accent);
+	}
+}
+
+.breadcrumbs__link--current {
+	color: var(--text-dark);
+
+	pointer-events: none;
+	user-select: none;
+}

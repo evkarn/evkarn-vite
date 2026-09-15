@@ -1,0 +1,17 @@
+{
+	// Header
+	"Blockquote": {
+		"prefix": "qoute",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<blockquote class=\"blockqoute\">",
+			"\t<p class=\"blockqoute__text\">",
+			"\t\t$1",
+			"\t</p>",
+			"</blockquote>",
+			"",
+			"<p>$2, <cite>$3</cite></p>",
+		],
+		"description": "Blockquote",
+	},
+}

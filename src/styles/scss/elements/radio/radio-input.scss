@@ -1,0 +1,59 @@
+.radio-input {
+	appearance: none;
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 24px;
+	height: 24px;
+
+	background-color: #ffffff;
+
+	border: var(--bor-width) solid #415674;
+
+	border-radius: 100%;
+
+	&:focus {
+		outline-color: var(--accent);
+		outline-style: dashed;
+		outline-width: var(--outline-width);
+		outline-offset: var(--outline-offset);
+	}
+
+	&:before {
+		content: "";
+
+		position: absolute;
+		inset: 0;
+
+		overflow: hidden;
+
+		margin: auto;
+
+		transition:
+			opacity 0.3s ease,
+			background-color 0.3s ease,
+			scale 0.3s ease;
+
+		will-change: scale, opacity;
+
+		scale: 0;
+	}
+
+	&:checked {
+		&:before {
+			display: block;
+
+			width: 14px;
+			height: 14px;
+
+			background-color: #4b83fc;
+
+			border-radius: 100%;
+
+			scale: 1;
+		}
+	}
+}

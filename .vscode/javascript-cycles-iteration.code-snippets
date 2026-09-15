@@ -1,0 +1,22 @@
+{
+	"forEach function arrow": {
+		"prefix": "forEachArrow",
+		"scope": "javascript, typescript",
+		"body": ["$1.forEach(el => {", "\t$2", "});"],
+		"description": "forEach function arrow",
+	},
+
+	"forEach function": {
+		"prefix": "forEach",
+		"scope": "javascript, typescript",
+		"body": ["$1.forEach(function(el, index, array) {", "\t$2", "});"],
+		"description": "forEach function",
+	},
+
+	"for": {
+		"prefix": "for",
+		"scope": "javascript, typescript",
+		"body": ["for (let i = 0; i < 3; i++) {", "\t$1", "}"],
+		"description": "for",
+	},
+}

@@ -1,0 +1,64 @@
+// Search-field-google
+// @use './_components/readProgressLine'
+// End. Search-field-google
+.search-field-google
+	width: 100%
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 10
+	opacity: 0
+	visibility: hidden
+	transition: top .5s ease, opacity .5s ease, visibility .5s ease
+
+	&.search-field-google--active
+		top: var(--header-height)
+		visibility: visible
+		opacity: 1
+		border-top: 1px solid var(--search-border)
+		background: var(--search-bg)
+
+.search-field-google__inner
+	padding: 10px
+	border-radius: 0 0 $bdrs $bdrs
+
+.search-field-google__input
+	padding: 10px
+	width: 100%
+	border-radius: $bdrs
+	background: var(--search-input-bg)
+	border: 1px solid var(--search-border)
+	caret-color: var(--search-curet-color)
+	&::placeholder
+		color: var(--search-color)
+
+.form__content
+	position: relative
+	display: flex
+	align-items: center
+	border-radius: $bdrs
+	overflow: hidden
+
+.aside-search-field-google__button
+	position: absolute
+	top: 1px
+	right: 1px
+	width: 50px
+	height: 50px
+	display: flex
+	align-items: center
+	justify-content: center
+	background: var(--search-field-google-button-bg)
+	transition: background .3s ease
+	@media ( any-hover: hover )
+		&:hover
+			background: var(--search-field-google-button-bg-hover)
+			.aside-search-field-google__icon
+				&:before
+					color: var(--search-field-google-button-color-hover)
+
+.aside-search-field-google__icon
+	&:before
+		color: var(--search-field-google-button-color)
+		font-size: 16px
+		transition: color .3s ease

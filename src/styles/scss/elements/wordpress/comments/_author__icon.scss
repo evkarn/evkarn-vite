@@ -1,0 +1,21 @@
+.comments .author__icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: rem(40);
+	height: rem(40);
+	font-size: rem(24);
+
+	font-weight: 500;
+
+	color: var(--c-light);
+
+	background-color: var(--california-lilac);
+
+	border-radius: rem(5);
+
+	@media (min-width: em(1920.96)) {
+		@include calc-size(border-radius, 5, 10, 1920, 3840, rem);
+	}
+}

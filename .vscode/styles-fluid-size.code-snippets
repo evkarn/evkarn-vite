@@ -1,0 +1,156 @@
+{
+	"Fluid clamp text viewport px": {
+		"prefix": "fs-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-px($1, $2, $3);",
+		]
+	},
+	"Fluid value font-size px": {
+		"prefix": "fs-fz-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-px(font-size, $1, $2);",
+		]
+	},
+	"Fluid value padding px": {
+		"prefix": "fs-pad-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-px(padding, $1, $2);",
+		]
+	},
+	"Fluid value padding-top px": {
+		"prefix": "fs-pad-t-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-px(padding-top, $1, $2);",
+		]
+	},
+	"Fluid value padding-right px": {
+		"prefix": "fs-pad-r-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-px(padding-right, $1, $2);",
+		]
+	},
+	"Fluid value padding-bottom px": {
+		"prefix": "fs-pad-b-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-px(padding-bottom, $1, $2);",
+		]
+	},
+	"Fluid value padding-left px": {
+		"prefix": "fs-pad-l-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-px(padding-left, $1, $2);",
+		]
+	},
+	"Fluid value margin px": {
+		"prefix": "fs-mar-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-px(margin, $1, $2);",
+		]
+	},
+	"Fluid value margin-top px": {
+		"prefix": "fs-mar-t-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-px(margin-top, $1, $2);",
+		]
+	},
+	"Fluid value margin-bottom px": {
+		"prefix": "fs-mar-b-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-px(margin-bottom, $1, $2);",
+		]
+	},
+	"Fluid value margin-right px": {
+		"prefix": "fs-mar-r-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-px(margin-right, $1, $2);",
+		]
+	},
+	"Fluid value margin-left px": {
+		"prefix": "fs-mar-l-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-px(margin-left, $1, $2);",
+		]
+	},
+	"Fluid value gap px": {
+		"prefix": "fs-gap-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-px(gap, $1, $2);",
+		]
+	},
+	"Fluid value row-gap px": {
+		"prefix": "fs-row-gap-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-px(row-gap, $1, $2);",
+		]
+	},
+	"Fluid value column-gap px": {
+		"prefix": "fs-col-gap-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-px(column-gap, $1, $2);",
+		]
+	},
+	"Fluid value max-width px": {
+		"prefix": "fs-max-width-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-px(max-width, $1, $2);",
+		]
+	},
+	"Fluid value min-width px": {
+		"prefix": "fs-min-width-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-px(min-width, $1, $2);",
+		]
+	},
+	"Fluid value width px": {
+		"prefix": "fs-width-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-px(width, $1, $2);",
+		]
+	},
+	"Fluid value height px": {
+		"prefix": "fs-height-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-px(height, $1, $2);",
+		]
+	},
+	"Fluid value max-height px": {
+		"prefix": "fs-max-height-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-px(max-height, $1, $2);",
+		]
+	},
+	"Fluid value min-height px": {
+		"prefix": "fs-min-height-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-px(max-height, $1, $2);",
+		]
+	},
+	"Fluid value border-radius px": {
+		"prefix": "fs-bor-rad-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include fluid-size-px(border-radius, $1, $2);",
+		]
+	},
+}

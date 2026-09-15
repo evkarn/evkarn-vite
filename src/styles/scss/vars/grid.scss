@@ -1,0 +1,60 @@
+// Greed system
+$gap: 30px;
+
+$content-width: 1290px;
+
+$container-offset: 16px;
+
+$container-width: $content-width + $container-offset * 2;
+
+$max-switch-point: 768px;
+$min-switch-point: 768.96px;
+
+// Breakpoints width
+$min-screen: 320px;
+
+$mobile: 480px;
+$min-mobile: 480.96px;
+
+$mobile-plus: 576px;
+$min-mobile-plus: 576.96px;
+
+$mobile-wga: 640px;
+$min-mobile-wga: 640.96px;
+
+$tablet: 768px;
+$min-tablet: 768.96px;
+
+$tablet-plus: 992px;
+$min-tablet-plus: 992.96px;
+
+$tablet-full: 1024px;
+$min-tablet-full: 1024.96px;
+
+$desktop: 1200px;
+$min-desktop: 1200.96px;
+
+$desktop-wide: 1280px;
+$min-desktop-wide: 1280.96px;
+
+$desktop-hd: 1366px;
+$min-desktop-hd: 1366.96px;
+
+$desktop-wide-plus: 1440px;
+$min-desktop-wide-plus: 1440.96px;
+
+$desktop-no-name: 1536px;
+$min-desktop-no-name: 1536.96px;
+
+$desktop-hd-plus: 1600px;
+$min-desktop-hd-plus: 1600.96px;
+
+$full-hd: 1920px;
+$min-full-hd: 1920.96px;
+
+$quad-hd: 2560px;
+$min-quad-hd: 2560.96px;
+
+$ultra-hd: 3840px;
+$min-ultra-hd: 3840.96px;
+// End. Greed system

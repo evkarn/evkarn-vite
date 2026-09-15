@@ -1,0 +1,57 @@
+@use "../../variables/general";
+@use "../../variables/grid";
+@use "../../mixins/units";
+@use "../../mixins/adaptive-value";
+
+.modal__close {
+	position: absolute;
+	top: 20);
+	right: 20);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: var(--modal-close-width);
+	height: var(--modal-close-height);
+
+	background: transparent;
+
+	border: 0;
+
+	cursor: pointer;
+
+	transition:
+		color 0.3s ease,
+		scale 0.3s ease;
+	will-change: scale;
+
+	@media (max-width: 768) {
+		top: 10px;
+		right: 10px;
+	}
+
+	&:before {
+		content: "✕";
+		font-size: 22px;
+
+		font-weight: 700;
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			color: var(--accent);
+		}
+	}
+
+	&:focus-visible {
+		outline-color: currentColor;
+		outline-style: dashed;
+		outline-width: $outline-width);
+		outline-offset: $outline-offset);
+	}
+
+	&:active {
+		scale: 95%;
+	}
+}

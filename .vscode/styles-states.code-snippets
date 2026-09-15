@@ -1,0 +1,79 @@
+{
+	"Hover + Focus": {
+		"prefix": "hover-focus",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"&:hover, &:focus {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Focus + Active": {
+		"prefix": "focus-active",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"&:focus, &:active {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Active + Focus": {
+		"prefix": "active-focus",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"&:active, &:focus {",
+			"\t$1",
+			"}"
+		],
+	},
+	"State element": {
+		"prefix": "state",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( any-hover: hover ) {",
+			"\t&:hover {",
+			"\t\t$1",
+			"\t}",
+			"}",
+			"",
+			"&:focus {",
+			"\toutline: none;",
+			"}",
+			"",
+			"&:focus-visible {",
+			"\t$3",
+			"}",
+			"",
+			"&:active {",
+			"\tscale: .95;",
+			"}",
+		],
+	},
+	"State link": {
+		"prefix": "state-link",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"&:visited {",
+			"\t$1",
+			"}",
+			"",
+			"@media ( any-hover: hover ) {",
+			"\t&:hover {",
+			"\t\t$1",
+			"\t}",
+			"}",
+			"",
+			"&:focus {",
+			"\toutline: none;",
+			"}",
+			"",
+			"&:focus-visible {",
+			"\t$3",
+			"}",
+			"",
+			"&:active {",
+			"\t$4",
+			"}",
+		],
+	},
+}

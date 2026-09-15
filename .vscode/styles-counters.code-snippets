@@ -1,0 +1,20 @@
+{
+	"counter-reset": {
+		"prefix": "count-res",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"counter-reset: numbers 0;",
+		],
+	},
+	"counter-inc": {
+		"prefix": "count-incr",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"&:before {",
+			"\tcontent: \"0\" counter(numbers);",
+			"",
+			"\tcounter-increment: numbers 1;",
+			"}"
+		],
+	},
+}

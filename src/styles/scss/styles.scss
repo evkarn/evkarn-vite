@@ -1,0 +1,41 @@
+// Variables
+@use "root";
+// End. Variables
+
+
+// Fonts
+@use "fonts/fonts-faces";
+// END. Fonts
+
+
+// Config styles
+@use "settings/config";
+// End. Config styles
+
+
+// Global
+@use "./settings/settings";
+// END. Global
+
+
+// Components
+@use "elements/breadcrumbs/breadcrumbs";
+@use "elements/burger/burger";
+@use "elements/go-back-top";
+@use "elements/nav/nav";
+// End. Components
+
+
+// Header
+@use "header/header";
+// End. Header
+
+
+// Sections
+
+// End. Sections
+
+
+// Footer
+@use "footer/footer";
+// End. Footer

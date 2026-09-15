@@ -1,0 +1,56 @@
+@use "../../variables/general";
+@use "../../variables/grid";
+@use "../../mixins/units";
+@use "../../mixins/adaptive-value";
+
+.ticker {
+	position: relative;
+	overflow: hidden;
+	gap: 40px;
+	width: max-content;
+	user-select: none;
+
+	&:before,
+	&:after {
+		content: "";
+
+		position: absolute;
+		z-index: 1;
+		top: 0;
+
+		display: block;
+
+		width: 10%;
+		height: 100%;
+
+		@media (max-width: 576)) {
+			width: 15%;
+		}
+	}
+
+	&:before {
+		left: 0;
+
+		background: linear-gradient(90deg, #ffffff 25%, hsla(0, 0%, 100%, 0));
+	}
+
+	&:after {
+		right: 0;
+
+		background: linear-gradient(90deg, hsla(0, 0%, 100%, 0), #ffffff 75%);
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			.ticker__wrapper {
+				animation-play-state: paused;
+			}
+		}
+	}
+
+	&:focus-visible {
+		.ticker__wrapper {
+			animation-play-state: paused;
+		}
+	}
+}

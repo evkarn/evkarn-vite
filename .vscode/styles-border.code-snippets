@@ -1,0 +1,42 @@
+{
+	"border-color: transparent": {
+		"prefix": "bor-trt",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"border-color: transparent;"
+		],
+	},
+	"border-color: var($1)": {
+		"prefix": "bor-color-var",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"border-color: var($1);"
+		],
+	},
+	"border-color: rgba($1border-color, $2)": {
+		"prefix": "bor-color-rgba",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"border-color: rgb($1 / $2%);"
+		],
+	},
+	"border-radius: border-radius-px": {
+		"prefix": "bor-rad-px",
+		"scope": "css, scss, sass, scss, less",
+		"body": [
+			"border-radius: $1px;"
+		],
+	},
+	"Border all px": {
+		"prefix": "bor-px",
+		"body": [
+			"border: $1px solid var($2);"
+		],
+	},
+	"Border accent": {
+		"prefix": "bor-accent",
+		"body": [
+			"border: $1px solid var(--accent);"
+		],
+	},
+}

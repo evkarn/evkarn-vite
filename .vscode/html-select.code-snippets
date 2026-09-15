@@ -1,0 +1,26 @@
+{
+	"Select": {
+		"prefix": "sel",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<select name=\"city\">",
+			"\t<option value=\"\">-- Выберите город --</option>",
+			"\t<option value=\"petersburg\">Санкт-Петербург</option>",
+			"</select>",
+		]
+	},
+
+	"Select-css": {
+		"prefix": "sel-css",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<div class=\"select-css-wrap\">",
+			"\t<select name=\"city\">",
+			"\t\t<option value=\"\">-- Выберите город --</option>",
+			"\t\t<option value=\"petersburg\">Санкт-Петербург</option>",
+			"\t</select>",
+			"</div>",
+		]
+	},
+}
+

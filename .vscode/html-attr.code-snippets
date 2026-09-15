@@ -1,0 +1,17 @@
+{
+	"aria-hidden=true": {
+		"prefix": "ar-hid-true",
+		"scope": "html, php, njk, md",
+		"body": [
+			"aria-hidden=\"true\"",
+		],
+	},
+
+	"aria-hidden=false": {
+		"prefix": "ar-hid-false",
+		"scope": "html, php, njk, md",
+		"body": [
+			"aria-hidden=\"true\"",
+		],
+	},
+}

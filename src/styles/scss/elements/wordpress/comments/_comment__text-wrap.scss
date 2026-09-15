@@ -1,0 +1,7 @@
+.comments .comment__text-wrap {
+	@include calc-size(font-size, 16, 20, 320, 1920, rem);
+
+	@media (min-width: em(1920.96)) {
+		@include calc-size(font-size, 20, 40, 1920, 38400, rem);
+	}
+}

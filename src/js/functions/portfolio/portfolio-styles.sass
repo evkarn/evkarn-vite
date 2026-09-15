@@ -1,0 +1,124 @@
+// Portfolio-tabs
+// @use './_components/portfolioTabs'
+// End. Portfolio-tabs
+$c-primary: #ff5a30
+$main-shadow: 0 80px 80px -20px rgba(154, 156, 165, 0.08), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 4px 4px -4px rgba(30, 33, 44, 0.03)
+$c-gray: #424551
+$c-active: #fc3300
+$c-ebony: #1e212c
+$gap: 30px
+
+.portfolio-tabs-nav
+	display: flex
+	align-items: center
+	margin-bottom: 61px
+	transform: translateY(-60px)
+
+	&__item
+		width: calc((100% - ($gap * 4)) / 5)
+
+		&:not(:last-child)
+			margin-right: $gap
+
+		@media ( max-width: em(768) )
+			margin-bottom: 20px
+			width: calc((100% - ($gap * 2)) / 3)
+
+		@media ( max-width: em(576) )
+			margin-right: 0 !important
+			width: 100%
+
+	&__btn
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		border-radius: 4px
+		padding: 15px
+		width: 100%
+		min-height: 154px
+		box-shadow: $main-shadow
+		color: $c-primary
+		background-color: $c-white
+		transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out
+
+		&--active
+			color: $c-white
+			background-color: $c-primary
+			pointer-events: none
+
+			.portfolio-tabs-nav__text
+				color: $c-white
+
+	&__icon
+		display: block
+		margin-bottom: 16px
+		width: 48px
+		height: 48px
+		color: inherit
+		fill: currentColor
+		object-fit: cover
+		pointer-events: none
+
+	&__text
+		font-weight: 700
+		font-size: 16px
+		line-height: 160%
+		text-align: center
+		color: #9a9ca5
+		transition: color 0.3s ease-in-out
+		pointer-events: none
+
+	@media ( max-width: em(768) )
+		flex-wrap: wrap
+		justify-content: center
+		margin-top: 30px
+		transform: none
+
+.portfolio-tabs
+	&__item
+		display: none
+		grid-column: 4 span
+
+		&--visible
+			display: block
+
+		&--visible-more
+			display: block !important
+
+.portfolio-more
+	display: inline-flex
+	align-items: center
+	margin-top: 60px
+	font-weight: 700
+	font-size: 16px
+	line-height: 160%
+	color: $c-gray
+	transition: color 0.3s ease-in-out
+
+	svg
+		margin-right: 16px
+		width: 24px
+		height: 24px
+		color: inherit
+		fill: currentColor
+		object-fit: cover
+
+	&:focus
+		outline: 2px solid $c-primary
+		outline-offset: 2px
+
+	&:hover
+		color: $c-primary
+
+	&:hover
+		color: $c-active
+
+.portfolio-tabs-nav__btn
+	&:focus
+		outline: 2px solid $c-primary
+		outline-offset: 2px
+
+	&:hover
+		.portfolio-tabs-nav__text
+			color: $c-ebony

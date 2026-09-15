@@ -1,0 +1,106 @@
+.search-block
+	position: absolute
+	top: var(--header-height)
+	z-index: 20
+
+	width: 100%
+
+	padding: 16px
+	+calc-size(padding, 16, 32, 1920.96, 3840, px)
+
+	pointer-events: none
+
+	background-color: var(--c-body-bg)
+	border: none
+	border-top: 1px solid var(--c-search-border-top)
+	opacity: 0
+	
+	transform: scale(0)
+
+	transition: transform .3s ease, opacity .1s ease
+
+	@media ( min-width: em(3840.96) )
+		padding: 32px
+
+.search-block--visible
+	pointer-events: auto
+	
+	opacity: 1
+	
+	transform: scale(1)
+
+.search-block
+	form
+		display: flex
+		align-items: center
+
+	#ya-site-form0
+		.ya-site-form__search-input
+			padding: 0
+
+	#ya-site-form0
+		.ya-site-form__form
+			.ya-site-form__input-text
+				min-height: 40px
+				+calc-size(min-height, 40, 80, 1920.96, 3840, px)
+
+				padding: 6px
+				+calc-size(padding, 6, 12, 1920.96, 3840, px)
+
+				font-weight: 300
+
+				background-color: var(--c-search-bg) !important
+				border-radius: var(--border-radius)
+				color: var(--c-text) !important
+				
+				@media ( min-width: em(2880.96) )
+					font-size: 28px !important
+
+					border-radius: calc(var(--border-radius) * 2)
+
+				@media ( min-width: em(3840.96) )
+					min-height: 80px
+
+					padding: 12px
+
+				&::placeholder
+					font-weight: 300
+					color: var(--c-text)
+
+	.ya-page_js_yes
+		.ya-site-form_inited_no
+			display: none
+
+	#ya-site-form0
+		.ya-site-form__submit
+			display: flex
+			align-items: center
+			justify-content: center
+
+			min-width: 90px
+			min-height: 40px
+			+calc-size(min-height, 40, 80, 1920.96, 3840, px)
+			+calc-size(min-width, 90, 180, 1920.96, 3840, px)
+
+			padding: 8px 20px
+
+			border: none
+			border-radius: var(--border-radius)
+			background-color: var(--c-valencia)
+			color: var(--c-light) !important
+
+			transition: background-color .3s ease
+
+			&:hover
+				background-color: var(--c-accent)
+				cursor: pointer
+
+			&:active
+				background-color: var(--c-dark-burgundy)
+			
+			@media ( min-width: em(2880.96) )
+				border-radius: calc(var(--border-radius) * 2)
+
+			@media ( min-width: em(3840.96) )
+				min-width: 180px
+				min-height: 80px

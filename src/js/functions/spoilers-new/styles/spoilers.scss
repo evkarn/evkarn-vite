@@ -1,0 +1,17 @@
+@use './spoilers__content';
+@use './spoilers__inner';
+@use './spoilers__trigger';
+
+
+
+
+
+
+
+
+@media (prefers-reduced-motion: reduce) {
+	.spoilers__content,
+	.spoilers__trigger:after {
+		transition: none;
+	}
+}

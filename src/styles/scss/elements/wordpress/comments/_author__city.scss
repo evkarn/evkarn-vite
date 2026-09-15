@@ -1,0 +1,13 @@
+.comments .author__city {
+	@include calc-size(font-size, 14, 18, 320, 1920, rem);
+
+	color: var(--california-lilac);
+
+	border-bottom: rem($bor-width) solid currentColor;
+
+	@media (min-width: em(1920.96)) {
+		@include calc-size(font-size, 18, 36, 1920, 38400, rem);
+
+		@include calc-size(border-width, $bor-width, $bor-width * 2, 1920, 3840, rem);
+	}
+}

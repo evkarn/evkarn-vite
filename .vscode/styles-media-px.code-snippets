@@ -1,0 +1,2060 @@
+{
+	// General
+	"Media Screen max-width switch-point px": {
+		"prefix": "@max-switch-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: \\$max-switch-point ) {",
+			"\t$2",
+			"}"
+		],
+	},
+	"Media Screen min-width switch-point px": {
+		"prefix": "@min-switch-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: \\$min-switch-point )  {",
+			"\t$2",
+			"}"
+		],
+	},
+	"Media Screen max-width px": {
+		"prefix": "@mmax-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: $1px ) {",
+			"\t$2",
+			"}"
+		],
+	},
+	"Media Screen min-width px": {
+		"prefix": "@mmin-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: $1px ) {",
+			"\t$2",
+			"}"
+		],
+	},
+	// End. General
+	// Media var names desktop-first
+	"Media max-minimal-px": {
+		"prefix": "@max-minimal-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-minimal-px {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media max-minimal-px",
+	},
+	"Media max-mobile-px": {
+		"prefix": "@max-mobile-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-mobile-px {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media max-mobile-px",
+	},
+	"Media max-mobile-plus-px": {
+		"prefix": "@max-mobile-plus-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-mobile-plus-px {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media max-mobile-plus-px",
+	},
+	"Media max-mobile-wga-px": {
+		"prefix": "@max-mobile-wga-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-mobile-wga-px {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media max-mobile-wga-px",
+	},
+	"Media max-tablet-px": {
+		"prefix": "@max-tablet-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-tablet-px {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media max-tablet-px",
+	},
+	"Media max-tablet-plus-px": {
+		"prefix": "@max-tablet-plus-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-tablet-plus-px {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media max-tablet-plus-px",
+	},
+	"Media max-tablet-full-px": {
+		"prefix": "@max-tablet-full-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-tablet-full-px {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media max-tablet-full-px",
+	},
+	"Media max-desktop-px": {
+		"prefix": "@max-desktop-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-desktop-px {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media max-desktop-px",
+	},
+	"Media max-desktop-wide-px": {
+		"prefix": "@max-desktop-wide-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-desktop-wide-px {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media max-desktop-wide-px",
+	},
+	"Media max-desktop-hd-px": {
+		"prefix": "@max-desktop-hd-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-desktop-hd-px {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media max-desktop-hd-px",
+	},
+	"Media max-desktop-wide-plus-px": {
+		"prefix": "@max-desktop-wide-plus-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-desktop-wide-plus-px {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media max-desktop-wide-plus-px",
+	},
+	"Media max-desktop-hd-plus-px": {
+		"prefix": "@max-desktop-hd-plus-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-desktop-hd-plus-px {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media max-desktop-hd-plus-px",
+	},
+	"Media max-full-hd-px": {
+		"prefix": "@max-full-hd-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-full-hd-px {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media max-full-hd-px",
+	},
+	"Media max-quad-hd-px": {
+		"prefix": "@max-quad-hd-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-quad-hd-px {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media max-quad-hd-px",
+	},
+	"Media max-ultra-hd-px": {
+		"prefix": "@max-ultra-hd-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-ultra-hd-px {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media max-ultra-hd-px",
+	},
+	// End. Media var names desktop-first
+	// Media var names mobile-first
+	"Media min-mobile-px": {
+		"prefix": "@min-mobile-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include min-mobile-px {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media min-mobile-px",
+	},
+	"Media min-mobile-plus-px": {
+		"prefix": "@min-mobile-plus-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include min-mobile-plus-px {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media min-mobile-plus-px",
+	},
+	"Media min-mobile-wga-px": {
+		"prefix": "@min-mobile-wga-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include min-mobile-wga-px {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media min-mobile-wga-px",
+	},
+	"Media min-tablet-px": {
+		"prefix": "@min-tablet-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include min-tablet-px {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media min-tablet-px",
+	},
+	"Media min-tablet-plus-px": {
+		"prefix": "@min-tablet-plus-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include min-tablet-plus-px {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media min-tablet-plus-px",
+	},
+	"Media min-tablet-full-px": {
+		"prefix": "@min-tablet-full-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include min-tablet-full-px {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media min-tablet-full-px",
+	},
+	"Media min-desktop-px": {
+		"prefix": "@min-desktop-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include min-desktop-px {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media min-desktop-px",
+	},
+	"Media min-desktop-wide-px": {
+		"prefix": "@min-desktop-wide-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include min-desktop-wide-px {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media min-desktop-wide-px",
+	},
+	"Media min-desktop-hd-px": {
+		"prefix": "@min-desktop-hd-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include min-desktop-hd-px {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media min-desktop-hd-px",
+	},
+	"Media min-desktop-wide-plus-px": {
+		"prefix": "@min-desktop-wide-plus-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include min-desktop-wide-plus-px {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media min-desktop-wide-plus-px",
+	},
+	"Media min-desktop-hd-plus-px": {
+		"prefix": "@min-desktop-hd-plus-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include min-desktop-hd-plus-px {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media min-desktop-hd-plus-px",
+	},
+	"Media min-full-hd-px": {
+		"prefix": "@min-full-hd-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include min-full-hd-px {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media min-full-hd-px",
+	},
+	"Media min-quad-hd-px": {
+		"prefix": "@min-quad-hd-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include min-quad-hd-px {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media min-quad-hd-px",
+	},
+	"Media min-ultra-hd-px": {
+		"prefix": "@min-ultra-hd-px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include min-ultra-hd-px {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media min-ultra-hd-px",
+	},
+	// End. Media var names mobile-first
+
+	// Media max-width px
+	"Media Screen max-width-1600px": {
+		"prefix": "@max1600px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1600px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1600px",
+	},
+	"Media Screen max-width-1584px": {
+		"prefix": "@max1584px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1584px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1584px",
+	},
+	"Media Screen max-width-1568px": {
+		"prefix": "@max1568px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1568px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1568px",
+	},
+	"Media Screen max-width-1552px": {
+		"prefix": "@max1552px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1552px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1552px",
+	},
+	"Media Screen max-width-1536px": {
+		"prefix": "@max1536px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1536px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1536px",
+	},
+	"Media Screen max-width-1520px": {
+		"prefix": "@max1520px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1520px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1520px",
+	},
+	"Media Screen max-width-1504px": {
+		"prefix": "@max1504px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1504px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1504px",
+	},
+	"Media Screen max-width-1488px": {
+		"prefix": "@max1488px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1488px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1488px",
+	},
+	"Media Screen max-width-1472px": {
+		"prefix": "@max1472px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1472px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1472px",
+	},
+	"Media Screen max-width-1456px": {
+		"prefix": "@max1456px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1456px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1456px",
+	},
+	"Media Screen max-width-1440px": {
+		"prefix": "@max1440px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1440px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1440px",
+	},
+	"Media Screen max-width-1424px": {
+		"prefix": "@max1424px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1424px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1424px",
+	},
+	"Media Screen max-width-1400px": {
+		"prefix": "@max1408px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1408px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1408px",
+	},
+	"Media Screen max-width-1392px": {
+		"prefix": "@max1392px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1392px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1392px",
+	},
+	"Media Screen max-width-1376px": {
+		"prefix": "@max1376px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1376px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1376px",
+	},
+	"Media Screen max-width-1360px": {
+		"prefix": "@max1360px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1360px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1360px",
+	},
+	"Media Screen max-width-1344px": {
+		"prefix": "@max1344px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1344px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1344px",
+	},
+	"Media Screen max-width-1328px": {
+		"prefix": "@max1328px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1328px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1328px",
+	},
+	"Media Screen max-width-1312px": {
+		"prefix": "@max1312px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1312px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1312px",
+	},
+	"Media Screen max-width-1296px": {
+		"prefix": "@max1296px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1296px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1296px",
+	},
+	"Media Screen max-width-1280px": {
+		"prefix": "@max1280px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1280px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1280px",
+	},
+	"Media Screen max-width-1264px": {
+		"prefix": "@max1264px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1264px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1264px",
+	},
+	"Media Screen max-width-1248px": {
+		"prefix": "@max1248px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1248px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1248px",
+	},
+	"Media Screen max-width-1232px": {
+		"prefix": "@max1232px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1232px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1232px",
+	},
+	"Media Screen max-width-1216px": {
+		"prefix": "@max1216px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1216px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1216px",
+	},
+	"Media Screen max-width-1200px": {
+		"prefix": "@max1200px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1200px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1200px",
+	},
+	"Media Screen max-width-1184px": {
+		"prefix": "@max1184px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1184px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1184px",
+	},
+	"Media Screen max-width-1168px": {
+		"prefix": "@max1168px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1168px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1168px",
+	},
+	"Media Screen max-width-1152px": {
+		"prefix": "@max1152px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1152px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1152px",
+	},
+	"Media Screen max-width-1136px": {
+		"prefix": "@max1136px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1136px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1136px",
+	},
+	"Media Screen max-width-1120px": {
+		"prefix": "@max1120px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1120px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1120px",
+	},
+	"Media Screen max-width-1104px": {
+		"prefix": "@max1104px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1104px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1104px",
+	},
+	"Media Screen max-width-1088px": {
+		"prefix": "@max1088px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1088px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1088px",
+	},
+	"Media Screen max-width-1072px": {
+		"prefix": "@max1072px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1072px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1072px",
+	},
+	"Media Screen max-width-1056px": {
+		"prefix": "@max1056px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1056px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1056px",
+	},
+	"Media Screen max-width-1040px": {
+		"prefix": "@max1040px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1040px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1040px",
+	},
+	"Media Screen max-width-1024px": {
+		"prefix": "@max1024px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1024px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1024px",
+	},
+	"Media Screen max-width-1008px": {
+		"prefix": "@max1008px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 1008px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-1008px",
+	},
+	"Media Screen max-width-992px": {
+		"prefix": "@max992px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 992px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-992px",
+	},
+	"Media Screen max-width-976px": {
+		"prefix": "@max976px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 976px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-976px",
+	},
+	"Media Screen max-width-960px": {
+		"prefix": "@max960px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 960px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-960px",
+	},
+	"Media Screen max-width-944px": {
+		"prefix": "@max944px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 944px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-944px",
+	},
+	"Media Screen max-width-928px": {
+		"prefix": "@max928px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 928px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-928px",
+	},
+	"Media Screen max-width-912px": {
+		"prefix": "@max912px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 912px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-912px",
+	},
+	"Media Screen max-width-896px": {
+		"prefix": "@max896px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 896px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-896px",
+	},
+	"Media Screen max-width-880px": {
+		"prefix": "@max880px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 880px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-880px",
+	},
+	"Media Screen max-width-864px": {
+		"prefix": "@max864px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 864px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-864px",
+	},
+	"Media Screen max-width-848px": {
+		"prefix": "@max848px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 848px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-848px",
+	},
+	"Media Screen max-width-832px": {
+		"prefix": "@max832px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 832px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-832px",
+	},
+	"Media Screen max-width-816px": {
+		"prefix": "@max816px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 816px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-816px",
+	},
+	"Media Screen max-width-800px": {
+		"prefix": "@max800px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 800px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-800px",
+	},
+	"Media Screen max-width-784px": {
+		"prefix": "@max784px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 784px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-784px",
+	},
+	"Media Screen max-width-768px": {
+		"prefix": "@max768px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 768px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-768px",
+	},
+	"Media Screen max-width-752px": {
+		"prefix": "@max752px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 752px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-752px",
+	},
+	"Media Screen max-width-736px": {
+		"prefix": "@max736px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 736px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-736px",
+	},
+	"Media Screen max-width-720px": {
+		"prefix": "@max720px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 720px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-720px",
+	},
+	"Media Screen max-width-704px": {
+		"prefix": "@max704px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 704px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-704px",
+	},
+	"Media Screen max-width-688px": {
+		"prefix": "@max688px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 688px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-688px",
+	},
+	"Media Screen max-width-672px": {
+		"prefix": "@max672px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 672px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-672px",
+	},
+	"Media Screen max-width-656px": {
+		"prefix": "@max656px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 656px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-656px",
+	},
+	"Media Screen max-width-640px": {
+		"prefix": "@max640px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 640px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-640px",
+	},
+	"Media Screen max-width-624px": {
+		"prefix": "@max624px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 624px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-624px",
+	},
+	"Media Screen max-width-608px": {
+		"prefix": "@max608px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 608px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-608px",
+	},
+	"Media Screen max-width-592px": {
+		"prefix": "@max592px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 592px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-592px",
+	},
+	"Media Screen max-width-576px": {
+		"prefix": "@max576px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 576px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-576px",
+	},
+	"Media Screen max-width-560px": {
+		"prefix": "@max560px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 560px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-560px",
+	},
+	"Media Screen max-width-544px": {
+		"prefix": "@max544px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 544px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-544px",
+	},
+	"Media Screen max-width-528px": {
+		"prefix": "@max528px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 528px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-528px",
+	},
+	"Media Screen max-width-512px": {
+		"prefix": "@max512px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 512px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-512px",
+	},
+	"Media Screen max-width-496px": {
+		"prefix": "@max496px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 496px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-496px",
+	},
+	"Media Screen max-width-480px": {
+		"prefix": "@max480px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 480px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-480px",
+	},
+	"Media Screen max-width-464px": {
+		"prefix": "@max464px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 464px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-464px",
+	},
+	"Media Screen max-width-448px": {
+		"prefix": "@max448px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 448px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-448px",
+	},
+	"Media Screen max-width-432px": {
+		"prefix": "@max432px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 432px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-432px",
+	},
+	"Media Screen max-width-416px": {
+		"prefix": "@max416px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 416px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-416px",
+	},
+	"Media Screen max-width-400px": {
+		"prefix": "@max400px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 400px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-400px",
+	},
+	"Media Screen max-width-384px": {
+		"prefix": "@max384px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 384px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-384px",
+	},
+	"Media Screen max-width-368px": {
+		"prefix": "@max368px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 368px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-368px",
+	},
+	"Media Screen max-width-352px": {
+		"prefix": "@max352px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: 352px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen max-width-352px",
+	},
+	// End. Media max-width px
+
+	// Media min-width px
+	"Media Screen min-width-3840px": {
+		"prefix": "@min3840px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 3840.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen min-width-3840px",
+	},
+	"Media Screen min-width-3824px": {
+		"prefix": "@min3824px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 3824.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen min-width-3824px",
+	},
+	"Media Screen min-width-3552px": {
+		"prefix": "@min3552px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 3552.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen min-width-3552px",
+	},
+	"Media Screen min-width-3280px": {
+		"prefix": "@min3280px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 3280.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen min-width-3280px",
+	},
+	"Media Screen min-width-3008px": {
+		"prefix": "@min3008px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 3008.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen min-width-3008px",
+	},
+	"Media Screen min-width-2880px": {
+		"prefix": "@min2880px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 2880.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen min-width-2880px",
+	},
+	"Media Screen min-width-2736px": {
+		"prefix": "@min2736px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 2736.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen min-width-2736px",
+	},
+	"Media Screen min-width-2464px": {
+		"prefix": "@min2464px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 2464.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen min-width-2464px",
+	},
+	"Media Screen min-width-2192px": {
+		"prefix": "@min2192px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 2192.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen min-width-2192px",
+	},
+	"Media Screen min-width-1984px": {
+		"prefix": "@min1984px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1984.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen min-width-1984px",
+	},
+	"Media Screen min-width-1968px": {
+		"prefix": "@min1968px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1968.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen min-width-1968px",
+	},
+	"Media Screen min-width-1952px": {
+		"prefix": "@min1952px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1952.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen min-width-1952px",
+	},
+	"Media Screen min-width-1936px": {
+		"prefix": "@min1936px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1936.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen min-width-1936px",
+	},
+	"Media Screen min-width-1920px": {
+		"prefix": "@min1920px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1920.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen min-width-1920px",
+	},
+	"Media Screen (px) min-width-1600": {
+		"prefix": "@min1600px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1600.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1600",
+	},
+	"Media Screen (px) min-width-1584": {
+		"prefix": "@min1584px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1584.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1584",
+	},
+	"Media Screen (px) min-width-1568": {
+		"prefix": "@min1568px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1568.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1568",
+	},
+	"Media Screen (px) min-width-1552": {
+		"prefix": "@min1552px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1552.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1552",
+	},
+	"Media Screen (px) min-width-1536": {
+		"prefix": "@min1536px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1536.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1536",
+	},
+	"Media Screen (px) min-width-1520": {
+		"prefix": "@min1520px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1520.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1520",
+	},
+	"Media Screen (px) min-width-1504": {
+		"prefix": "@min1504px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1504.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1504",
+	},
+	"Media Screen (px) min-width-1488": {
+		"prefix": "@min1488px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1488.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1488",
+	},
+	"Media Screen (px) min-width-1472": {
+		"prefix": "@min1472px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1472.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1472",
+	},
+	"Media Screen (px) min-width-1456": {
+		"prefix": "@min1456px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1456.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1456",
+	},
+	"Media Screen (px) min-width-1440": {
+		"prefix": "@min1440px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1440.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1440",
+	},
+	"Media Screen (px) min-width-1424": {
+		"prefix": "@min1424px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1424.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1424",
+	},
+	"Media Screen (px) min-width-1400": {
+		"prefix": "@min1408px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1408.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1408",
+	},
+	"Media Screen (px) min-width-1392": {
+		"prefix": "@min1392px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1392.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1392",
+	},
+	"Media Screen (px) min-width-1376": {
+		"prefix": "@min1376px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1376.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1376",
+	},
+	"Media Screen (px) min-width-1360": {
+		"prefix": "@min1360px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1360.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1360",
+	},
+	"Media Screen (px) min-width-1344": {
+		"prefix": "@min1344px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1344.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1344",
+	},
+	"Media Screen (px) min-width-1328": {
+		"prefix": "@min1328px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1328.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1328",
+	},
+	"Media Screen (px) min-width-1312": {
+		"prefix": "@min1312px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1312.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1312",
+	},
+	"Media Screen (px) min-width-1296": {
+		"prefix": "@min1296px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1296.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1296",
+	},
+	"Media Screen (px) min-width-1280": {
+		"prefix": "@min1280px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1280.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1280",
+	},
+	"Media Screen (px) min-width-1264": {
+		"prefix": "@min1264px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1264.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1264",
+	},
+	"Media Screen (px) min-width-1248": {
+		"prefix": "@min1248px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1248.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1248",
+	},
+	"Media Screen (px) min-width-1232": {
+		"prefix": "@min1232px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1232.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1232",
+	},
+	"Media Screen (px) min-width-1216": {
+		"prefix": "@min1216px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1216.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1216",
+	},
+	"Media Screen (px) min-width-1200": {
+		"prefix": "@min1200px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1200.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1200",
+	},
+	"Media Screen (px) min-width-1184": {
+		"prefix": "@min1184px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1184.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1184",
+	},
+	"Media Screen (px) min-width-1168": {
+		"prefix": "@min1168px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1168.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1168",
+	},
+	"Media Screen (px) min-width-1152": {
+		"prefix": "@min1152px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1152.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1152",
+	},
+	"Media Screen (px) min-width-1136": {
+		"prefix": "@min1136px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1136.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1136",
+	},
+	"Media Screen (px) min-width-1120": {
+		"prefix": "@min1120px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1120.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1120",
+	},
+	"Media Screen (px) min-width-1104": {
+		"prefix": "@min1104px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1104.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1104",
+	},
+	"Media Screen (px) min-width-1088": {
+		"prefix": "@min1088px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1088.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1088",
+	},
+	"Media Screen (px) min-width-1072": {
+		"prefix": "@min1072px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1072.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1072",
+	},
+	"Media Screen (px) min-width-1056": {
+		"prefix": "@min1056px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1056.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1056",
+	},
+	"Media Screen (px) min-width-1040": {
+		"prefix": "@min1040px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1040.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1040",
+	},
+	"Media Screen (px) min-width-1024": {
+		"prefix": "@min1024px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1024.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1024",
+	},
+	"Media Screen (px) min-width-1008": {
+		"prefix": "@min1008px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 1008.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-1008",
+	},
+	"Media Screen (px) min-width-992": {
+		"prefix": "@min992px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 992.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-992",
+	},
+	"Media Screen (px) min-width-976": {
+		"prefix": "@min976px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 976.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-976",
+	},
+	"Media Screen (px) min-width-960": {
+		"prefix": "@min960px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 960.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-960",
+	},
+	"Media Screen (px) min-width-944": {
+		"prefix": "@min944px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 944.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-944",
+	},
+	"Media Screen (px) min-width-928": {
+		"prefix": "@min928px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 928.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-928",
+	},
+	"Media Screen (px) min-width-912": {
+		"prefix": "@min912px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 912.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-912",
+	},
+	"Media Screen (px) min-width-896": {
+		"prefix": "@min896px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 896.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-896",
+	},
+	"Media Screen (px) min-width-880": {
+		"prefix": "@min880px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 880.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-880",
+	},
+	"Media Screen (px) min-width-864": {
+		"prefix": "@min864px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 864.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-864",
+	},
+	"Media Screen (px) min-width-848": {
+		"prefix": "@min848px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 848.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-848",
+	},
+	"Media Screen (px) min-width-832": {
+		"prefix": "@min832px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 832.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-832",
+	},
+	"Media Screen (px) min-width-816": {
+		"prefix": "@min816px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 816.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-816",
+	},
+	"Media Screen (px) min-width-800": {
+		"prefix": "@min800px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 800.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-800",
+	},
+	"Media Screen (px) min-width-784": {
+		"prefix": "@min784px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 784.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-784",
+	},
+	"Media Screen (px) min-width-768": {
+		"prefix": "@min768px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 768.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-768",
+	},
+	"Media Screen (px) min-width-752": {
+		"prefix": "@min752px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 752.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-752",
+	},
+	"Media Screen (px) min-width-736": {
+		"prefix": "@min736px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 736.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-736",
+	},
+	"Media Screen (px) min-width-720": {
+		"prefix": "@min720px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 720.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-720",
+	},
+	"Media Screen (px) min-width-704": {
+		"prefix": "@min704px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 704.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-704",
+	},
+	"Media Screen (px) min-width-688": {
+		"prefix": "@min688px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 688.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-688",
+	},
+	"Media Screen (px) min-width-672": {
+		"prefix": "@min672px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 672.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-672",
+	},
+	"Media Screen (px) min-width-656": {
+		"prefix": "@min656px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 656.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-656",
+	},
+	"Media Screen (px) min-width-640": {
+		"prefix": "@min640px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 640.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-640",
+	},
+	"Media Screen (px) min-width-624": {
+		"prefix": "@min624px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 624.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-624",
+	},
+	"Media Screen (px) min-width-608": {
+		"prefix": "@min608px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 608.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-608",
+	},
+	"Media Screen (px) min-width-592": {
+		"prefix": "@min592px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 592.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-592",
+	},
+	"Media Screen (px) min-width-576": {
+		"prefix": "@min576px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 576.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-576",
+	},
+	"Media Screen (px) min-width-560": {
+		"prefix": "@min560px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 560.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-560",
+	},
+	"Media Screen (px) min-width-544": {
+		"prefix": "@min544px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 544.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-544",
+	},
+	"Media Screen (px) min-width-528": {
+		"prefix": "@min528px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 528.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-528",
+	},
+	"Media Screen (px) min-width-512": {
+		"prefix": "@min512px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 512.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-512",
+	},
+	"Media Screen (px) min-width-496": {
+		"prefix": "@min496px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 496.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-496",
+	},
+	"Media Screen (px) min-width-480": {
+		"prefix": "@min480px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 480.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-480",
+	},
+	"Media Screen (px) min-width-464": {
+		"prefix": "@min464px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 464.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-464",
+	},
+	"Media Screen (px) min-width-448": {
+		"prefix": "@min448px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 448.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-448",
+	},
+	"Media Screen (px) min-width-432": {
+		"prefix": "@min432px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 432.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-432",
+	},
+	"Media Screen (px) min-width-416": {
+		"prefix": "@min416px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 416.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-416",
+	},
+	"Media Screen (px) min-width-400": {
+		"prefix": "@min400px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 400.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-400",
+	},
+	"Media Screen (px) min-width-384": {
+		"prefix": "@min384px ",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 384.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-384",
+	},
+	"Media Screen (px) min-width-368": {
+		"prefix": "@min368px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 368.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-368",
+	},
+	"Media Screen (px) min-width-352": {
+		"prefix": "@min352px",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: 352.96px ) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Media Screen (px) min-width-352",
+	},
+	// End. Media min-width px
+}

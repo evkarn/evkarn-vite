@@ -1,0 +1,9 @@
+@use '../../variables/general';
+@use '../../variables/grid';
+@use '../../mixins/units';
+@use '../../mixins/adaptive-value';
+
+.card__date {
+	font-size: 14px;
+	color: var(--dark);
+}

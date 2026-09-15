@@ -1,0 +1,39 @@
+
+@use "./nav__list";
+@use "./nav__link";
+
+@use 'settings/imports' as *;
+
+.header__nav.nav {
+	transition:
+		right 0.5s ease, visibility .5s ease;
+
+	@media (max-width: $max-switch-point) {
+		position: fixed;
+		top: 0;
+		right: -100%;
+
+		width: 100%;
+		height: 100%;
+
+		background-color: var(--body-bg);
+
+		visibility: none;
+		pointer-events: none;
+		user-select: none;
+	}
+}
+
+.header__nav.nav--is-visible {
+	@media (max-width: $max-switch-point) {
+		z-index: $z-index-header;
+		right: 0;
+
+		padding: $container-offset;
+		padding-top: calc(var(--header-height) + $container-offset);
+
+		visibility: visible;
+		opacity: 1;
+		pointer-events: auto;
+	}
+}

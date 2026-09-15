@@ -1,0 +1,68 @@
+@use "./burger__line";
+
+@use "settings/imports" as *;
+
+.burger {
+	--line-height: 1px;
+	--color: var(--dark);
+	--radius: 1px;
+
+	flex-shrink: 0;
+	position: relative;
+	z-index: $z-index-header + 1;
+
+	display: none;
+
+	width: 38px;
+	height: 26px;
+
+	@media (max-width: $max-switch-point) {
+		display: inline-block;
+	}
+
+	&:before,
+	&:after {
+		content: "";
+
+		position: absolute;
+
+		display: block;
+
+		width: 100%;
+		height: var(--line-height);
+
+		background-color: var(--color);
+
+		border-radius: var(--radius);
+
+		transition: rotate 0.3s ease;
+	}
+
+	&:before {
+		top: 0;
+	}
+
+	&:after {
+		bottom: 0;
+	}
+}
+
+.burger--is-active {
+	&:before,
+	&:after {
+		left: 2%;
+		width: 93%;
+	}
+
+	&:before {
+		top: 50%;
+
+		rotate: 45deg;
+	}
+
+	&:after {
+		bottom: 45%;
+
+		rotate: -45deg;
+	}
+}

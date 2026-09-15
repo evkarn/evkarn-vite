@@ -1,0 +1,72 @@
+<div
+	class="spoilers"
+>
+	// Если нужно чтобы в блоке открывался только один спойлер добавляем родителю атрибут data-one-spoiler
+	<ul
+		class="spoilers__list spoilers__list--1"
+		data-spoilers-list
+	>
+		<li
+			class="spoilers__item spoiler"
+			data-spoiler
+		>
+			<button
+				class="spoiler__title active"
+				data-spoiler-title
+				tabindex="-1"
+				type="button"
+			>
+				Обычный спойлер № 1
+			</button>
+
+			<div
+				class="spoiler__content"
+				data-spoiler-content
+			>
+				<div
+					class="spoiler__inner"
+				>
+					Далеко-далеко за словесными горами в стране гласных и согласных живут
+					рыбные тексты. Свой вскоре семантика страну своего пор рот над запятых
+					ее?
+				</div>
+			</div>
+		</li>
+
+		<li
+			class="spoilers__item spoiler"
+			data-spoiler
+		>
+			<button
+				class="spoiler__title"
+				data-spoiler-title
+				tabindex="-1"
+				type="button"
+			>
+				Обычный спойлер № 2
+			</button>
+
+			<div
+				class="spoiler__content spoiler-content"
+				data-spoiler-content
+			>
+				<div
+					class="spoiler-content__inner"
+				>
+					Далеко-далеко за словесными горами в стране гласных и согласных живут
+					рыбные тексты. Свой вскоре семантика страну своего пор рот над запятых
+					ее?
+				</div>
+			</div>
+		</li>
+	</ul>
+
+	// Сработает при ширине экрана от 650 и выше
+	<ul data-spoilers-list="650,min">
+	</ul>
+
+
+	// Сработает при ширине экрана менее 650
+	<ul data-spoilers-list="800,max">
+	</ul>
+</div>

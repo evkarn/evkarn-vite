@@ -1,0 +1,37 @@
+<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Fireseo — Агентство интернет-маркетинга",
+		"url": "/",
+		"logo": "assets/svg/logo.svg",
+		"image": "assets/images/og-images/home.webp",
+		"address": {
+			"@type": "PostalAddress",
+			"postalCode": "111123",
+			"addressCountry": "RU",
+			"addressRegion": "Московская",
+			"addressLocality": "Москва",
+			"streetAddress": "шоссе Энтузиастов, дом 56, строение 26, офис 304"
+		},
+		"openingHoursSpecification": {
+			"@type": "OpeningHoursSpecification",
+			"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+			"opens": "09:00",
+			"closes": "19:00"
+		},
+		"contactPoint": [
+			{
+				"@type": "ContactPoint",
+				"telephone": "+7 (499) 346-69-92",
+				"contactType": "customer service",
+				"email": "info@fireseo.ru",
+				"availableLanguage": ["Russian"]
+			}
+		],
+		"sameAs": [
+			"https://t.me/+79775725932",
+			"https://wa.me/79775725932"
+		]
+	}
+</script>

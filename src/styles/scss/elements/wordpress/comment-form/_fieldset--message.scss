@@ -1,0 +1,12 @@
+.fieldset--message {
+	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+
+	@include calc-size(row-gap, 10, 16, 320, 1920, rem);
+
+	@media (min-width: em(1920.96)) {
+		@include calc-size(row-gap, 16, 32, 1920, 3840, rem);
+	}
+}

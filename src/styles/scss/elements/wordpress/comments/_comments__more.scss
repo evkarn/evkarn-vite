@@ -1,0 +1,12 @@
+.comments__more {
+
+	color: var(--c-accent);
+	border: none;
+	border-bottom: rem($bor-width) solid currentColor;
+
+	transition:
+		color 0.3s ease,
+		border-color 0.3s ease;
+
+	@include state-accent;
+}

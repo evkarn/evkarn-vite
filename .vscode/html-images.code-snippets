@@ -1,0 +1,88 @@
+{
+	// Images and Picture
+	"Image": {
+		"prefix": "img",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<img class=\"$1__img\" src=\"assets/images/$2.webp\" width=\"$3\" height=\"$4\" alt=\"$5\" loading=\"lazy\" decoding=\"async\">",
+		],
+	},
+
+	"SVG": {
+		"prefix": "img-svg",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<img class=\"$1__img\" src=\"assets/svg/$2.svg\" width=\"$3\" height=\"$4\" alt=\"$5\" loading=\"lazy\" decoding=\"async\">",
+		],
+	},
+
+	"Image @2x": {
+		"prefix": "img@2x",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<img class=\"$1__img\" src=\"assets/images/$2.webp\" srcset=\"assets/images/$2@2x.webp 2x\" width=\"$3\" height=\"$4\" alt=\"$5\" loading=\"lazy\" decoding=\"async\">",
+		],
+	},
+	"Picture tag with .webp": {
+		"prefix": "picWebp",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<picture class=\"$1__picture\">",
+			"\t<source srcset=\"assets/images/$2.webp\" type=\"image/webp\">",
+			"",
+			"\t<img class=\"$1__img\" src=\"assets/images/$2.jpg\" width=\"$3\" height=\"$4\" alt=\"$5\" loading=\"lazy\" decoding=\"async\">",
+			"</picture>",
+		],
+	},
+
+	"Picture @2x tag with .webp": {
+		"prefix": "pic@2xWebp",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<picture class=\"$1__picture\">",
+			"\t<source srcset=\"assets/images/$2.webp, assets/images/$2@2x.webp 2x\" type=\"image/webp\">",
+			"",
+			"\t<img class=\"$1__img\" src=\"assets/images/$2.jpg\" srcset=\"assets/images/$2@2x.jpg 2x\" width=\"$3\" height=\"$4\" alt=\"$5\" loading=\"lazy\" decoding=\"async\">",
+			"</picture>",
+		],
+	},
+
+	"Picture tag with .avif + .webp": {
+		"prefix": "picAvifWebp",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<picture class=\"__picture\">",
+			"\t<source srcset=\"assets/images/$1.webp\" type=\"image/webp\">",
+			"",
+			"\t<source srcset=\"assets/images/$1.avif\" type=\"image/avif\">",
+			"",
+			"\t<img class=\"$2__img\" src=\"assets/images/$1.jpg\" width=\"$3\" height=\"$4\" alt=\"$6\" loading=\"lazy\" decoding=\"async\">",
+			"</picture>",
+		],
+	},
+
+	"Picture tag with .avif + .webp @2x": {
+		"prefix": "pic@2xAvifWebp",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<picture class=\"$1__picture\">",
+			"\t<source srcset=\"assets/images/$2.webp, assets/images/$2@2x.webp 2x\" type=\"image/webp\">",
+			"",
+			"\t<source srcset=\"assets/images/$2.avif, assets/images/$2@2x.avif 2x\" type=\"image/avif\">",
+			"",
+			"\t<img class=\"$1__img\" src=\"assets/images/$2.jpg\" srcset=\"assets/images/$2@2x.jpg 2x\" width=\"$3\" height=\"$4\" alt=\"$5\" loading=\"lazy\" decoding=\"async\">",
+			"</picture>",
+		],
+	},
+
+	"Image in background": {
+		"prefix": "img-bg",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<div class=\"image-wrap\" data-image-in-bg>",
+			"\t<img class\"img-bg\" src=\"@img/$1.webp\" alt=\"$2\">",
+			"</div>",
+		],
+	},
+	// End. Images and Picture
+}

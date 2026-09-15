@@ -1,0 +1,15 @@
+.tabs__list {
+	display: flex;
+	align-items: center;
+	gap: rem(12) rem(16);
+
+	margin: 0;
+	padding: 0;
+
+	list-style-type: none;
+
+	@include min-full-hd-em {
+		@include calc-size(row-gap, 12, 24, 1920, 3840, rem);
+		@include calc-size(column-gap, 16, 32, 1920, 3840, rem);
+	}
+}

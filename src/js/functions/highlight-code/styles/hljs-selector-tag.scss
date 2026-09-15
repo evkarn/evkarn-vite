@@ -1,0 +1,7 @@
+.hljs-selector-tag {
+	color: var(--hljs-selector-tag);
+
+	@media screen and (-ms-high-contrast: active) {
+		font-weight: 700;
+	}
+}

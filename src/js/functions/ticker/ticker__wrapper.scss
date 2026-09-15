@@ -1,0 +1,21 @@
+@use "../../variables/general";
+@use "../../variables/grid";
+@use "../../mixins/units";
+@use "../../mixins/adaptive-value";
+
+.ticker__wrapper {
+	display: inline-flex;
+	gap: 40px;
+
+	width: min-content;
+}
+
+.ticker__wrapper--main {
+	animation: ticker 24s infinite linear;
+	animation-delay: -24s;
+}
+
+.ticker__wrapper--duplicate {
+	animation: ticker_duplicate 24s infinite linear;
+	animation-delay: -12s;
+}

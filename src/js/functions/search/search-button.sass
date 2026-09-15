@@ -1,0 +1,36 @@
+.header__search-button, .search-button__svg
+	max-width: 48px
+	max-height: 48px
+	+calc-size(max-width, 48, 96, 1920.96, 3840, px)
+	+calc-size(max-height, 48, 96, 1920.96, 3840, px)
+
+	@media ( min-width: em(3840.96) )
+		max-width: 96px
+		max-height: 96px
+
+.header__search-button
+	z-index: 6
+
+	transition: color .3s ease
+
+	&:hover
+		color: var(--c-accent)
+
+	&:focus-visible
+		outline: 3px dashed var(--c-accent)
+
+		@media ( min-width: em(3840.96) )
+			outline: 6px dashed var(--c-accent)
+
+	&:active
+		outline: none
+		color: var(--c-valencia)
+
+	@media ( min-width: em(3840.96) )
+		max-width: 96px
+		max-height: 96px
+
+.search-button__svg
+	fill: currentColor
+
+	transition: fill .3s ease

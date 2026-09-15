@@ -1,0 +1,17 @@
+.loader__overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	height: rem(4);
+
+	background-color: #d1d3d6;
+
+	border-radius: rem(4);
+
+	@include min-full-hd-em {
+		@include calc-size(height, 4, 8, 1920, 3840, rem);
+
+		@include calc-size(border-radius, 4, 8, 1920, 3840, rem);
+	}
+}

@@ -1,0 +1,10 @@
+@use "../mixins/units";
+
+.header__container {
+	justify-content: space-between;
+	column-gap: 20px;
+
+	@media ( max-width: 576px ) {
+		row-gap: 6px;
+	}
+}

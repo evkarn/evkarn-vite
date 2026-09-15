@@ -1,0 +1,13 @@
+@use "../../variables/general";
+@use "../../variables/grid";
+@use "../../mixins/units";
+@use "../../mixins/fluid-size";
+
+.select-expanded__chevron {
+	width: 15);
+	height: 9);
+
+	margin-left: auto;
+
+	transition: transform 0.3s ease;
+}

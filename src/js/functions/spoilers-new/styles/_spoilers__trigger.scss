@@ -1,0 +1,50 @@
+.spoilers__trigger {
+	position: relative;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+
+	width: 100%;
+
+	padding: 10px;
+
+	text-align: left;
+
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.spoilers__trigger:focus-visible {
+	outline-color: var(--accent);
+	outline-style: dashed;
+	outline-width: var(--outline-width);
+	outline-offset: var(--outline-offset);
+}
+
+.spoilers.is-active .spoilers__trigger:after {
+	content: '';
+	flex-shrink: 0;
+
+	width: 8px;
+	height: 8px;
+
+	border-right: 2px solid currentColor;
+	border-bottom: 2px solid currentColor;
+
+	transition: transform 0.3s ease-out;
+
+	transform: translateY(-50%) rotate(45deg);
+}
+
+.spoilers__trigger[aria-expanded='true']:after {
+	transform: translateY(-50%) rotate(-135deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.spoilers__trigger:after {
+		transition: none;
+	}
+}

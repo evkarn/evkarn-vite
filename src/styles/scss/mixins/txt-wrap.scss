@@ -1,0 +1,15 @@
+@mixin txt-wrap($minValue, $maxValue) {
+	> * {
+		margin: 0;
+
+		&:not(:last-child) {
+			margin-bottom: $minValue;
+
+			@media (min-width: 1920.96px) {
+				@include calc-size(margin-bottom, $minValue, $maxValue, 1920, 3840, px);
+			}
+		}
+	}
+
+	@content;
+}

@@ -1,0 +1,62 @@
+{
+	// Flex
+	"Display flex center": {
+		"prefix": "flex-center",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"display: flex;",
+			"justify-content: center;",
+			"align-items: center;",
+		],
+		"description": "Display flex center",
+	},
+	"Flex: 1 1 auto": {
+		"prefix": "flex-1-1-a",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"flex: 1 1 auto;"
+		],
+		"description": "Flex: 1 1 auto",
+	},
+	"flex-grow: 1, flex-shrink: 1, flex-basis: auto": {
+		"prefix": "flex-grow-shr-bas",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"flex-grow: 1;",
+			"flex-shrink: 1;",
+			"flex-basis: auto;"
+		],
+		"description": "flex-grow: 1, flex-shrink: 1, flex-basis: auto",
+	},
+	"display: flex, flex-direction: column": {
+		"prefix": "flex-column",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"display: flex;",
+			"flex-direction: column;"
+		],
+		"description": "display: flex, flex-direction: column",
+	},
+	"Flex product list": {
+		"prefix": "flex-cards",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"--num-elements: $1;",
+			"--gap: $2px;",
+			"",
+			"display: flex;",
+			"flex-wrap: wrap;",
+			"gap: var(--gap);",
+		],
+		"description": "Flex product list",
+	},
+	"Flex width items": {
+		"prefix": "flex-cards-item",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"width: calc((100% - ((var(--num-elements) - 1) * var(--gap))) / (var(--num-elements)));",
+		],
+		"description": "Flex width items",
+	},
+	// End. Flex
+}

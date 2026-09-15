@@ -1,0 +1,11 @@
+.comments {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@include calc-size(gap, 16, 20, 320, 1920, rem);
+
+	@media (min-width: em(1920.96)) {
+		@include calc-size(gap, 20, 40, 1920, 3840, rem);
+	}
+}

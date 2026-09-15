@@ -1,0 +1,10 @@
+{
+	"Fonts preload": {
+		"prefix": "fpr",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<link rel=\"preload\" href=\"$1\" as=\"font\" type=\"font/woff2\" crossorigin>",
+		],
+		"description": "Fonts preload",
+	},
+}

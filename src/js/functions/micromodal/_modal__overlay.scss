@@ -1,0 +1,22 @@
+.modal__overlay {
+	position: fixed;
+	inset: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	background: var(--overlay);
+}
+
+.modal .modal__overlay {
+	will-change: transform;
+}
+
+.modal[aria-hidden='false'] .modal__overlay {
+	animation: microModalFadeIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.modal[aria-hidden='true'] .modal__overlay {
+	animation: microModalFadeOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+}

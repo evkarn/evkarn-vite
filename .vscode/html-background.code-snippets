@@ -1,0 +1,21 @@
+{
+	"Image in background": {
+		"prefix": "ibg",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<div class=\"$1\" data-image-in-background>",
+			"\t<img src=\"@img/$2\" alt=\"$3\">",
+			"</div>",
+		],
+		"description": "Image in background",
+	},
+
+	"background inline": {
+		"prefix": "bg-inline",
+		"scope": "html, php, njk, md",
+		"body": [
+			"style=\"background-color: $1; background-image: url('$2'); background-position: center; background-repeat: no-repeat; background-size: cover\"",
+		],
+		"description": "background inline",
+	},
+}

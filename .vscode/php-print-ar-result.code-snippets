@@ -1,0 +1,32 @@
+{
+	"Header with logo link": {
+		"prefix": "print-ar-result",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?php",
+			"\techo '<pre>';",
+			"\tprint_r(\\$arResult);",
+			"\techo '</pre>';",
+			"?>",
+		],
+		"description": "Header with logo link",
+	},
+
+	"If !empty $arResult": {
+		"prefix": "if-!empty-arResult",
+		"scope": "html, php, njk, md",
+		"body": ["<?phpif (!empty(\\$arResult)):?>", "\t$1", "<?phpendif?>"],
+		"description": "If !empty $arResult",
+	},
+
+	"Foreach $arResult as $arItem": {
+		"prefix": "foreach-result-item",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<?phpforeach(\\$arResult['ITEMS'] as \\$arItem):?>",
+			"\t$1",
+			"<?phpendforeach?>",
+		],
+		"description": "Foreach $arResult as $arItem",
+	},
+}

@@ -1,0 +1,1929 @@
+{
+	// General
+	"Media Screen max-width switch-point em": {
+		"prefix": "@max-switch-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(grid.\\$max-switch-point) ) {",
+			"\t$2",
+			"}"
+		],
+	},
+	"Media Screen min-width switch-point em": {
+		"prefix": "@min-switch-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(grid.\\$min-switch-point) ) {",
+			"\t$2",
+			"}"
+		],
+	},
+	"Media Screen max-width": {
+		"prefix": "@mmax-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem($1) ) {",
+			"\t$2",
+			"}"
+		],
+	},
+	"Media Screen min-width": {
+		"prefix": "@mmin-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem($1) ) {",
+			"\t$2",
+			"}"
+		],
+	},
+	// End. General
+	// Media var names desktop-first
+	"Media max-minimal-rem": {
+		"prefix": "@max-minimal-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-minimal-rem {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media max-mobile-rem": {
+		"prefix": "@max-mobile-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-mobile-rem {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media max-mobile-plus-rem": {
+		"prefix": "@max-mobile-plus-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-mobile-plus-rem {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media max-mobile-wga-rem": {
+		"prefix": "@max-mobile-wga-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-mobile-wga-rem {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media max-tablet-rem": {
+		"prefix": "@max-tablet-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-tablet-rem {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media max-tablet-plus-rem": {
+		"prefix": "@max-tablet-plus-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-tablet-plus-rem {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media max-tablet-full-rem": {
+		"prefix": "@max-tablet-full-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-tablet-full-rem {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media max-desktop-rem": {
+		"prefix": "@max-desktop-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-desktop-rem {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media max-desktop-wide-rem": {
+		"prefix": "@max-desktop-wide-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-desktop-wide-rem {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media max-desktop-hd-rem": {
+		"prefix": "@max-desktop-hd-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-desktop-hd-rem {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media max-desktop-wide-plus-rem": {
+		"prefix": "@max-desktop-wide-plus-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-desktop-wide-plus-rem {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media max-desktop-hd-plus-rem": {
+		"prefix": "@max-desktop-hd-plus-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-desktop-hd-plus-rem {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media max-full-hd-rem": {
+		"prefix": "@max-full-hd-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-full-hd-rem {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media max-quad-hd-rem": {
+		"prefix": "@max-quad-hd-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-quad-hd-rem {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media max-ultra-hd-rem": {
+		"prefix": "@max-ultra-hd-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include max-ultra-hd-rem {",
+			"\t$1",
+			"}"
+		],
+	},
+	// End. Media var names desktop-first
+	// Media var names mobile-first
+	"Media min-mobile-rem": {
+		"prefix": "@min-mobile-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include min-mobile-rem {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media min-mobile-plus-rem": {
+		"prefix": "@min-mobile-plus-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include min-mobile-plus-rem {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media min-mobile-wga-rem": {
+		"prefix": "@min-mobile-wga-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include min-mobile-wga-rem {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media min-tablet-rem": {
+		"prefix": "@min-tablet-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include min-tablet-rem {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media min-tablet-plus-rem": {
+		"prefix": "@min-tablet-plus-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include min-tablet-plus-rem {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media min-tablet-full-rem": {
+		"prefix": "@min-tablet-full-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include min-tablet-full-rem {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media min-desktop-rem": {
+		"prefix": "@min-desktop-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include min-desktop-rem {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media min-desktop-wide-rem": {
+		"prefix": "@min-desktop-wide-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include min-desktop-wide-rem {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media min-desktop-hd-rem": {
+		"prefix": "@min-desktop-hd-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include min-desktop-hd-rem {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media min-desktop-wide-plus-rem": {
+		"prefix": "@min-desktop-wide-plus-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include min-desktop-wide-plus-rem {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media min-desktop-hd-plus-rem": {
+		"prefix": "@min-desktop-hd-plus-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include min-desktop-hd-plus-rem {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media min-full-hd-rem": {
+		"prefix": "@min-full-hd-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include min-full-hd-rem {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media min-quad-hd-rem": {
+		"prefix": "@min-quad-hd-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include min-quad-hd-rem {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media min-ultra-hd-rem": {
+		"prefix": "@min-ultra-hd-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@include min-ultra-hd-rem {",
+			"\t$1",
+			"}"
+		],
+	},
+	// End. Media var names mobile-first
+	// Media max-width em
+	"Media Screen max-width-3824": {
+		"prefix": "@max3824-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(3824) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-3552": {
+		"prefix": "@max3552-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(3552) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-3280": {
+		"prefix": "@max3280-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(3280) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-3008": {
+		"prefix": "@max3008-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(3008) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-2736": {
+		"prefix": "@max2736-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(2736) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-2464": {
+		"prefix": "@max2464-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(2464) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-2192": {
+		"prefix": "@max2192-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(2192) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1920": {
+		"prefix": "@max1920-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1920) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1600": {
+		"prefix": "@max1600-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1600) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1584": {
+		"prefix": "@max1584-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1584) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1568": {
+		"prefix": "@max1568-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1568) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1552": {
+		"prefix": "@max1552-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1552) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1536": {
+		"prefix": "@max1536-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1536) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1520": {
+		"prefix": "@max1520-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1520) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1504": {
+		"prefix": "@max1504-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1504) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1488": {
+		"prefix": "@max1488-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1488) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1472": {
+		"prefix": "@max1472-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1472) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1456": {
+		"prefix": "@max1456-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1456) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1440": {
+		"prefix": "@max1440-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1440) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1424": {
+		"prefix": "@max1424-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1424) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1400": {
+		"prefix": "@max1408-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1408) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1392": {
+		"prefix": "@max1392-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1392) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1376": {
+		"prefix": "@max1376-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1376) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1360": {
+		"prefix": "@max1360-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1360) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1344": {
+		"prefix": "@max1344-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1344) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1328": {
+		"prefix": "@max1328-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1328) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1312": {
+		"prefix": "@max1312-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1312) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1296": {
+		"prefix": "@max1296-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1296) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1280": {
+		"prefix": "@max1280-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1280) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1264": {
+		"prefix": "@max1264-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1264) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1248": {
+		"prefix": "@max1248-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1248) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1232": {
+		"prefix": "@max1232-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1232) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1216": {
+		"prefix": "@max1216-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1216) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1200": {
+		"prefix": "@max1200-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1200) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1184": {
+		"prefix": "@max1184-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1184) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1168": {
+		"prefix": "@max1168-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1168) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1152": {
+		"prefix": "@max1152-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1152) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1136": {
+		"prefix": "@max1136-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1136) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1120": {
+		"prefix": "@max1120-rem-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1120) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1104": {
+		"prefix": "@max1104-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1104) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1088": {
+		"prefix": "@max1088-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1088) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1072": {
+		"prefix": "@max1072-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1072) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1056": {
+		"prefix": "@max1056-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1056) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1040": {
+		"prefix": "@max1040-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1040) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1024": {
+		"prefix": "@max1024-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1024) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-1008": {
+		"prefix": "@max1008-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(1008) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-992": {
+		"prefix": "@max992-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(992) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-976": {
+		"prefix": "@max976-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(976) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-960": {
+		"prefix": "@max960-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(960) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-944": {
+		"prefix": "@max944-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(944) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-928": {
+		"prefix": "@max928-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(928) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-912": {
+		"prefix": "@max912-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(912) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-896": {
+		"prefix": "@max896-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(896) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-880": {
+		"prefix": "@max880-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(880) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-864": {
+		"prefix": "@max864-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(864) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-848": {
+		"prefix": "@max848-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(848) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-832": {
+		"prefix": "@max832-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(832) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-816": {
+		"prefix": "@max816-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(816) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-800": {
+		"prefix": "@max800-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(800) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-784": {
+		"prefix": "@max784-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(784) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-768": {
+		"prefix": "@max768-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(768) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-752": {
+		"prefix": "@max752-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(752) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-736": {
+		"prefix": "@max736-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(736) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-720": {
+		"prefix": "@max720-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(720) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-704": {
+		"prefix": "@max704-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(704) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-688": {
+		"prefix": "@max688-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(688) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-672": {
+		"prefix": "@max672-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(672) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-656": {
+		"prefix": "@max656-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(656) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-640": {
+		"prefix": "@max640-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(640) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-624": {
+		"prefix": "@max624-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(624) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-608": {
+		"prefix": "@max608-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(608) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-592": {
+		"prefix": "@max592-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(592) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-576": {
+		"prefix": "@max576-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(576) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-560": {
+		"prefix": "@max560-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(560) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-544": {
+		"prefix": "@max544-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(544) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-528": {
+		"prefix": "@max528-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(528) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-512": {
+		"prefix": "@max512-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(512) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-496": {
+		"prefix": "@max496-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(496) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-480": {
+		"prefix": "@max480-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(480) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-464": {
+		"prefix": "@max464-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(464) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-448": {
+		"prefix": "@max448-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(448) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-432": {
+		"prefix": "@max432-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(432) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-416": {
+		"prefix": "@max416-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(416) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-400": {
+		"prefix": "@max400-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(400) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-384": {
+		"prefix": "@max384-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(384) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-368": {
+		"prefix": "@max368-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(368) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen max-width-352": {
+		"prefix": "@max352-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( max-width: units.rem(352) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	// End. Media max-width em
+	// Media min-width em
+	"Media Screen min-width-3840": {
+		"prefix": "@min3840-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(3840.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-3824": {
+		"prefix": "@min3824-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(3824.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-3552": {
+		"prefix": "@min3552-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(3552.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-3280": {
+		"prefix": "@min3280-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(3280.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-3008": {
+		"prefix": "@min3008-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(3008.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-2880": {
+		"prefix": "@min2880-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(2880.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-2736": {
+		"prefix": "@min2736-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(2736.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-2464": {
+		"prefix": "@min2464-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(2464.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-2192": {
+		"prefix": "@min2192-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(2192.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1984": {
+		"prefix": "@min1984-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1984.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1968": {
+		"prefix": "@min1968-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1968.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1952": {
+		"prefix": "@min1952-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1952.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1936": {
+		"prefix": "@min1936-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1936.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1920": {
+		"prefix": "@min1920-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1920.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1600": {
+		"prefix": "@min1600-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1600.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1584": {
+		"prefix": "@min1584-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1584.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1568": {
+		"prefix": "@min1568-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1568.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1552": {
+		"prefix": "@min1552-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1552.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1536": {
+		"prefix": "@min1536-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1536.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1520": {
+		"prefix": "@min1520-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1520.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1504": {
+		"prefix": "@min1504-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1504.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1488": {
+		"prefix": "@min1488-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1488.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1472": {
+		"prefix": "@min1472-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1472.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1456": {
+		"prefix": "@min1456-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1456.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1440": {
+		"prefix": "@min1440-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1440.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1424": {
+		"prefix": "@min1424-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1424.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1400": {
+		"prefix": "@min1408-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1408.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1392": {
+		"prefix": "@min1392-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1392.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1376": {
+		"prefix": "@min1376-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1376.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1360": {
+		"prefix": "@min1360-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1360.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1344": {
+		"prefix": "@min1344-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1344.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1328": {
+		"prefix": "@min1328-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1328.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1312": {
+		"prefix": "@min1312-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1312.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1296": {
+		"prefix": "@min1296-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1296.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1280": {
+		"prefix": "@min1280-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1280.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1264": {
+		"prefix": "@min1264-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1264.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1248": {
+		"prefix": "@min1248-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1248.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1232": {
+		"prefix": "@min1232-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1232.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1216": {
+		"prefix": "@min1216-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1216.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1200": {
+		"prefix": "@min1200-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1200.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1184": {
+		"prefix": "@min1184-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1184.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1168": {
+		"prefix": "@min1168-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1168.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1152": {
+		"prefix": "@min1152-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1152.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1136": {
+		"prefix": "@min1136-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1136.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1120": {
+		"prefix": "@min1120-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1120.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1104": {
+		"prefix": "@min1104-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1104.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1088": {
+		"prefix": "@min1088-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1088.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1072": {
+		"prefix": "@min1072-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1072.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1056": {
+		"prefix": "@min1056-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1056.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1040": {
+		"prefix": "@min1040-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1040.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1024": {
+		"prefix": "@min1024-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1024.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-1008": {
+		"prefix": "@min1008-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(1008.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-992": {
+		"prefix": "@min992-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(992.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-976": {
+		"prefix": "@min976-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(976.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-960": {
+		"prefix": "@min960-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(960.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-944": {
+		"prefix": "@min944-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(944.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-928": {
+		"prefix": "@min928-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(928.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-912": {
+		"prefix": "@min912-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(912.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-896": {
+		"prefix": "@min896-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(896.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-880": {
+		"prefix": "@min880-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(880.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-864": {
+		"prefix": "@min864-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(864.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-848": {
+		"prefix": "@min848-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(848.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-832": {
+		"prefix": "@min832-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(832.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-816": {
+		"prefix": "@min816-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(816.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-800": {
+		"prefix": "@min800-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(800.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-784": {
+		"prefix": "@min784-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(784.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-768": {
+		"prefix": "@min768-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(768.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-752": {
+		"prefix": "@min752-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(752.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-736": {
+		"prefix": "@min736-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(736.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-720": {
+		"prefix": "@min720-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(720.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-704": {
+		"prefix": "@min704-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(704.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-688": {
+		"prefix": "@min688-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(688.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-672": {
+		"prefix": "@min672-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(672.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-656": {
+		"prefix": "@min656-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(656.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-640": {
+		"prefix": "@min640-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(640.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-624": {
+		"prefix": "@min624-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(624.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-608": {
+		"prefix": "@min608-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(608.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-592": {
+		"prefix": "@min592-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(592.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-576": {
+		"prefix": "@min576-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(576.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-560": {
+		"prefix": "@min560-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(560.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-544": {
+		"prefix": "@min544-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(544.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-528": {
+		"prefix": "@min528-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(528.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-512": {
+		"prefix": "@min512-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(512.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-496": {
+		"prefix": "@min496-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(496.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-480": {
+		"prefix": "@min480-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(480.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-464": {
+		"prefix": "@min464-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(464.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-448": {
+		"prefix": "@min448-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(448.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-432": {
+		"prefix": "@min432-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(432.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-416": {
+		"prefix": "@min416-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(416.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-400": {
+		"prefix": "@min400-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(400.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-384": {
+		"prefix": "@min384-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(384.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-368": {
+		"prefix": "@min368-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(368.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	"Media Screen min-width-352": {
+		"prefix": "@min352-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"@media ( min-width: units.rem(352.96) ) {",
+			"\t$1",
+			"}"
+		],
+	},
+	// End. Media min-width em
+}

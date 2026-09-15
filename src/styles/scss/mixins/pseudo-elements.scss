@@ -1,0 +1,15 @@
+@mixin aft() {
+	&:after {
+		content: '';
+
+		@content;
+	}
+}
+
+@mixin bef() {
+	&:before {
+		content: '';
+
+		@content;
+	}
+}

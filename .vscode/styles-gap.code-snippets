@@ -1,0 +1,30 @@
+{
+	"gap: px": {
+		"prefix": "gap",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"gap: $1px;"
+		]
+	},
+	"gap num px": {
+		"prefix": "gap-num",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"gap: \\$gap-num + px;"
+		]
+	},
+	"row-gap: px": {
+		"prefix": "row-gap",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"row-gap: $1px;"
+		]
+	},
+	"column-gap: px": {
+		"prefix": "col-gap",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"column-gap: $1px;"
+		]
+	},
+}

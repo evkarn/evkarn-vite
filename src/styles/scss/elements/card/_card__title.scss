@@ -1,0 +1,8 @@
+@use 'settings/imports' as *;
+
+.card__title {
+	font-weight: 700;
+	@include fluid-size-rem(font-size, 22, 35);
+	text-align: center;
+	color: var(--accent);
+}

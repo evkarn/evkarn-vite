@@ -1,0 +1,13 @@
+@use "../../variables/general";
+@use "../../variables/grid";
+@use "../../mixins/units";
+@use "../../mixins/fluid-size";
+
+.select-expanded__options {
+	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+
+	list-style-type: none;
+}

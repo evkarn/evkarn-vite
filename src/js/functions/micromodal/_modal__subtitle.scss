@@ -1,0 +1,9 @@
+@use '../../variables/general';
+@use '../../variables/grid';
+@use '../../mixins/units';
+@use '../../mixins/adaptive-value';
+
+.modal__subtitle {
+	margin-bottom: 16);
+	color: var(--text-dark);
+}

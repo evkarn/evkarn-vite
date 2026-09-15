@@ -1,0 +1,51 @@
+@use 'settings/imports' as *;
+
+.state-accent {
+	transition: color 0.3s ease;
+
+	@media (any-hover: hover) {
+		&:hover {
+			color: var(--accent);
+		}
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+	&:focus-visible {
+		outline-color: currentColor;
+		outline-style: dashed;
+		outline-width: $outline-width + px;
+		outline-offset: $outline-offset + px;
+	}
+
+	&:active {
+		color: var(--accent-dark);
+	}
+}
+
+.state-opacity {
+	transition: opacity 0.3s ease;
+
+	@media (any-hover: hover) {
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+	&:focus-visible {
+		outline-color: currentColor;
+		outline-style: dashed;
+		outline-width: $outline-width + px;
+		outline-offset: $outline-offset + px;
+	}
+
+	&:active {
+		opacity: 1;
+	}
+}

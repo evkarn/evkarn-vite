@@ -1,0 +1,49 @@
+@use "./likely";
+@use "./likely_visible";
+@use "./likely__widget";
+@use "./likely__button";
+@use "./likely__counter";
+@use "./likely__icon";
+
+.likely {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	font-family: "Helvetica Neue", "Arial", sans-serif;
+	font-size: 0 !important;
+	font-weight: 400;
+	text-indent: 0 !important;
+	color: #000000;
+	opacity: 0;
+	transition: opacity 0.1s ease;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	* {
+		display: inline-block;
+		visibility: hidden;
+	}
+
+	svg {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 16px;
+		height: 16px;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.likely-small {
+	svg {
+		width: 12px;
+		height: 12px;
+	}
+}
+
+.likely-big {
+	svg {
+		width: 24px;
+		height: 24px;
+	}
+}

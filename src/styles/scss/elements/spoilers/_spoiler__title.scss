@@ -1,0 +1,40 @@
+.spoiler__title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 100%;
+
+	padding: 30px 52px;
+	font-size: 40px;
+
+	font-weight: 600;
+	line-height: 80%;
+
+	transition: color 0.3s ease;
+
+	@include min-full-hd-px {
+		@include calc-size(padding-top, 30, 60, 1920, 3840, px);
+		@include calc-size(padding-bottom, 30, 60, 1920, 3840, px);
+		@include calc-size(padding-right, 52, 104, 1920, 3840, px);
+		@include calc-size(padding-left, 52, 104, 1920, 3840, px);
+
+		@include calc-size(font-size, 40, 80, 1920, 3840, px);
+	}
+
+	&:after {
+		content: '+';
+
+		transition: rotate 0.3s ease;
+	}
+
+	@include state-accent;
+}
+
+.spoiler__title.active {
+	color: var(--c-accent);
+
+	&:after {
+		rotate: 135deg;
+	}
+}

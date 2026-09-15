@@ -1,0 +1,24 @@
+{
+	"import": {
+		"prefix": "imp",
+		"scope": "javascript, typescript",
+		"body": ["import {$1} from './$2/$2-func.js';"],
+		"description": "import",
+	},
+
+	"import default": {
+		"prefix": "imp-def",
+		"scope": "javascript, typescript",
+		"body": ["import $1 from './$2/$2-func.js';"],
+		"description": "import default",
+	},
+
+	"import vars": {
+		"prefix": "imp-vars",
+		"scope": "javascript, typescript",
+		"body": [
+			"import vars from '@components/vars.js';"
+		],
+	},
+
+}

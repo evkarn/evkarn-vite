@@ -1,0 +1,8 @@
+.comments .review__quantity {
+	@include calc-size(font-size, 16, 18, 320, 1920, rem);
+	line-height: 1;
+
+	@media (min-width: em(1920.96)) {
+		@include calc-size(font-size, 18, 36, 1920, 38400, rem);
+	}
+}

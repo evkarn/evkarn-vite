@@ -1,0 +1,30 @@
+@use "sass:math";
+@use "../variables/general";
+@use "../variables/grid";
+
+// @mixin adaptive-value-rem($property, $min, $max) {
+// 	$min-vw-width: grid.$min-screen;
+// 	$max-vw-width: grid.$container-width;
+
+// 	$min-size: math.div($min, $fz);
+// 	$max-size: math.div($max, $fz);
+// 	$min-width: math.div($min-vw-width, $fz);
+// 	$max-width: math.div($max-vw-width, $fz);
+
+// 	$slope: math.div(($max-size - $min-size), ($max-width - $min-width));
+
+// 	$intercept: $min-size - $slope * $min-width;
+
+// 	#{$property}: clamp(#{$min-size * 1rem}, #{$intercept * 1rem} + #{$slope * 100vw}, #{$max-size * 1rem});
+// }
+
+@mixin adaptive-value-px($property, $min, $max) {
+	$min-vw-width: grid.$min-screen;
+	$max-vw-width: grid.$container-width;
+
+	$slope: math.div(($max - $min), ($max-vw-width - $min-vw-width));
+
+	$intercept: $min - $slope * $min-vw-width;
+
+	#{$property}: clamp(#{$min * 1px}, #{$intercept * 1px} + #{$slope * 100vw}, #{$max * 1px});
+}

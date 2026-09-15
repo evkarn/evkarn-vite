@@ -1,0 +1,7 @@
+.scheme-switcher__radio--light {
+	background-image: url('/assets/svg/static/icons/scheme-light-sun.svg');
+
+	&:checked ~ .scheme-switcher__status {
+		background-position: left 2% center;
+	}
+}

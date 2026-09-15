@@ -1,0 +1,640 @@
+<div data-filter-body data-active-items-amount="4">
+	<div class="tabs-content__select filter">
+		<div class="filter__name">Показать</div>
+
+		<div class="selects" data-selects>
+			<div class="select" data-select-body>
+				<button class="select__title" data-select-title="one">
+					<span class="filter-select__text" data-select-text>Все</span>
+
+					<span class="filter-select__icon icon-chevron-down"></span>
+				</button>
+
+				<ul class="filter-select__options" data-select-options data-filter-list>
+					<li class="filter-select__option" data-select-option data-filter-item>
+						<button
+							class="select__button is-active"
+							data-select-button
+							data-filter-button="all"
+						>
+							Все
+						</button>
+					</li>
+
+					<li class="filter-select__option" data-select-option data-filter-item>
+						<button
+							class="select__button"
+							data-select-button
+							data-filter-button="new"
+						>
+							Новые
+						</button>
+					</li>
+
+					<li class="filter-select__option" data-select-option data-filter-item>
+						<button
+							class="select__button"
+							data-select-button
+							data-filter-button="old"
+						>
+							Старые
+						</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="reviews">
+		<ul class="my-reviews__list reviews__list" data-filter-target-list>
+			<li
+				class="reviews__item reviews-item is-visible"
+				data-filter-target="new"
+			>
+				<div class="reviews-item__body reviews-body">
+					<div class="reviews-body__column">
+						<div class="reviews-item__user-name">Марина К.</div>
+
+						<div class="reviews-item__date">15 июля 2022 г.</div>
+
+						<div
+							class="reviews-item__rating-stars rating-stars rating-stars--four"
+						>
+							<ul class="rating-stars__list rating-stars__fill">
+								<li class="rating-stars__item">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 19 18"
+										style="enable-background: new 0 0 19 18"
+										xml:space="preserve"
+									>
+										<path
+											class="st-back"
+											d="M11.5,5.5L9.5,1l-2,4.5C7.2,6.2,6.6,6.6,6,6.6L1,7.1l3.7,3.3c0.5,0.4,0.7,1.1,0.6,1.8L4.2,17l4.3-2.5c0.6-0.3,1.3-0.3,1.9,0l4.3,2.5l-1.1-4.8c-0.1-0.7,0.1-1.3,0.6-1.8L18,7.1l-5-0.5C12.4,6.6,11.8,6.2,11.5,5.5z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+
+										<path
+											class="st-front"
+											d="M17.4,5.6l-4.5-0.4L11.1,1c-0.6-1.4-2.6-1.4-3.2,0L6.1,5.2L1.6,5.6c-1.5,0.1-2.1,2-1,3l3.4,3l-1,4.4c-0.3,1.5,1.3,2.6,2.6,1.8l3.9-2.3l3.9,2.3c1.3,0.8,2.9-0.4,2.6-1.8l-1-4.4l3.4-3C19.5,7.6,18.9,5.7,17.4,5.6z M13.9,10.3c-0.5,0.4-0.7,1-0.5,1.6l1,4.4L10.4,14c-0.5-0.3-1.2-0.3-1.8,0l-3.9,2.3l1-4.4c0.1-0.6-0.1-1.2-0.5-1.6l-3.4-3l4.5-0.4c0.6-0.1,1.2-0.4,1.4-1l1.8-4.1l1.8,4.1c0.2,0.6,0.8,1,1.4,1l4.5,0.4L13.9,10.3z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+									</svg>
+								</li>
+
+								<li class="rating-stars__item">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 19 18"
+										style="enable-background: new 0 0 19 18"
+										xml:space="preserve"
+									>
+										<path
+											class="st-back"
+											d="M11.5,5.5L9.5,1l-2,4.5C7.2,6.2,6.6,6.6,6,6.6L1,7.1l3.7,3.3c0.5,0.4,0.7,1.1,0.6,1.8L4.2,17l4.3-2.5c0.6-0.3,1.3-0.3,1.9,0l4.3,2.5l-1.1-4.8c-0.1-0.7,0.1-1.3,0.6-1.8L18,7.1l-5-0.5C12.4,6.6,11.8,6.2,11.5,5.5z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+
+										<path
+											class="st-front"
+											d="M17.4,5.6l-4.5-0.4L11.1,1c-0.6-1.4-2.6-1.4-3.2,0L6.1,5.2L1.6,5.6c-1.5,0.1-2.1,2-1,3l3.4,3l-1,4.4c-0.3,1.5,1.3,2.6,2.6,1.8l3.9-2.3l3.9,2.3c1.3,0.8,2.9-0.4,2.6-1.8l-1-4.4l3.4-3C19.5,7.6,18.9,5.7,17.4,5.6z M13.9,10.3c-0.5,0.4-0.7,1-0.5,1.6l1,4.4L10.4,14c-0.5-0.3-1.2-0.3-1.8,0l-3.9,2.3l1-4.4c0.1-0.6-0.1-1.2-0.5-1.6l-3.4-3l4.5-0.4c0.6-0.1,1.2-0.4,1.4-1l1.8-4.1l1.8,4.1c0.2,0.6,0.8,1,1.4,1l4.5,0.4L13.9,10.3z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+									</svg>
+								</li>
+
+								<li class="rating-stars__item">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 19 18"
+										style="enable-background: new 0 0 19 18"
+										xml:space="preserve"
+									>
+										<path
+											class="st-back"
+											d="M11.5,5.5L9.5,1l-2,4.5C7.2,6.2,6.6,6.6,6,6.6L1,7.1l3.7,3.3c0.5,0.4,0.7,1.1,0.6,1.8L4.2,17l4.3-2.5c0.6-0.3,1.3-0.3,1.9,0l4.3,2.5l-1.1-4.8c-0.1-0.7,0.1-1.3,0.6-1.8L18,7.1l-5-0.5C12.4,6.6,11.8,6.2,11.5,5.5z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+
+										<path
+											class="st-front"
+											d="M17.4,5.6l-4.5-0.4L11.1,1c-0.6-1.4-2.6-1.4-3.2,0L6.1,5.2L1.6,5.6c-1.5,0.1-2.1,2-1,3l3.4,3l-1,4.4c-0.3,1.5,1.3,2.6,2.6,1.8l3.9-2.3l3.9,2.3c1.3,0.8,2.9-0.4,2.6-1.8l-1-4.4l3.4-3C19.5,7.6,18.9,5.7,17.4,5.6z M13.9,10.3c-0.5,0.4-0.7,1-0.5,1.6l1,4.4L10.4,14c-0.5-0.3-1.2-0.3-1.8,0l-3.9,2.3l1-4.4c0.1-0.6-0.1-1.2-0.5-1.6l-3.4-3l4.5-0.4c0.6-0.1,1.2-0.4,1.4-1l1.8-4.1l1.8,4.1c0.2,0.6,0.8,1,1.4,1l4.5,0.4L13.9,10.3z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+									</svg>
+								</li>
+
+								<li class="rating-stars__item">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 19 18"
+										style="enable-background: new 0 0 19 18"
+										xml:space="preserve"
+									>
+										<path
+											class="st-back"
+											d="M11.5,5.5L9.5,1l-2,4.5C7.2,6.2,6.6,6.6,6,6.6L1,7.1l3.7,3.3c0.5,0.4,0.7,1.1,0.6,1.8L4.2,17l4.3-2.5c0.6-0.3,1.3-0.3,1.9,0l4.3,2.5l-1.1-4.8c-0.1-0.7,0.1-1.3,0.6-1.8L18,7.1l-5-0.5C12.4,6.6,11.8,6.2,11.5,5.5z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+
+										<path
+											class="st-front"
+											d="M17.4,5.6l-4.5-0.4L11.1,1c-0.6-1.4-2.6-1.4-3.2,0L6.1,5.2L1.6,5.6c-1.5,0.1-2.1,2-1,3l3.4,3l-1,4.4c-0.3,1.5,1.3,2.6,2.6,1.8l3.9-2.3l3.9,2.3c1.3,0.8,2.9-0.4,2.6-1.8l-1-4.4l3.4-3C19.5,7.6,18.9,5.7,17.4,5.6z M13.9,10.3c-0.5,0.4-0.7,1-0.5,1.6l1,4.4L10.4,14c-0.5-0.3-1.2-0.3-1.8,0l-3.9,2.3l1-4.4c0.1-0.6-0.1-1.2-0.5-1.6l-3.4-3l4.5-0.4c0.6-0.1,1.2-0.4,1.4-1l1.8-4.1l1.8,4.1c0.2,0.6,0.8,1,1.4,1l4.5,0.4L13.9,10.3z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+									</svg>
+								</li>
+
+								<li class="rating-stars__item">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 19 18"
+										style="enable-background: new 0 0 19 18"
+										xml:space="preserve"
+									>
+										<path
+											class="st-back"
+											d="M11.5,5.5L9.5,1l-2,4.5C7.2,6.2,6.6,6.6,6,6.6L1,7.1l3.7,3.3c0.5,0.4,0.7,1.1,0.6,1.8L4.2,17l4.3-2.5c0.6-0.3,1.3-0.3,1.9,0l4.3,2.5l-1.1-4.8c-0.1-0.7,0.1-1.3,0.6-1.8L18,7.1l-5-0.5C12.4,6.6,11.8,6.2,11.5,5.5z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+
+										<path
+											class="st-front"
+											d="M17.4,5.6l-4.5-0.4L11.1,1c-0.6-1.4-2.6-1.4-3.2,0L6.1,5.2L1.6,5.6c-1.5,0.1-2.1,2-1,3l3.4,3l-1,4.4c-0.3,1.5,1.3,2.6,2.6,1.8l3.9-2.3l3.9,2.3c1.3,0.8,2.9-0.4,2.6-1.8l-1-4.4l3.4-3C19.5,7.6,18.9,5.7,17.4,5.6z M13.9,10.3c-0.5,0.4-0.7,1-0.5,1.6l1,4.4L10.4,14c-0.5-0.3-1.2-0.3-1.8,0l-3.9,2.3l1-4.4c0.1-0.6-0.1-1.2-0.5-1.6l-3.4-3l4.5-0.4c0.6-0.1,1.2-0.4,1.4-1l1.8-4.1l1.8,4.1c0.2,0.6,0.8,1,1.4,1l4.5,0.4L13.9,10.3z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+									</svg>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="reviews-body__column">
+						<div class="reviews-item__text">
+							<p>
+								Товар соответствует описанию. Кожа приятная на ощупь, запах
+								выветрился быстро. Теплая куртка. Если у вас параметры примерно
+								как у меня - 82-67-86, то вам подойдёт 40 размер. Я мерила 42 и
+								44 (подпись на фото справа вверху). Дело в том, что резинка
+								снизу только сзади, а спереди будет немного поддувать, если
+								возьмёте оверсайз. Я взяла 42 всё равно. У меня рост 160, рукава
+								нормальной длины.
+							</p>
+						</div>
+
+						<div class="reviews-item__grade reviews-grade">
+							<div class="reviews-grade__element">
+								<span class="reviews-grade__like icon-like"></span>
+
+								<span class="reviews-grade__amount">2</span>
+							</div>
+
+							<div class="reviews-grade__element">
+								<span class="reviews-grade__dislike icon-like"></span>
+
+								<span class="reviews-grade__amount">1</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+
+			<li
+				class="reviews__item reviews-item is-visible"
+				data-filter-target="new"
+			>
+				<div class="reviews-item__body reviews-body">
+					<div class="reviews-body__column">
+						<div class="reviews-item__user-name">Андрей П.</div>
+
+						<div class="reviews-item__date">1 день назад</div>
+
+						<div
+							class="reviews-item__rating-stars rating-stars rating-stars--four"
+						>
+							<ul class="rating-stars__list rating-stars__fill">
+								<li class="rating-stars__item">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 19 18"
+										style="enable-background: new 0 0 19 18"
+										xml:space="preserve"
+									>
+										<path
+											class="st-back"
+											d="M11.5,5.5L9.5,1l-2,4.5C7.2,6.2,6.6,6.6,6,6.6L1,7.1l3.7,3.3c0.5,0.4,0.7,1.1,0.6,1.8L4.2,17l4.3-2.5c0.6-0.3,1.3-0.3,1.9,0l4.3,2.5l-1.1-4.8c-0.1-0.7,0.1-1.3,0.6-1.8L18,7.1l-5-0.5C12.4,6.6,11.8,6.2,11.5,5.5z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+
+										<path
+											class="st-front"
+											d="M17.4,5.6l-4.5-0.4L11.1,1c-0.6-1.4-2.6-1.4-3.2,0L6.1,5.2L1.6,5.6c-1.5,0.1-2.1,2-1,3l3.4,3l-1,4.4c-0.3,1.5,1.3,2.6,2.6,1.8l3.9-2.3l3.9,2.3c1.3,0.8,2.9-0.4,2.6-1.8l-1-4.4l3.4-3C19.5,7.6,18.9,5.7,17.4,5.6z M13.9,10.3c-0.5,0.4-0.7,1-0.5,1.6l1,4.4L10.4,14c-0.5-0.3-1.2-0.3-1.8,0l-3.9,2.3l1-4.4c0.1-0.6-0.1-1.2-0.5-1.6l-3.4-3l4.5-0.4c0.6-0.1,1.2-0.4,1.4-1l1.8-4.1l1.8,4.1c0.2,0.6,0.8,1,1.4,1l4.5,0.4L13.9,10.3z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+									</svg>
+								</li>
+
+								<li class="rating-stars__item">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 19 18"
+										style="enable-background: new 0 0 19 18"
+										xml:space="preserve"
+									>
+										<path
+											class="st-back"
+											d="M11.5,5.5L9.5,1l-2,4.5C7.2,6.2,6.6,6.6,6,6.6L1,7.1l3.7,3.3c0.5,0.4,0.7,1.1,0.6,1.8L4.2,17l4.3-2.5c0.6-0.3,1.3-0.3,1.9,0l4.3,2.5l-1.1-4.8c-0.1-0.7,0.1-1.3,0.6-1.8L18,7.1l-5-0.5C12.4,6.6,11.8,6.2,11.5,5.5z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+
+										<path
+											class="st-front"
+											d="M17.4,5.6l-4.5-0.4L11.1,1c-0.6-1.4-2.6-1.4-3.2,0L6.1,5.2L1.6,5.6c-1.5,0.1-2.1,2-1,3l3.4,3l-1,4.4c-0.3,1.5,1.3,2.6,2.6,1.8l3.9-2.3l3.9,2.3c1.3,0.8,2.9-0.4,2.6-1.8l-1-4.4l3.4-3C19.5,7.6,18.9,5.7,17.4,5.6z M13.9,10.3c-0.5,0.4-0.7,1-0.5,1.6l1,4.4L10.4,14c-0.5-0.3-1.2-0.3-1.8,0l-3.9,2.3l1-4.4c0.1-0.6-0.1-1.2-0.5-1.6l-3.4-3l4.5-0.4c0.6-0.1,1.2-0.4,1.4-1l1.8-4.1l1.8,4.1c0.2,0.6,0.8,1,1.4,1l4.5,0.4L13.9,10.3z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+									</svg>
+								</li>
+
+								<li class="rating-stars__item">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 19 18"
+										style="enable-background: new 0 0 19 18"
+										xml:space="preserve"
+									>
+										<path
+											class="st-back"
+											d="M11.5,5.5L9.5,1l-2,4.5C7.2,6.2,6.6,6.6,6,6.6L1,7.1l3.7,3.3c0.5,0.4,0.7,1.1,0.6,1.8L4.2,17l4.3-2.5c0.6-0.3,1.3-0.3,1.9,0l4.3,2.5l-1.1-4.8c-0.1-0.7,0.1-1.3,0.6-1.8L18,7.1l-5-0.5C12.4,6.6,11.8,6.2,11.5,5.5z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+
+										<path
+											class="st-front"
+											d="M17.4,5.6l-4.5-0.4L11.1,1c-0.6-1.4-2.6-1.4-3.2,0L6.1,5.2L1.6,5.6c-1.5,0.1-2.1,2-1,3l3.4,3l-1,4.4c-0.3,1.5,1.3,2.6,2.6,1.8l3.9-2.3l3.9,2.3c1.3,0.8,2.9-0.4,2.6-1.8l-1-4.4l3.4-3C19.5,7.6,18.9,5.7,17.4,5.6z M13.9,10.3c-0.5,0.4-0.7,1-0.5,1.6l1,4.4L10.4,14c-0.5-0.3-1.2-0.3-1.8,0l-3.9,2.3l1-4.4c0.1-0.6-0.1-1.2-0.5-1.6l-3.4-3l4.5-0.4c0.6-0.1,1.2-0.4,1.4-1l1.8-4.1l1.8,4.1c0.2,0.6,0.8,1,1.4,1l4.5,0.4L13.9,10.3z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+									</svg>
+								</li>
+
+								<li class="rating-stars__item">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 19 18"
+										style="enable-background: new 0 0 19 18"
+										xml:space="preserve"
+									>
+										<path
+											class="st-back"
+											d="M11.5,5.5L9.5,1l-2,4.5C7.2,6.2,6.6,6.6,6,6.6L1,7.1l3.7,3.3c0.5,0.4,0.7,1.1,0.6,1.8L4.2,17l4.3-2.5c0.6-0.3,1.3-0.3,1.9,0l4.3,2.5l-1.1-4.8c-0.1-0.7,0.1-1.3,0.6-1.8L18,7.1l-5-0.5C12.4,6.6,11.8,6.2,11.5,5.5z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+
+										<path
+											class="st-front"
+											d="M17.4,5.6l-4.5-0.4L11.1,1c-0.6-1.4-2.6-1.4-3.2,0L6.1,5.2L1.6,5.6c-1.5,0.1-2.1,2-1,3l3.4,3l-1,4.4c-0.3,1.5,1.3,2.6,2.6,1.8l3.9-2.3l3.9,2.3c1.3,0.8,2.9-0.4,2.6-1.8l-1-4.4l3.4-3C19.5,7.6,18.9,5.7,17.4,5.6z M13.9,10.3c-0.5,0.4-0.7,1-0.5,1.6l1,4.4L10.4,14c-0.5-0.3-1.2-0.3-1.8,0l-3.9,2.3l1-4.4c0.1-0.6-0.1-1.2-0.5-1.6l-3.4-3l4.5-0.4c0.6-0.1,1.2-0.4,1.4-1l1.8-4.1l1.8,4.1c0.2,0.6,0.8,1,1.4,1l4.5,0.4L13.9,10.3z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+									</svg>
+								</li>
+
+								<li class="rating-stars__item">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 19 18"
+										style="enable-background: new 0 0 19 18"
+										xml:space="preserve"
+									>
+										<path
+											class="st-back"
+											d="M11.5,5.5L9.5,1l-2,4.5C7.2,6.2,6.6,6.6,6,6.6L1,7.1l3.7,3.3c0.5,0.4,0.7,1.1,0.6,1.8L4.2,17l4.3-2.5c0.6-0.3,1.3-0.3,1.9,0l4.3,2.5l-1.1-4.8c-0.1-0.7,0.1-1.3,0.6-1.8L18,7.1l-5-0.5C12.4,6.6,11.8,6.2,11.5,5.5z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+
+										<path
+											class="st-front"
+											d="M17.4,5.6l-4.5-0.4L11.1,1c-0.6-1.4-2.6-1.4-3.2,0L6.1,5.2L1.6,5.6c-1.5,0.1-2.1,2-1,3l3.4,3l-1,4.4c-0.3,1.5,1.3,2.6,2.6,1.8l3.9-2.3l3.9,2.3c1.3,0.8,2.9-0.4,2.6-1.8l-1-4.4l3.4-3C19.5,7.6,18.9,5.7,17.4,5.6z M13.9,10.3c-0.5,0.4-0.7,1-0.5,1.6l1,4.4L10.4,14c-0.5-0.3-1.2-0.3-1.8,0l-3.9,2.3l1-4.4c0.1-0.6-0.1-1.2-0.5-1.6l-3.4-3l4.5-0.4c0.6-0.1,1.2-0.4,1.4-1l1.8-4.1l1.8,4.1c0.2,0.6,0.8,1,1.4,1l4.5,0.4L13.9,10.3z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+									</svg>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="reviews-body__column">
+						<div class="reviews-item__text">
+							<p>Классная обувь</p>
+						</div>
+
+						<div class="reviews-item__grade reviews-grade">
+							<div class="reviews-grade__element">
+								<span class="reviews-grade__like icon-like"></span>
+
+								<span class="reviews-grade__amount">2</span>
+							</div>
+
+							<div class="reviews-grade__element">
+								<span class="reviews-grade__dislike icon-like"></span>
+
+								<span class="reviews-grade__amount">1</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+
+			<li
+				class="reviews__item reviews-item is-visible"
+				data-filter-target="old"
+			>
+				<div class="reviews-item__body reviews-body">
+					<div class="reviews-body__column">
+						<div class="reviews-item__user-name">Виолетта Н.</div>
+
+						<div class="reviews-item__date">7 июля 2020 г.</div>
+
+						<div
+							class="reviews-item__rating-stars rating-stars rating-stars--one"
+						>
+							<ul class="rating-stars__list rating-stars__fill">
+								<li class="rating-stars__item">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 19 18"
+										style="enable-background: new 0 0 19 18"
+										xml:space="preserve"
+									>
+										<path
+											class="st-back"
+											d="M11.5,5.5L9.5,1l-2,4.5C7.2,6.2,6.6,6.6,6,6.6L1,7.1l3.7,3.3c0.5,0.4,0.7,1.1,0.6,1.8L4.2,17l4.3-2.5c0.6-0.3,1.3-0.3,1.9,0l4.3,2.5l-1.1-4.8c-0.1-0.7,0.1-1.3,0.6-1.8L18,7.1l-5-0.5C12.4,6.6,11.8,6.2,11.5,5.5z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+
+										<path
+											class="st-front"
+											d="M17.4,5.6l-4.5-0.4L11.1,1c-0.6-1.4-2.6-1.4-3.2,0L6.1,5.2L1.6,5.6c-1.5,0.1-2.1,2-1,3l3.4,3l-1,4.4c-0.3,1.5,1.3,2.6,2.6,1.8l3.9-2.3l3.9,2.3c1.3,0.8,2.9-0.4,2.6-1.8l-1-4.4l3.4-3C19.5,7.6,18.9,5.7,17.4,5.6z M13.9,10.3c-0.5,0.4-0.7,1-0.5,1.6l1,4.4L10.4,14c-0.5-0.3-1.2-0.3-1.8,0l-3.9,2.3l1-4.4c0.1-0.6-0.1-1.2-0.5-1.6l-3.4-3l4.5-0.4c0.6-0.1,1.2-0.4,1.4-1l1.8-4.1l1.8,4.1c0.2,0.6,0.8,1,1.4,1l4.5,0.4L13.9,10.3z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+									</svg>
+								</li>
+
+								<li class="rating-stars__item">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 19 18"
+										style="enable-background: new 0 0 19 18"
+										xml:space="preserve"
+									>
+										<path
+											class="st-back"
+											d="M11.5,5.5L9.5,1l-2,4.5C7.2,6.2,6.6,6.6,6,6.6L1,7.1l3.7,3.3c0.5,0.4,0.7,1.1,0.6,1.8L4.2,17l4.3-2.5c0.6-0.3,1.3-0.3,1.9,0l4.3,2.5l-1.1-4.8c-0.1-0.7,0.1-1.3,0.6-1.8L18,7.1l-5-0.5C12.4,6.6,11.8,6.2,11.5,5.5z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+
+										<path
+											class="st-front"
+											d="M17.4,5.6l-4.5-0.4L11.1,1c-0.6-1.4-2.6-1.4-3.2,0L6.1,5.2L1.6,5.6c-1.5,0.1-2.1,2-1,3l3.4,3l-1,4.4c-0.3,1.5,1.3,2.6,2.6,1.8l3.9-2.3l3.9,2.3c1.3,0.8,2.9-0.4,2.6-1.8l-1-4.4l3.4-3C19.5,7.6,18.9,5.7,17.4,5.6z M13.9,10.3c-0.5,0.4-0.7,1-0.5,1.6l1,4.4L10.4,14c-0.5-0.3-1.2-0.3-1.8,0l-3.9,2.3l1-4.4c0.1-0.6-0.1-1.2-0.5-1.6l-3.4-3l4.5-0.4c0.6-0.1,1.2-0.4,1.4-1l1.8-4.1l1.8,4.1c0.2,0.6,0.8,1,1.4,1l4.5,0.4L13.9,10.3z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+									</svg>
+								</li>
+
+								<li class="rating-stars__item">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 19 18"
+										style="enable-background: new 0 0 19 18"
+										xml:space="preserve"
+									>
+										<path
+											class="st-back"
+											d="M11.5,5.5L9.5,1l-2,4.5C7.2,6.2,6.6,6.6,6,6.6L1,7.1l3.7,3.3c0.5,0.4,0.7,1.1,0.6,1.8L4.2,17l4.3-2.5c0.6-0.3,1.3-0.3,1.9,0l4.3,2.5l-1.1-4.8c-0.1-0.7,0.1-1.3,0.6-1.8L18,7.1l-5-0.5C12.4,6.6,11.8,6.2,11.5,5.5z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+
+										<path
+											class="st-front"
+											d="M17.4,5.6l-4.5-0.4L11.1,1c-0.6-1.4-2.6-1.4-3.2,0L6.1,5.2L1.6,5.6c-1.5,0.1-2.1,2-1,3l3.4,3l-1,4.4c-0.3,1.5,1.3,2.6,2.6,1.8l3.9-2.3l3.9,2.3c1.3,0.8,2.9-0.4,2.6-1.8l-1-4.4l3.4-3C19.5,7.6,18.9,5.7,17.4,5.6z M13.9,10.3c-0.5,0.4-0.7,1-0.5,1.6l1,4.4L10.4,14c-0.5-0.3-1.2-0.3-1.8,0l-3.9,2.3l1-4.4c0.1-0.6-0.1-1.2-0.5-1.6l-3.4-3l4.5-0.4c0.6-0.1,1.2-0.4,1.4-1l1.8-4.1l1.8,4.1c0.2,0.6,0.8,1,1.4,1l4.5,0.4L13.9,10.3z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+									</svg>
+								</li>
+
+								<li class="rating-stars__item">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 19 18"
+										style="enable-background: new 0 0 19 18"
+										xml:space="preserve"
+									>
+										<path
+											class="st-back"
+											d="M11.5,5.5L9.5,1l-2,4.5C7.2,6.2,6.6,6.6,6,6.6L1,7.1l3.7,3.3c0.5,0.4,0.7,1.1,0.6,1.8L4.2,17l4.3-2.5c0.6-0.3,1.3-0.3,1.9,0l4.3,2.5l-1.1-4.8c-0.1-0.7,0.1-1.3,0.6-1.8L18,7.1l-5-0.5C12.4,6.6,11.8,6.2,11.5,5.5z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+
+										<path
+											class="st-front"
+											d="M17.4,5.6l-4.5-0.4L11.1,1c-0.6-1.4-2.6-1.4-3.2,0L6.1,5.2L1.6,5.6c-1.5,0.1-2.1,2-1,3l3.4,3l-1,4.4c-0.3,1.5,1.3,2.6,2.6,1.8l3.9-2.3l3.9,2.3c1.3,0.8,2.9-0.4,2.6-1.8l-1-4.4l3.4-3C19.5,7.6,18.9,5.7,17.4,5.6z M13.9,10.3c-0.5,0.4-0.7,1-0.5,1.6l1,4.4L10.4,14c-0.5-0.3-1.2-0.3-1.8,0l-3.9,2.3l1-4.4c0.1-0.6-0.1-1.2-0.5-1.6l-3.4-3l4.5-0.4c0.6-0.1,1.2-0.4,1.4-1l1.8-4.1l1.8,4.1c0.2,0.6,0.8,1,1.4,1l4.5,0.4L13.9,10.3z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+									</svg>
+								</li>
+
+								<li class="rating-stars__item">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 19 18"
+										style="enable-background: new 0 0 19 18"
+										xml:space="preserve"
+									>
+										<path
+											class="st-back"
+											d="M11.5,5.5L9.5,1l-2,4.5C7.2,6.2,6.6,6.6,6,6.6L1,7.1l3.7,3.3c0.5,0.4,0.7,1.1,0.6,1.8L4.2,17l4.3-2.5c0.6-0.3,1.3-0.3,1.9,0l4.3,2.5l-1.1-4.8c-0.1-0.7,0.1-1.3,0.6-1.8L18,7.1l-5-0.5C12.4,6.6,11.8,6.2,11.5,5.5z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+
+										<path
+											class="st-front"
+											d="M17.4,5.6l-4.5-0.4L11.1,1c-0.6-1.4-2.6-1.4-3.2,0L6.1,5.2L1.6,5.6c-1.5,0.1-2.1,2-1,3l3.4,3l-1,4.4c-0.3,1.5,1.3,2.6,2.6,1.8l3.9-2.3l3.9,2.3c1.3,0.8,2.9-0.4,2.6-1.8l-1-4.4l3.4-3C19.5,7.6,18.9,5.7,17.4,5.6z M13.9,10.3c-0.5,0.4-0.7,1-0.5,1.6l1,4.4L10.4,14c-0.5-0.3-1.2-0.3-1.8,0l-3.9,2.3l1-4.4c0.1-0.6-0.1-1.2-0.5-1.6l-3.4-3l4.5-0.4c0.6-0.1,1.2-0.4,1.4-1l1.8-4.1l1.8,4.1c0.2,0.6,0.8,1,1.4,1l4.5,0.4L13.9,10.3z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+									</svg>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="reviews-body__column">
+						<div class="reviews-item__text">
+							<p>
+								Тяжёлая, плотная, наверно тёплая, но мне не подошла, не ношу
+								чёрное, а так вполне сносная по этой цене.
+							</p>
+						</div>
+
+						<div class="reviews-item__grade reviews-grade">
+							<div class="reviews-grade__element">
+								<span class="reviews-grade__like icon-like"></span>
+
+								<span class="reviews-grade__amount">2</span>
+							</div>
+
+							<div class="reviews-grade__element">
+								<span class="reviews-grade__dislike icon-like"></span>
+
+								<span class="reviews-grade__amount">1</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+
+			<li
+				class="reviews__item reviews-item is-visible"
+				data-filter-target="old"
+			>
+				<div class="reviews-item__body reviews-body">
+					<div class="reviews-body__column">
+						<div class="reviews-item__user-name">Кристина С.</div>
+
+						<div class="reviews-item__date">7 июля 2020 г.</div>
+
+						<div
+							class="reviews-item__rating-stars rating-stars rating-stars--one"
+						>
+							<ul class="rating-stars__list rating-stars__fill">
+								<li class="rating-stars__item">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 19 18"
+										style="enable-background: new 0 0 19 18"
+										xml:space="preserve"
+									>
+										<path
+											class="st-back"
+											d="M11.5,5.5L9.5,1l-2,4.5C7.2,6.2,6.6,6.6,6,6.6L1,7.1l3.7,3.3c0.5,0.4,0.7,1.1,0.6,1.8L4.2,17l4.3-2.5c0.6-0.3,1.3-0.3,1.9,0l4.3,2.5l-1.1-4.8c-0.1-0.7,0.1-1.3,0.6-1.8L18,7.1l-5-0.5C12.4,6.6,11.8,6.2,11.5,5.5z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+
+										<path
+											class="st-front"
+											d="M17.4,5.6l-4.5-0.4L11.1,1c-0.6-1.4-2.6-1.4-3.2,0L6.1,5.2L1.6,5.6c-1.5,0.1-2.1,2-1,3l3.4,3l-1,4.4c-0.3,1.5,1.3,2.6,2.6,1.8l3.9-2.3l3.9,2.3c1.3,0.8,2.9-0.4,2.6-1.8l-1-4.4l3.4-3C19.5,7.6,18.9,5.7,17.4,5.6z M13.9,10.3c-0.5,0.4-0.7,1-0.5,1.6l1,4.4L10.4,14c-0.5-0.3-1.2-0.3-1.8,0l-3.9,2.3l1-4.4c0.1-0.6-0.1-1.2-0.5-1.6l-3.4-3l4.5-0.4c0.6-0.1,1.2-0.4,1.4-1l1.8-4.1l1.8,4.1c0.2,0.6,0.8,1,1.4,1l4.5,0.4L13.9,10.3z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+									</svg>
+								</li>
+
+								<li class="rating-stars__item">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 19 18"
+										style="enable-background: new 0 0 19 18"
+										xml:space="preserve"
+									>
+										<path
+											class="st-back"
+											d="M11.5,5.5L9.5,1l-2,4.5C7.2,6.2,6.6,6.6,6,6.6L1,7.1l3.7,3.3c0.5,0.4,0.7,1.1,0.6,1.8L4.2,17l4.3-2.5c0.6-0.3,1.3-0.3,1.9,0l4.3,2.5l-1.1-4.8c-0.1-0.7,0.1-1.3,0.6-1.8L18,7.1l-5-0.5C12.4,6.6,11.8,6.2,11.5,5.5z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+
+										<path
+											class="st-front"
+											d="M17.4,5.6l-4.5-0.4L11.1,1c-0.6-1.4-2.6-1.4-3.2,0L6.1,5.2L1.6,5.6c-1.5,0.1-2.1,2-1,3l3.4,3l-1,4.4c-0.3,1.5,1.3,2.6,2.6,1.8l3.9-2.3l3.9,2.3c1.3,0.8,2.9-0.4,2.6-1.8l-1-4.4l3.4-3C19.5,7.6,18.9,5.7,17.4,5.6z M13.9,10.3c-0.5,0.4-0.7,1-0.5,1.6l1,4.4L10.4,14c-0.5-0.3-1.2-0.3-1.8,0l-3.9,2.3l1-4.4c0.1-0.6-0.1-1.2-0.5-1.6l-3.4-3l4.5-0.4c0.6-0.1,1.2-0.4,1.4-1l1.8-4.1l1.8,4.1c0.2,0.6,0.8,1,1.4,1l4.5,0.4L13.9,10.3z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+									</svg>
+								</li>
+
+								<li class="rating-stars__item">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 19 18"
+										style="enable-background: new 0 0 19 18"
+										xml:space="preserve"
+									>
+										<path
+											class="st-back"
+											d="M11.5,5.5L9.5,1l-2,4.5C7.2,6.2,6.6,6.6,6,6.6L1,7.1l3.7,3.3c0.5,0.4,0.7,1.1,0.6,1.8L4.2,17l4.3-2.5c0.6-0.3,1.3-0.3,1.9,0l4.3,2.5l-1.1-4.8c-0.1-0.7,0.1-1.3,0.6-1.8L18,7.1l-5-0.5C12.4,6.6,11.8,6.2,11.5,5.5z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+
+										<path
+											class="st-front"
+											d="M17.4,5.6l-4.5-0.4L11.1,1c-0.6-1.4-2.6-1.4-3.2,0L6.1,5.2L1.6,5.6c-1.5,0.1-2.1,2-1,3l3.4,3l-1,4.4c-0.3,1.5,1.3,2.6,2.6,1.8l3.9-2.3l3.9,2.3c1.3,0.8,2.9-0.4,2.6-1.8l-1-4.4l3.4-3C19.5,7.6,18.9,5.7,17.4,5.6z M13.9,10.3c-0.5,0.4-0.7,1-0.5,1.6l1,4.4L10.4,14c-0.5-0.3-1.2-0.3-1.8,0l-3.9,2.3l1-4.4c0.1-0.6-0.1-1.2-0.5-1.6l-3.4-3l4.5-0.4c0.6-0.1,1.2-0.4,1.4-1l1.8-4.1l1.8,4.1c0.2,0.6,0.8,1,1.4,1l4.5,0.4L13.9,10.3z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+									</svg>
+								</li>
+
+								<li class="rating-stars__item">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 19 18"
+										style="enable-background: new 0 0 19 18"
+										xml:space="preserve"
+									>
+										<path
+											class="st-back"
+											d="M11.5,5.5L9.5,1l-2,4.5C7.2,6.2,6.6,6.6,6,6.6L1,7.1l3.7,3.3c0.5,0.4,0.7,1.1,0.6,1.8L4.2,17l4.3-2.5c0.6-0.3,1.3-0.3,1.9,0l4.3,2.5l-1.1-4.8c-0.1-0.7,0.1-1.3,0.6-1.8L18,7.1l-5-0.5C12.4,6.6,11.8,6.2,11.5,5.5z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+
+										<path
+											class="st-front"
+											d="M17.4,5.6l-4.5-0.4L11.1,1c-0.6-1.4-2.6-1.4-3.2,0L6.1,5.2L1.6,5.6c-1.5,0.1-2.1,2-1,3l3.4,3l-1,4.4c-0.3,1.5,1.3,2.6,2.6,1.8l3.9-2.3l3.9,2.3c1.3,0.8,2.9-0.4,2.6-1.8l-1-4.4l3.4-3C19.5,7.6,18.9,5.7,17.4,5.6z M13.9,10.3c-0.5,0.4-0.7,1-0.5,1.6l1,4.4L10.4,14c-0.5-0.3-1.2-0.3-1.8,0l-3.9,2.3l1-4.4c0.1-0.6-0.1-1.2-0.5-1.6l-3.4-3l4.5-0.4c0.6-0.1,1.2-0.4,1.4-1l1.8-4.1l1.8,4.1c0.2,0.6,0.8,1,1.4,1l4.5,0.4L13.9,10.3z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+									</svg>
+								</li>
+
+								<li class="rating-stars__item">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 19 18"
+										style="enable-background: new 0 0 19 18"
+										xml:space="preserve"
+									>
+										<path
+											class="st-back"
+											d="M11.5,5.5L9.5,1l-2,4.5C7.2,6.2,6.6,6.6,6,6.6L1,7.1l3.7,3.3c0.5,0.4,0.7,1.1,0.6,1.8L4.2,17l4.3-2.5c0.6-0.3,1.3-0.3,1.9,0l4.3,2.5l-1.1-4.8c-0.1-0.7,0.1-1.3,0.6-1.8L18,7.1l-5-0.5C12.4,6.6,11.8,6.2,11.5,5.5z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+
+										<path
+											class="st-front"
+											d="M17.4,5.6l-4.5-0.4L11.1,1c-0.6-1.4-2.6-1.4-3.2,0L6.1,5.2L1.6,5.6c-1.5,0.1-2.1,2-1,3l3.4,3l-1,4.4c-0.3,1.5,1.3,2.6,2.6,1.8l3.9-2.3l3.9,2.3c1.3,0.8,2.9-0.4,2.6-1.8l-1-4.4l3.4-3C19.5,7.6,18.9,5.7,17.4,5.6z M13.9,10.3c-0.5,0.4-0.7,1-0.5,1.6l1,4.4L10.4,14c-0.5-0.3-1.2-0.3-1.8,0l-3.9,2.3l1-4.4c0.1-0.6-0.1-1.2-0.5-1.6l-3.4-3l4.5-0.4c0.6-0.1,1.2-0.4,1.4-1l1.8-4.1l1.8,4.1c0.2,0.6,0.8,1,1.4,1l4.5,0.4L13.9,10.3z"
+											style="fill-rule: evenodd; clip-rule: evenodd"
+										/>
+									</svg>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="reviews-body__column">
+						<div class="reviews-item__text">
+							<p>
+								Куртка очень тёплая, подошла размер в размер, выглядит отлично
+							</p>
+						</div>
+
+						<div class="reviews-item__grade reviews-grade">
+							<div class="reviews-grade__element">
+								<span class="reviews-grade__like icon-like"></span>
+
+								<span class="reviews-grade__amount">2</span>
+							</div>
+
+							<div class="reviews-grade__element">
+								<span class="reviews-grade__dislike icon-like"></span>
+
+								<span class="reviews-grade__amount">1</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>

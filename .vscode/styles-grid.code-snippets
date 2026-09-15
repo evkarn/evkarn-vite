@@ -1,0 +1,41 @@
+{
+	"grid-template-columns: ": {
+		"prefix": "grid-temp-col",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"grid-template-columns: $1;"
+		],
+		"description": "grid-template-columns: repeat()",
+	},
+	"grid-template-columns: repeat()": {
+		"prefix": "grid-temp-col-repeat",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"grid-template-columns: repeat($1, $2);"
+		],
+		"description": "grid-template-columns: repeat()",
+	},
+	"grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));": {
+		"prefix": "grid-auto-fit",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));"
+		],
+		"description": "grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));",
+	},
+	"grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));": {
+		"prefix": "grid-auto-fill",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));"
+		],
+		"description": "grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));",
+	},
+	"grid-column: span ": {
+		"prefix": "grid-column",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"grid-column: span $1;"
+		]
+	},
+}

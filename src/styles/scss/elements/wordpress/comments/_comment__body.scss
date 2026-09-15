@@ -1,0 +1,10 @@
+.comments .comment__body {
+	display: flex;
+	flex-direction: column;
+
+	@include calc-size(row-gap, 26, 16, 320, 1920, rem);
+
+	@media (min-width: em(1920.96)) {
+		@include calc-size(row-gap, 16, 32, 1920, 3840, rem);
+	}
+}

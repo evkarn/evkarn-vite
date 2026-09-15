@@ -1,0 +1,14 @@
+.fieldset__header {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: rem(10);
+
+	margin-bottom: rem(16);
+
+	@media (min-width: em(1920.96)) {
+		@include calc-size(gap, 10, 20, 1920, 3840, rem);
+
+		@include calc-size(margin-bottom, 16, 32, 1920, 3840, rem);
+	}
+}

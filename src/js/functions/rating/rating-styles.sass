@@ -1,0 +1,55 @@
+// Rating
+// @use './_components/rating'
+// End. Rating
+
+$star-color: red
+$star-hover-color: orange
+
+.simple-rating
+	position: relative
+	font-size: 40px
+	display: inline-block
+
+	&::before
+		content: "★★★★★"
+		display: block
+		color: $star-color
+
+.simple-rating__list
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	display: flex
+	flex-direction: row-reverse
+	overflow: hidden
+
+.simple-rating__item
+	position: absolute
+	width: 0
+	height: 0
+	opacity: 0
+	visibility: hidden
+	top: 0
+	left: 0
+
+.simple-rating__label
+	flex: 0 0 20%
+	height: 100%
+	cursor: pointer
+	color: $star-color
+
+	&::before
+		content: "★"
+		display: block
+		transition: color .3s ease
+
+.simple-rating__item:checked,
+.simple-rating__item:checked ~ .simple-rating__label
+	color: darken($star-hover-color, 15%)
+
+.simple-rating__label:hover,
+.simple-rating__label:hover ~ .simple-rating__label,
+.simple-rating__label:checked ~ .simple-rating__label:hover
+	color: $star-hover-color

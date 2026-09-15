@@ -1,0 +1,38 @@
+{
+	"padding: var": {
+		"prefix": "pad-var",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"padding: var(--$1);"
+		],
+	},
+	"padding-top: var": {
+		"prefix": "pad-top-var",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"padding-top: var(--$1);"
+		],
+	},
+	"padding-bottom: var": {
+		"prefix": "pad-var",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"padding-bottom: var(--$1);"
+		],
+	},
+	"padding-left: var": {
+		"prefix": "pad-var",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"padding-left: var(--$1);"
+		],
+	},
+	"padding-right: var": {
+		"prefix": "pad-var",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"padding-right: var(--$1);"
+		],
+	},
+
+}

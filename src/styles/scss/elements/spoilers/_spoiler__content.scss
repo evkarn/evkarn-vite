@@ -1,0 +1,14 @@
+.spoiler__content {
+	padding: 0 52px 30px;
+
+	font-size: 30px;
+	line-height: 150%;
+
+	@include min-tablet-full-px {
+		@include calc-size(padding-bottom, 30, 60, 1920, 3840, px);
+		@include calc-size(padding-right, 52, 104, 1920, 3840, px);
+		@include calc-size(padding-left, 52, 104, 1920, 3840, px);
+
+		@include calc-size(font-size, 30, 60, 1920, 3840, px);
+	}
+}

@@ -1,0 +1,39 @@
+@keyframes microModalFadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes microModalFadeOut {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes microModalSlideIn {
+	from {
+		transform: translateY(15%);
+	}
+
+	to {
+		transform: translateY(0);
+	}
+}
+
+@keyframes microModalSlideOut {
+	from {
+		transform: translateY(0);
+	}
+
+	to {
+		transform: translateY(-15%);
+	}
+}

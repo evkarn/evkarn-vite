@@ -1,0 +1,9 @@
+.spoilers__list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+
+	@include min-full-hd-px {
+		@include calc-size(row-gap, 30, 60, 1920, 3840, px);
+	}
+}

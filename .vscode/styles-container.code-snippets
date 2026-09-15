@@ -1,0 +1,43 @@
+{
+	"Container inline-size": {
+		"prefix": "cont-in-size",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"container-type: inline-size;"
+		]
+	},
+	"Container size": {
+		"prefix": "cont-size",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"container-type: size;"
+		]
+	},
+
+	"Container inline-size with name": {
+		"prefix": "cont-in-size-name",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"container-type: inline-size;",
+			"container-name: $1;"
+		]
+	},
+
+	"Container size with name": {
+		"prefix": "cont-size-name",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"container-type: size;",
+			"container-name: $1;"
+		]
+	},
+
+	"Container max-width": {
+		"prefix": "cont-max-width",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"container $1 ( width )",
+			"container-name: $1;"
+		]
+	},
+}

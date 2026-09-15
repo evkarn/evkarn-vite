@@ -1,0 +1,18 @@
+.textarea {
+	width: 100%;
+	@include calc-size(min-height, 144, 210, 320, 1920, rem);
+
+	@include calc-size(padding, 16, 20, 320, 1920, rem);
+
+	border-radius: rem($bor-rad);
+
+	resize: vertical;
+
+	@media (min-width: em(1920.96)) {
+		@include calc-size(min-height, 210, 420, 1920, 3840, rem);
+
+		@include calc-size(padding, 20, 40, 1920, 3840, rem);
+
+		@include calc-size(border-radius, $bor-rad, $bor-rad * 2, 1920, 3840, rem);
+	}
+}

@@ -1,0 +1,13 @@
+.comments .author {
+	display: flex;
+	align-items: center;
+	gap: rem(10);
+
+	@media (min-width: em(1920.96)) {
+		@include calc-size(gap, 10, 20, 1920, 3840, rem);
+	}
+
+	@media (max-width: em(400)) {
+		flex-wrap: wrap;
+	}
+}

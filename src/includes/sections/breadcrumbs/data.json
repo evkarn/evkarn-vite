@@ -1,0 +1,14 @@
+[
+	{
+		"link": "category.html",
+		"current": "false",
+		"name": "Категория",
+		"index": "2"
+	},
+	{
+		"link": "post.html",
+		"current": "page",
+		"name": "Пост об икре",
+		"index": "3"
+	}
+]

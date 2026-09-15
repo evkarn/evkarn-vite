@@ -1,0 +1,75 @@
+<form class="form" action="#" method="POST">
+	<div class="form__group">
+		<label class="form__label label" for="name">
+			Имя<span class="label__req">*</span>
+		</label>
+
+		<input
+			class="form__input input input--name"
+			type="text"
+			name="Имя"
+			id="name"
+			placeholder="Введите имя"
+			required
+		/>
+	</div>
+
+	<div class="form__group">
+		<label class="form__label label" for="phone">
+			Контактный телефон<span class="label__req">*</span>
+		</label>
+
+		<input
+			class="form__input input input--phone"
+			type="tel"
+			id="phone"
+			name="Телефон"
+			placeholder="Номер телефона"
+			required
+		/>
+	</div>
+
+	<div class="form__group">
+		<label class="form__label label" for="email"> E-mail </label>
+
+		<input
+			class="form__input input input--email"
+			type="email"
+			id="email"
+			name="Email"
+			placeholder="Введите email"
+		/>
+	</div>
+
+	<div class="form__group">
+		<label class="form__label label" for="message">
+			Сообщение<span class="label__req">*</span>
+		</label>
+
+		<textarea
+			class="form__textarea textarea"
+			name="Сообщение"
+			id="message"
+			placeholder="Текст сообщения"
+			required
+		></textarea>
+	</div>
+
+	<div class="form__group">
+		<input
+			class="form__input input"
+			type="file"
+			name="file[]"
+			id="myfile"
+			multiple
+		/>
+	</div>
+
+	<button type="submit" class="form__button" id="form-btn">Отправить</button>
+
+	<p class="form__alert">
+		Нажимая на кнопку «Отправить», вы соглашаетесь с условиями обработки
+		персональных данных и
+		<a class="form__link" href="#">Политикой конфиденциальности</a>
+	</p>
+</form>

@@ -1,0 +1,8 @@
+@use './current-menu-item';
+@use './menu-link';
+
+@use "settings/imports" as *;
+
+.menu {
+	@include fluid-size-px(gap, 16, 30);
+}

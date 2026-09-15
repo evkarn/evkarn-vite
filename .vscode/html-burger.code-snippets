@@ -1,0 +1,12 @@
+{
+	"Burger": {
+		"prefix": "burger",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<button class=\"header__burger burger\" aria-label=\"Открыть меню\" aria-expanded=\"false\" data-burger>",
+			"\t<span class=\"burger__line\"></span>",
+			"</button>",
+		],
+		"description": "Burger",
+	},
+}

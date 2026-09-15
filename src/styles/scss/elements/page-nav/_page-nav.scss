@@ -1,0 +1,15 @@
+@use './nav-page';
+@use './nav-page__title';
+@use './nav-page__list';
+@use './nav-page__item';
+@use './nav-page__link';
+
+@use 'settings/imports' as *;
+
+.page-nav {
+	row-gap: 20px;
+
+	width: 100%;
+
+	color: var(--dark);
+}

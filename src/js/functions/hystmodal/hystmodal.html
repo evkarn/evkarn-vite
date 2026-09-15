@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="scr3__wrap flexi">
+			<button class="button demobuttons" data-hystmodal="#modalSimple">
+				Simple windows
+			</button>
+		</div>
+
+		<a
+			href="https://addmorescripts.github.io/hystModal/index_ru.html"
+			class="button demobuttons demobuttons--min"
+			>HystModal Documentation</a
+		>
+
+		<a
+			href="https://www.npmjs.com/package/hystmodal"
+			class="button demobuttons demobuttons--min"
+			>HystModal Documentation NPM</a
+		>
+
+		<div class="hystmodal" id="modalSimple" aria-hidden="true">
+			<div class="hystmodal__wrap" tabindex="-1">
+				<div
+					class="hystmodal__window"
+					aria-labelledby="modalSimple-title"
+					role="dialog"
+					aria-modal="true"
+				>
+					<header class="hystmodal__header">
+						<button class="hystmodal__close" data-hystclose>Закрыть</button>
+
+						<h3 class="hystmodal__title" id="modalSimple-title">Modal Title</h3>
+					</header>
+
+					<div class="hystmodal__main">
+						<div class="hystmodal__styled">
+							<div class="h1">Website Overview</div>
+							<p>
+								Websites have many functions and can be used in various
+								fashions; a website can be a personal website, a commercial
+								website, a government website or a non-profit organization
+								website. Websites can be the work of an individual, a business
+								or other organization, and are typically dedicated to a
+								particular topic or purpose.
+							</p>
+
+							<p>
+								Any website can contain a hyperlink to any other website, so the
+								distinction between individual sites, as perceived by the user,
+								can be blurred. Websites are written in, or converted to, HTML
+								(Hyper Text Markup Language) and are accessed using a software
+								interface classified as a user agent.
+							</p>
+							<p>
+								text from
+								<a href="https://en.wikipedia.org/wiki/Website">Wikipedia</a>
+							</p>
+						</div>
+					</div>
+
+					<footer class="hystmodal__footer">
+						<button data-hystmodal="#modalLong">Open long modal</button>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

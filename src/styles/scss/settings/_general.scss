@@ -1,0 +1,163 @@
+@use 'settings/imports' as *;
+
+.page-wrapper {
+	// flex
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+	// display: grid;
+	// grid-template-rows: auto 1fr auto;
+	// min-height: 100vh;
+}
+
+.main {
+	// if flex
+	flex: 1;
+}
+
+
+
+.section {
+	position: relative;
+
+	@include fluid-size-px(padding-top, 40, 80);
+	@include fluid-size-px(padding-bottom, 40, 80);
+
+	min-width: 0;
+}
+
+.section__header {
+	row-gap: 20px;
+	@include fluid-size-px(margin-bottom, 30, 40);
+}
+
+.section__header:has(.section__descr) {
+	row-gap: 16px;
+}
+
+.fslightbox-open {
+  overflow: initial !important;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.txt-bold, .fw-700 {
+	font-weight: 700;
+}
+
+.accent {
+	color: var(--accent);
+}
+
+.underline {
+	text-decoration: underline;
+	text-underline-position: under;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.section__bg {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.img-wrap {
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	padding-bottom: 56.25%;
+
+	.image,
+	.img,
+	.photo,
+	.avatar,
+	.picture,
+	.pic,
+	.user-photo,
+	img {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.img-bg {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.display-none,
+.none,
+.hidden {
+	display: none !important;
+}
+
+.video-wrap {
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	padding-bottom: 56.25%;
+
+	.video,
+	iframe,
+	video {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border: none;
+	}
+}
+
+.txt-wrap {
+	display: flex;
+	flex-direction: column;
+	row-gap: 16px;
+}
+
+.stop-scroll {
+	position: fixed;
+	top: var(--top-position);
+	left: 0;
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+	padding-right: var(--scroll-width);
+}
+
+.fixed-el {
+	padding-right: var(--scroll-width);
+}
+
+.sr-only {
+	position: absolute !important;
+  overflow: hidden !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+  clip-path: inset(100%) !important;
+}
+
+.sprite-svg {
+	transition: fill 0.3s ease;
+
+	fill: currentColor;
+}

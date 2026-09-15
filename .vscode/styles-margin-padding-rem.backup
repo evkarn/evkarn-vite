@@ -1,0 +1,109 @@
+{
+	"Margin all": {
+		"prefix": "margin-all-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"margin: units.rem($1) units.rem($2) units.rem($3) units.rem($4);"
+		],
+	},
+	"Margin top-bottom, left-right": {
+		"prefix": "margin-tb-lr-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"margin: units.rem($1) units.rem($2);"
+		],
+	},
+	"Margin not-last-child-rem": {
+		"prefix": "mar-not-last-ch-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"&:not(:last-child) {",
+			"\tmargin-bottom: units.rem(16);",
+			"}",
+		],
+	},
+	"Margin: rem": {
+		"prefix": "mar-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"margin: units.rem($1);"
+		],
+	},
+	"Margin-top: rem": {
+		"prefix": "mtr",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"margin-top: units.rem($1);"
+		],
+	},
+	"Margin-right: rem": {
+		"prefix": "mrr",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"margin-right: units.rem($1);"
+		],
+	},
+	"Margin-bottom: rem": {
+		"prefix": "mbr",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"margin-bottom: units.rem($1);"
+		],
+	},
+	"Margin-left: rem": {
+		"prefix": "mlr",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"margin-left: units.rem($1);"
+		],
+	},
+	"Padding all": {
+		"prefix": "pad-all-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"padding: units.rem($1) units.rem($2) units.rem($3) units.rem($4);"
+		],
+	},
+	"Padding top-bottom, left-right": {
+		"prefix": "pad-tb-lr-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"padding: units.rem($1) units.rem($2);"
+		],
+	},
+	"Padding rem": {
+		"prefix": "pad-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"padding: units.rem($1);"
+		],
+	},
+	"padding-top: rem": {
+		"prefix": "pad-t-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"padding-top: units.rem($1);"
+		],
+	},
+	"padding-right: rem": {
+		"prefix": "pad-r-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"padding-right: units.rem($1);"
+		],
+	},
+	"padding-bottom: rem": {
+		"prefix": "pad-b-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"padding-bottom: units.rem($1);"
+		],
+	},
+	"padding-left: rem": {
+		"prefix": "pad-l-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"padding-left: units.rem($1);"
+		],
+	},
+}

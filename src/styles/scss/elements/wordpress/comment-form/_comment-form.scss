@@ -1,0 +1,21 @@
+@use "comment-form";
+@use "checkbox-input";
+@use "fieldset--category";
+@use "fieldset--message";
+@use "comment-form__submit";
+
+.comment-form {
+	display: inline-flex;
+	flex-direction: column;
+	@include calc-size(row-gap, 16, 30, 320, 1920, rem);
+
+	width: 100%;
+
+	@include calc-size(font-size, 18, 20, 320, 1920, rem);
+
+	@media (min-width: em(1920.96)) {
+		@include calc-size(row-gap, 30, 60, 1920, 3840, rem);
+
+		@include calc-size(font-size, 20, 40, 1920, 3840, rem);
+	}
+}

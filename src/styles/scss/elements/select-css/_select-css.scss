@@ -1,0 +1,48 @@
+@use "./select-wrap";
+
+.select-css {
+	appearance: none;
+
+	display: inline-flex;
+	width: 100%;
+
+	max-width: 100%;
+
+	padding: 4px 26px 4px 4px;
+
+	font-size: 18px;
+
+	color: var(--c-darken);
+
+	background-color: transparent;
+
+	border: none;
+
+	cursor: pointer;
+}
+
+.select-css::-ms-expand {
+	display: none;
+}
+
+.select-css:hover {
+	border-color: var(--c-accent);
+}
+
+.select-css:focus {
+	border-color: var(--c-accent);
+	outline: none;
+}
+
+.select-css option {
+	font-weight: normal;
+}
+
+*[dir='rtl'] .select-css,
+:root:lang(ar) .select-css,
+:root:lang(iw) .select-css {
+	padding: 0.6em 0.8em 0.5em 1.4em;
+	background-position:
+		left 0.7em top 50%,
+		0 0;
+}

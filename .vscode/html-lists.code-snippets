@@ -1,0 +1,25 @@
+{
+	// Header
+	"Ul": {
+		"prefix": "list-ul",
+		"scope": "html, php, njk, md, astro",
+		"body": [
+			"<ul class=\"$1__list\">",
+			"\t<li class=\"$1__item\">",
+			"\t\t$2",
+			"\t</li>",
+			"</ul>",
+		],
+	},
+	"Ol": {
+		"prefix": "list-ol",
+		"scope": "html, php, njk, md, astro",
+		"body": [
+			"<ol class=\"$1__list\">",
+			"\t<li class=\"$1__item\">",
+			"\t\t$2",
+			"\t</li>",
+			"</ol>",
+		],
+	},
+}

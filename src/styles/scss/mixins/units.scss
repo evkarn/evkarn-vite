@@ -1,0 +1,27 @@
+@use "sass:math";
+
+@function to-number($value) {
+	@if math.is-unitless($value) {
+		@return $value;
+	}
+	@else {
+		@return strip-unit($value);
+	}
+}
+
+// Удаляем единицы измерения
+@function strip-unit($value) {
+	@return math.div($value, $value * 0 + 1);
+}
+
+@function rem($pxValue) {
+	@return #{math.div(strip-unit($pxValue), strip-unit(16px))}rem;
+}
+
+@function em($pxValue) {
+	@return #{math.div(strip-unit($pxValue), strip-unit(16px))}em;
+}
+
+@function px($pxValue) {
+	@return #{math.div(strip-unit($pxValue), strip-unit(1px))}px;
+}

@@ -1,0 +1,103 @@
+@use 'settings/imports' as *;
+
+.margin-bottom-16 {
+	margin-bottom: 16px;
+}
+
+.margin-bottom-200 {
+	margin-bottom: 200px;
+
+	@media (max-width: 1440px) {
+		margin-bottom: 100px;
+	}
+}
+
+.padding-30 {
+	padding: 30px;
+
+	@media (max-width: 1440px) {
+		padding: 20px;
+	}
+}
+
+.padding-top-16 {
+	padding-top: 16px;
+}
+
+.padding-top-150 {
+	padding-top: 150px;
+
+	@media (max-width: 1440px) {
+		padding-top: 100px;
+	}
+
+	@media (max-width: 768px) {
+		padding-top: 50px;
+	}
+}
+
+.padding-bottom-150 {
+	padding-bottom: 150px;
+
+	@media (max-width: 1440px) {
+		padding-bottom: 100px;
+	}
+
+	@media (max-width: 768px) {
+		padding-bottom: 50px;
+	}
+}
+
+.padding-top-bottom-150 {
+	padding-top: 150px;
+	padding-bottom: 150px;
+
+	@media (max-width: 1440px) {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	@media (max-width: 768px) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+
+.padding-top-200 {
+	padding-top: 200px;
+
+	@media (max-width: 1440px) {
+		padding-top: 100px;
+	}
+
+	@media (max-width: 768px) {
+		padding-top: 50px;
+	}
+}
+
+.padding-bottom-200 {
+	padding-bottom: 200px;
+
+	@media (max-width: 1440px) {
+		padding-bottom: 100px;
+	}
+
+	@media (max-width: 768px) {
+		padding-bottom: 50px;
+	}
+}
+
+.padding-top-bottom-200 {
+	padding-top: 200px;
+	padding-bottom: 200px;
+
+	@media (max-width: 1440px) {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	@media (max-width: 768px) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}

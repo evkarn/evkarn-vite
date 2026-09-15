@@ -1,0 +1,44 @@
+{
+	"Width rem": {
+		"prefix": "width-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"width: units.rem($1);"
+		]
+	},
+	"height: rem": {
+		"prefix": "height-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"height: units.rem($1);"
+		]
+	},
+	"min-width rem": {
+		"prefix": "min-width-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"min-width: units.rem($1);"
+		]
+	},
+	"min-height: rem": {
+		"prefix": "min-height-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"min-height: units.rem($1);"
+		]
+	},
+	"max-width rem": {
+		"prefix": "max-width-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"max-width: units.rem($1);"
+		]
+	},
+	"max-height: rem": {
+		"prefix": "max-height-rem",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"max-height: units.rem($1);"
+		]
+	},
+}

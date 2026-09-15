@@ -1,0 +1,35 @@
+.form__button {
+	margin: 0;
+	padding: 0;
+
+	border: none;
+	border-bottom: rem($bor-width) solid currentColor;
+
+	transition:
+		color 0.3s ease,
+		border-color 0.3s ease;
+
+	@media (any-hover: hover) {
+		&:hover {
+
+			color: var(--c-accent);
+			cursor: pointer;
+		}
+
+		&:focus-visible {
+			outline-color: currentColor;
+			outline-style: dashed;
+			outline-width: rem($outline-width);
+			outline-offset: rem($outline-offset);
+
+			@media (min-width: em(1920.96)) {
+				@include calc-size(outline-width, $outline-width, $outline-width * 2, 1920, 3840, rem);
+				@include calc-size(outline-offset, $outline-offset, $outline-offset * 2, 1920, 3840, rem);
+			}
+		}
+
+		&:active {
+			color: var(--c-accent-dark);
+		}
+	}
+}

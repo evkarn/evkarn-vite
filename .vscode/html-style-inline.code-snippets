@@ -1,0 +1,37 @@
+{
+	"Background image": {
+		"prefix": "style-bg-img",
+		"scope": "html, php, njk, md",
+		"body": [
+			"style=\"background-image: url('assets/images/$1.webp');\"",
+		]
+	},
+	"Background svg": {
+		"prefix": "style-bg-svg",
+		"scope": "html, php, njk, md",
+		"body": [
+			"style=\"background-image: url('assets/svg/static/$1.svg');\"",
+		]
+	},
+	"Background color": {
+		"prefix": "style-bg-cr",
+		"scope": "html, php, njk, md",
+		"body": [
+			"style=\"background-color: $1;\"",
+		]
+	},
+	"Background color, background-image, img": {
+		"prefix": "style-bg-cr-img",
+		"scope": "html, php, njk, md",
+		"body": [
+			"style=\"background-color: $1; background-image: url('assets/images/$2.webp');\"",
+		]
+	},
+	"Background color, background-image, svg": {
+		"prefix": "style-bg-cr-svg",
+		"scope": "html, php, njk, md",
+		"body": [
+			"style=\"background-color: $1; background-image: url('assets/svg/static/$2.svg');\"",
+		]
+	},
+}

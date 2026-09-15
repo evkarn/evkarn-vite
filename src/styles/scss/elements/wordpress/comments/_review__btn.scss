@@ -1,0 +1,25 @@
+.comments .review__btn {
+	display: flex;
+	align-items: center;
+	column-gap: rem(2);
+
+	color: var(--grey-shingle);
+
+	border: none;
+
+	@media (min-width: em(1920.96)) {
+		@include calc-size(column-gap, 2, 4, 1920, 3840, rem);
+	}
+
+	> * {
+		pointer-events: none;
+	}
+}
+
+.comments .review__btn--dislike {
+	rotate: 180deg;
+}
+
+.comments .review__btn.is-active {
+	color: var(--c-text-dark);
+}

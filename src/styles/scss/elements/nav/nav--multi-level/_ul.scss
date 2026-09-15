@@ -1,0 +1,18 @@
+@use '../../../mixins/units';
+
+.nav--multi-level ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.nav--multi-level ul ul {
+	position: absolute;
+	left: 0;
+
+	min-width: 220);
+}
+
+.nav--multi-level ul > li ul {
+	top: 100%;
+}

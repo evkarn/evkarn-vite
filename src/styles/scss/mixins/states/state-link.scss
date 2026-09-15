@@ -1,0 +1,27 @@
+@use "../units";
+@use "../../variables/general";
+
+@mixin state-link {
+	@media (any-hover: hover) {
+		&:hover {
+			color: var(--accent);
+
+			cursor: pointer;
+		}
+	}
+
+	&:focus-visible {
+		outline-color: currentColor;
+		outline-style: dashed;
+		outline-width: $outline-width);
+		outline-offset: $outline-offset);
+	}
+
+	&:active {
+		color: var(--accent-dark);
+
+		outline: none;
+	}
+
+	@content;
+}

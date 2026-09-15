@@ -1,0 +1,7 @@
+.hljs-keyword {
+	color: var(--hljs-keyword);
+
+	@media screen and (-ms-high-contrast: active) {
+		font-weight: 700;
+	}
+}

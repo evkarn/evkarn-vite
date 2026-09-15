@@ -1,0 +1,53 @@
+{
+	"After": {
+		"prefix": "after",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"&:after {",
+			"\tcontent: '';",
+			"",
+			"\t$1",
+			"}"
+		],
+	},
+	"After without content": {
+		"prefix": "&after",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"&:after {",
+			"\t$1",
+			"}"
+		],
+	},
+	"$:before, &:after": {
+		"prefix": "before-after",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"&:before, &:after {",
+			"\tcontent: '';",
+			"",
+			"\t$1",
+			"}"
+		],
+	},
+	"Before": {
+		"prefix": "before",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"&:before {",
+			"\tcontent: '';",
+			"",
+			"\t$1",
+			"}"
+		],
+	},
+	"Before without content": {
+		"prefix": "&before",
+		"scope": "css, sass, scss, less",
+		"body": [
+			"&:before {",
+			"\t$1",
+			"}"
+		],
+	},
+}

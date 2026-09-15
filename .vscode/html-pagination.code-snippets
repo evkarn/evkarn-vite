@@ -1,0 +1,28 @@
+{
+	"Section pagination": {
+		"prefix": "pagination",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<section class=\"pagination\">",
+			"\t<h2 class=\"pagination__title visually-hidden\">",
+			"\t\tПагинация для страниц блога",
+			"\t</h2>",
+			"",
+			"\t<div class=\"pagination__container container\">",
+			"\t\t<a href=\"#\" class=\"pagination__level pagination__level--prev\" title=\"Предыдущая страница\"></a>",
+			"",
+			"\t\t<span class=\"pagination__current\"  title=\"Текущая страница\">1</span>",
+			"",
+			"\t\t<a class=\"pagination__link\" href=\"/blog/page2/\" title=\"Страница 2\">2</a>",
+			"",
+			"\t\t<a class=\"pagination__link\" href=\"/blog/page3/\" title=\"Страница 3\">3</a>",
+			"",
+			"\t\t<a class=\"pagination__link\" href=\"/blog/page4/\" title=\"Страница 4\">4</a>",
+			"",
+			"\t\t<a href=\"#\" class=\"pagination__level pagination__level--next pagination__level--is-visible\" title=\"Следующая страница\"></a>",
+			"\t</div>",
+			"</section>",
+		],
+		"description": "Section pagination",
+	},
+}

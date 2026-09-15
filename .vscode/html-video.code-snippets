@@ -1,0 +1,24 @@
+{
+	// Video
+	"Video html tag": {
+		"prefix": "video",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<video class=\"video__player\" src=\"assets/videos/$1.mp4\" poster=\"assets/images/posters/$2.svg\" preload=\"metadata\" loop=\"\" muted=\"\" autoplay=\"\" playsinline=\"\" controls=\"\">",
+			"\tИзвините, ваш браузер не поддерживает встроенные видео, но не волнуйтесь, вы можете <a href=\"assets/videos/$1.mp4\">скачать его</a> и&nbsp;посмотреть в&nbsp;своем любимом видеоплеере!",
+			"</video>",
+		],
+		"description": "Video html tag",
+	},
+	"Video html tag jekyll": {
+		"prefix": "video-Jekyll",
+		"scope": "html, php, njk, md",
+		"body": [
+			"<video class=\"video__player\" src=\"assets/videos/{{ page.video }}.mp4\" poster=\"assets/images/posters/{{ page.video }}.svg\" preload=\"metadata\" loop=\"\" muted=\"\" autoplay=\"\" playsinline=\"\" controls=\"\">",
+			"\tИзвините, ваш браузер не поддерживает встроенные видео, но не волнуйтесь, вы можете <a href=\"assets/videos/{{ post.video }}.mp4\">скачать его</a> и&nbsp;посмотреть в&nbsp;своем любимом видеоплеере!",
+			"</video>",
+		],
+		"description": "Video html tag jekyll",
+	},
+	// End. Video
+}
