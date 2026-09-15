@@ -81,6 +81,24 @@ scripts/             # Vite-плагины и standalone-скрипты депл
 - **Алиасы** (`vite.config.js`): `@`, `@components`, `@funcs`, `@utils`, `@modules`, `@constants`, `@styles`, `@js`.
 - `assetsInlineLimit: 0` — ассеты в HTML/CSS **не инлайнятся** в data-URI, отдаются файлами.
 
+## Несколько страниц (MPA)
+
+Сейчас сайт одностраничный (`src/index.html`). Vite поддерживает мультистраничность:
+
+- **Dev**: любой `.html` внутри `src/` сразу работает как отдельная страница — создайте `src/about.html` и откройте `/about.html`. Плагин включений обрабатывает все HTML-входные (transformIndexHtml).
+- **Build**: свои страницы добавьте в `build.rollupOptions.input` (`vite.config.js`, там есть закомментированный пример):
+
+```js
+rollupOptions: {
+  input: [
+    fileURLToPath(new URL('./src/index.html', import.meta.url)),
+    fileURLToPath(new URL('./src/about.html', import.meta.url)),
+  ],
+},
+```
+
+Все страницы делят одни и те же `@include`/`@loop`, стили и ассеты — других изменений не нужно.
+
 ## Конфигурация `.env`
 
 Скопируйте `.env.example` → `.env` (в `.gitignore`, не попадает в репозиторий). Пароли и ключи — только туда, никогда не хардкодить:

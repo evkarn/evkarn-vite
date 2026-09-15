@@ -70,7 +70,15 @@ export default {
 		emptyOutDir: true,
 		sourcemap: false,
 		// Не инлайнить ассеты (<img src="..."> в HTML, svg) в data-URI —
-		// отдавать файлами (картинки/логотипы не раздувают HTML)
+		// отдавать файлами, как в gulp (картинки/логотипы не раздувают HTML)
 		assetsInlineLimit: 0,
+		// MPA (доп. страницы): dev-сервер сам отдаёт любой .html из src/,
+		// для build добавьте свои страницы сюда:
+		// rollupOptions: {
+		// 	input: [
+		// 		fileURLToPath(new URL('./src/index.html', import.meta.url)),
+		// 		fileURLToPath(new URL('./src/about.html', import.meta.url)),
+		// 	],
+		// },
 	},
 };
