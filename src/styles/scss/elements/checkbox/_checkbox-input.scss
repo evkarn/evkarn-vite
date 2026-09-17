@@ -1,12 +1,4 @@
-@use "../../variables/general";
-@use "../../variables/grid";
-@use "../../mixins/units";
-@use "../../mixins/adaptive-value";
-
 .checkbox-input {
-	--size: 18px;
-	--bdrs: var(--bdrs);
-
 	appearance: none;
 
 	position: relative;
@@ -15,12 +7,15 @@
 	justify-content: center;
 	align-items: center;
 
-	width: var(--size);
-	height: var(--size);
+	width: 20px;
+	height: 20px;
 	margin: 0;
 
 	background-color: transparent;
+	border: 1px solid var(--label-color);
 	border-radius: var(--bdrs);
+
+	transition: border-color .3s ease;
 
 	&:focus-visible {
 		outline-color: var(--accent);
@@ -37,12 +32,12 @@
 		left: 50%;
 
 		display: block;
-		width: var(--size);
-		height: var(--size);
+		width: 13px;
+		height: 13px;
 
 		margin: auto;
 
-		background-color: var(--checkbox-before-bg-color);
+		background-color: var(--accent);
 		border-radius: var(--bdrs);
 
 		opacity: 0;
@@ -52,11 +47,11 @@
 		transition: opacity 0.3s ease;
 
 		transform: translate(-50%, -50%);
-
-		will-change: opacity;
 	}
 
 	&:checked {
+		border-color: var(--accent);
+
 		&:before {
 			content: "";
 

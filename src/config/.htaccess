@@ -4,152 +4,111 @@ Options -Indexes
 RewriteEngine On
 RewriteBase /
 
-
-# Редирект для сайтов с https
-RewriteCond %{ENV:HTTPS} !on
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# ========== НАСТРОЙКА HTTPS ДЛЯ ПРОКСИ ==========
+# Если заголовок X-Forwarded-Proto равен https, устанавливаем переменную окружения HTTPS=on
 SetEnvIf X-Forwarded-Proto https HTTPS=on
 
-
-# Редирект для сайтов с http (без сертификата безопасности https)
-#RewriteCond %{HTTP_HOST} .
-#RewriteCond %{HTTP_HOST} www.slider.evkarn.ru [NC]
-#RewriteRule (.*) http://slider.evkarn.ru/$1 [R=301,L]
-
-
-# Редирект с www на без www
-RewriteCond %{HTTP_HOST} ^www\.(.*)$
+# ========== ЕДИНЫЙ РЕДИРЕКТ: HTTPS + убираем www ==========
+# Если включён www ИЛИ не включён HTTPS – редиректим на https://без-www
+RewriteCond %{HTTP_HOST} ^www\. [NC,OR]
+RewriteCond %{ENV:HTTPS} !on
+RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
 RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
 
+# ========== БЕЗОПАСНОСТЬ ==========
+# Запрет доступа к скрытым файлам
+RewriteRule ^(.*/)?\.(htaccess|htpasswd|env|git|svn|DS_Store) - [F,L]
 
-# Запрет скачивания через wget
-RewriteCond %{HTTP_USER_AGENT} wget [NC]
-RewriteRule .* - [F]
-
-
-# Переадресация на страницу ошибки 404
+# Страница 404
 ErrorDocument 404 /404.html
 
-
-<ifModule mod_expires.c>
-	# Add correct content-type for fonts & SVG
-	AddType application/font-woff2 .woff2
-	AddType image/svg+xml .svg
-
-	ExpiresActive On
-	ExpiresDefault  "access plus 1 year"
-
-
-	# CSS
-	ExpiresByType text/css                              "access plus 1 year"
-
-
-	# Data interchange
-	ExpiresByType application/atom+xml                  "access plus 1 hour"
-	ExpiresByType application/rdf+xml                   "access plus 1 hour"
-	ExpiresByType application/rss+xml                   "access plus 1 hour"
-
-	ExpiresByType application/json                      "access plus 0 seconds"
-	ExpiresByType application/ld+json                   "access plus 0 seconds"
-	ExpiresByType application/schema+json               "access plus 0 seconds"
-	ExpiresByType application/vnd.geo+json              "access plus 0 seconds"
-	ExpiresByType application/xml                       "access plus 0 seconds"
-	ExpiresByType text/xml                              "access plus 0 seconds"
-
-
-	# Favicon (cannot be renamed!) and cursor images
-	ExpiresByType image/vnd.microsoft.icon              "access plus 1 year"
-	ExpiresByType image/x-icon                          "access plus 1 year"
-
-	# HTML
-	ExpiresByType text/html                             "access plus 0 seconds"
-
-
-	# JavaScript
-	ExpiresByType application/javascript                "access plus 1 year"
-	ExpiresByType application/x-javascript              "access plus 1 year"
-	ExpiresByType text/javascript                       "access plus 1 year"
-
-
-	# Manifest files
-	ExpiresByType application/manifest+json             "access plus 1 week"
-	ExpiresByType application/x-web-app-manifest+json   "access plus 0 seconds"
-	ExpiresByType text/cache-manifest                   "access plus 0 seconds"
-
-
-	# Media files
-	ExpiresByType audio/ogg                             "access plus 1 year"
-	ExpiresByType image/bmp                             "access plus 1 year"
-	ExpiresByType image/gif                             "access plus 1 year"
-	ExpiresByType image/jpeg                            "access plus 1 year"
-	ExpiresByType image/png                             "access plus 1 year"
-	ExpiresByType image/svg+xml                         "access plus 1 year"
-	ExpiresByType image/webp                            "access plus 1 year"
-	ExpiresByType video/mp4                             "access plus 1 year"
-	ExpiresByType video/ogg                             "access plus 1 year"
-	ExpiresByType video/webm                            "access plus 1 year"
-
-
-	# Web fonts
-
-	# Embedded OpenType (EOT)
-	ExpiresByType application/vnd.ms-fontobject         "access plus 1 year"
-	ExpiresByType font/eot                              "access plus 1 year"
-
-	# OpenType
-	ExpiresByType font/opentype                         "access plus 1 year"
-
-	# TrueType
-	ExpiresByType application/x-font-ttf                "access plus 1 year"
-
-	# Web Open Font Format (WOFF) 1.0
-	ExpiresByType application/font-woff                 "access plus 1 year"
-	ExpiresByType application/x-font-woff               "access plus 1 year"
-	ExpiresByType font/woff                             "access plus 1 year"
-
-	# Web Open Font Format (WOFF) 2.0
-	ExpiresByType application/font-woff2                "access plus 1 year"
-
-
-	# Other
-	ExpiresByType text/x-cross-domain-policy            "access plus 1 year"
-
-
-	# Close indexation
-	SetEnvIfNoCase User-Agent "^Googlebot" search_bot
-	SetEnvIfNoCase User-Agent "^Yandex" search_bot
-	SetEnvIfNoCase User-Agent "^Yahoo" search_bot
-	SetEnvIfNoCase User-Agent "^Aport" search_bot
-	SetEnvIfNoCase User-Agent "^msnbot" search_bot
-	SetEnvIfNoCase User-Agent "^spider" search_bot
-	SetEnvIfNoCase User-Agent "^Robot" search_bot
-	SetEnvIfNoCase User-Agent "^php" search_bot
-	SetEnvIfNoCase User-Agent "^Mail" search_bot
-	SetEnvIfNoCase User-Agent "^bot" search_bot
-	SetEnvIfNoCase User-Agent "^igdeSpyder" search_bot
-	SetEnvIfNoCase User-Agent "^Snapbot" search_bot
-	SetEnvIfNoCase User-Agent "^WordPress" search_bot
-	SetEnvIfNoCase User-Agent "^BlogPulseLive" search_bot
-	SetEnvIfNoCase User-Agent "^Parser" search_bot
+# ========== ЗАПРЕТ ИНДЕКСАЦИИ ДЛЯ ПОИСКОВЫХ РОБОТОВ ==========
+# Определяем переменную search_bot для известных ботов
+<IfModule mod_setenvif.c>
+    SetEnvIfNoCase User-Agent "Googlebot" search_bot
+    SetEnvIfNoCase User-Agent "Yandex" search_bot
+    SetEnvIfNoCase User-Agent "Yahoo" search_bot
+    SetEnvIfNoCase User-Agent "Aport" search_bot
+    SetEnvIfNoCase User-Agent "msnbot" search_bot
+    SetEnvIfNoCase User-Agent "spider" search_bot
+    SetEnvIfNoCase User-Agent "Robot" search_bot
+    SetEnvIfNoCase User-Agent "php" search_bot
+    SetEnvIfNoCase User-Agent "Mail" search_bot
+    SetEnvIfNoCase User-Agent "bot" search_bot
+    SetEnvIfNoCase User-Agent "igdeSpyder" search_bot
+    SetEnvIfNoCase User-Agent "Snapbot" search_bot
+    SetEnvIfNoCase User-Agent "WordPress" search_bot
+    SetEnvIfNoCase User-Agent "BlogPulseLive" search_bot
+    SetEnvIfNoCase User-Agent "Parser" search_bot
+    # Дополнительные популярные боты
+    SetEnvIfNoCase User-Agent "Baiduspider" search_bot
+    SetEnvIfNoCase User-Agent "DuckDuckBot" search_bot
+    SetEnvIfNoCase User-Agent "facebookexternalhit" search_bot
+    SetEnvIfNoCase User-Agent "Twitterbot" search_bot
+    SetEnvIfNoCase User-Agent "WhatsApp" search_bot
+    SetEnvIfNoCase User-Agent "SemrushBot" search_bot
+    SetEnvIfNoCase User-Agent "AhrefsBot" search_bot
+    SetEnvIfNoCase User-Agent "MJ12bot" search_bot
+    SetEnvIfNoCase User-Agent "DotBot" search_bot
+    SetEnvIfNoCase User-Agent "SeznamBot" search_bot
+    SetEnvIfNoCase User-Agent "bingbot" search_bot
+    SetEnvIfNoCase User-Agent "Slurp" search_bot
+    SetEnvIfNoCase User-Agent "DuckDuckGo" search_bot
 </IfModule>
 
+# ========== КЕШИРОВАНИЕ ==========
+<IfModule mod_expires.c>
+    AddType application/font-woff2 .woff2
+    AddType image/svg+xml .svg
 
-<ifModule mod_deflate.c>
-	AddOutputFilterByType DEFLATE text/html
-	AddOutputFilterByType DEFLATE text/plain
-	AddOutputFilterByType DEFLATE text/xml
-	AddOutputFilterByType DEFLATE application/xml
-	AddOutputFilterByType DEFLATE application/xhtml+xml
-	AddOutputFilterByType DEFLATE text/css
-	AddOutputFilterByType DEFLATE text/javascript
-	AddOutputFilterByType DEFLATE application/javascript
-	AddOutputFilterByType DEFLATE application/x-javascript
-	AddOutputFilterByType DEFLATE application/font-woff2
-	AddOutputFilterByType DEFLATE image/svg+xml
+    ExpiresActive On
+    ExpiresDefault "access plus 1 year"
 
-	<IfModule mod_setenvif.c>
-		BrowserMatch ^Mozilla/4 gzip-only-text/html
-		BrowserMatch ^Mozilla/4\.0[678] no-gzip
-		BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
-	</IfModule>
-</ifModule>
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType application/x-javascript "access plus 1 year"
+    ExpiresByType text/javascript "access plus 1 year"
+
+    ExpiresByType text/html "access plus 1 hour"
+
+    ExpiresByType image/* "access plus 1 year"
+    ExpiresByType video/* "access plus 1 year"
+    ExpiresByType audio/* "access plus 1 year"
+    ExpiresByType application/font-* "access plus 1 year"
+    ExpiresByType font/* "access plus 1 year"
+    ExpiresByType application/x-font-* "access plus 1 year"
+
+    ExpiresByType application/json "access plus 0 seconds"
+    ExpiresByType application/ld+json "access plus 0 seconds"
+    ExpiresByType application/xml "access plus 0 seconds"
+    ExpiresByType text/xml "access plus 0 seconds"
+</IfModule>
+
+# ========== СЖАТИЕ ==========
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript
+    AddOutputFilterByType DEFLATE application/javascript application/x-javascript
+    AddOutputFilterByType DEFLATE application/xml application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/json application/ld+json
+    AddOutputFilterByType DEFLATE application/font-woff2 image/svg+xml
+
+    <IfModule mod_setenvif.c>
+        BrowserMatch ^Mozilla/4 gzip-only-text/html
+        BrowserMatch ^Mozilla/4\.0[678] no-gzip
+        BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+    </IfModule>
+</IfModule>
+
+# ========== ЗАГОЛОВКИ БЕЗОПАСНОСТИ + X-Robots-Tag ==========
+<IfModule mod_headers.c>
+    # Заголовки безопасности
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "no-referrer-when-downgrade"
+    # HSTS (раскомментируйте, если уверены)
+    # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+    # Запрет индексации для поисковых роботов (отправляется только если переменная search_bot определена)
+    Header set X-Robots-Tag "noindex, nofollow" env=search_bot
+</IfModule>

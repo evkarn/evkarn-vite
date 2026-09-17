@@ -1,4 +1,8 @@
-export function getElementHeight(selector, varHeightName, threshold = 0.05) {
+function getElementHeight(selector, varHeightName) {
+	'use strict';
+
+	const threshold = 0.05
+
 	let lastWidth = window.innerWidth;
 	let lastHeight = window.innerHeight;
 	let timeoutId;
@@ -20,8 +24,10 @@ export function getElementHeight(selector, varHeightName, threshold = 0.05) {
 		const newHeight = window.innerHeight;
 
 		// Изменение ширины больше порога или смена ориентации
-		const widthChanged = Math.abs(newWidth - lastWidth) / lastWidth > threshold;
-		const orientationChanged = lastWidth > lastHeight !== newWidth > newHeight;
+		const widthChanged =
+			Math.abs(newWidth - lastWidth) / lastWidth > threshold;
+		const orientationChanged =
+			lastWidth > lastHeight !== newWidth > newHeight;
 
 		if (widthChanged || orientationChanged) {
 			lastWidth = newWidth;
@@ -45,3 +51,5 @@ export function getElementHeight(selector, varHeightName, threshold = 0.05) {
 		window.removeEventListener('resize', checkSignificantChange);
 	};
 }
+
+export default getElementHeight();

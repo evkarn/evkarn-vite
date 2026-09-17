@@ -35,11 +35,10 @@ const fontsVars = {
 	fontStretch: '', // например 'condensed' — пока не используется
 };
 
-const FONT_DISPLAY = 'font-display: swap';
-
 /** Вес шрифта по имени файла */
 function resolveWeight(weight) {
 	const w = weight.toLowerCase();
+
 	if (w === 'thin') return 100;
 	if (w === 'extralight') return 200;
 	if (w === 'light' || w === 'book' || w === 'demi') return 300;
@@ -49,6 +48,7 @@ function resolveWeight(weight) {
 	if (w === 'bold') return 700;
 	if (w === 'extrabold' || w === 'heavy') return 800;
 	if (w === 'black' || w === 'ultrablack' || w === 'fat') return 900;
+
 	return 400;
 }
 
@@ -61,10 +61,10 @@ function resolveStyle(style) {
 function variableFontFace(fontName, file) {
 	return [
 		'@font-face {',
-		`\tfont-family: ${fontName};`,
+		`\tfont-family: '${fontName}';`,
 		`\tsrc: url('/assets/fonts/${file}') format('woff2-variations');`,
 		`\tsrc: url('/assets/fonts/${file}') format('woff2') tech('variations');`,
-		`\t${FONT_DISPLAY};`,
+		`\tfont-display: swap;`,
 		`\tfont-weight: ${fontsVars.fontWeight};`,
 		'}',
 	].join('\n');
@@ -74,9 +74,9 @@ function variableFontFace(fontName, file) {
 function staticFontFace(fontName, file, weight, style) {
 	return [
 		'@font-face {',
-		`\tfont-family: ${fontName};`,
+		`\tfont-family: '${fontName}';`,
 		`\tsrc: url('/assets/fonts/${file}') format('woff2');`,
-		`\t${FONT_DISPLAY};`,
+		`\tfont-display: swap;`,
 		`\tfont-weight: ${weight};`,
 		`\tfont-style: ${style};`,
 		'}',

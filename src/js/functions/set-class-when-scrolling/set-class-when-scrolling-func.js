@@ -9,7 +9,7 @@ function setClassWhenScrolling(e) {
 
 	const navSec = document.querySelector('.nav-sec');
 
-	const scrollHandler() {
+	const scrollHandler = () => {
 		previousY = currentY;
 
 		currentY = window.scrollY;

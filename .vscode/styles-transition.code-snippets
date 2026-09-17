@@ -5,7 +5,6 @@
 		"scope": "css, sass, scss, less",
 		"body": [
 			"transition: $1 .3s ease;",
-			"will-change: $1;",
 		],
 		"description": "Transition",
 	},
@@ -37,7 +36,6 @@
 		"scope": "css, sass, scss, less",
 		"body": [
 			"transition: opacity .3s ease;",
-			"will-change: opacity;"
 		],
 		"description": "transition: opacity .3s ease",
 	},
@@ -62,7 +60,6 @@
 		"scope": "css, sass, scss, less",
 		"body": [
 			"transition: transform .3s ease;",
-			"will-change: transform;",
 		],
 		"description": "transition: transform .3s ease",
 	},
@@ -71,7 +68,6 @@
 		"scope": "css, sass, scss, less",
 		"body": [
 			"transition: scale .3s ease;",
-			"will-change: scale;",
 		],
 		"description": "transition: scale .3s ease",
 	},
@@ -80,7 +76,6 @@
 		"scope": "css, sass, scss, less",
 		"body": [
 			"transition: rotate .3s ease;",
-			"will-change: rotate;",
 		],
 		"description": "transition: rotate .3s ease",
 	},

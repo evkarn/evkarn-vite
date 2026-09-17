@@ -5,6 +5,7 @@ import { imagePlugin } from './scripts/image-plugin.js';
 import { svgIconsPlugin } from './scripts/svg-icons.js';
 import { svgSpritePlugin } from './scripts/svg-sprite.js';
 import { htmlMinifyPlugin } from './scripts/html-minify-plugin.js';
+import { typografPlugin } from './scripts/typograf-plugin.js';
 
 // Алиасы путей
 export const jsAliases = {
@@ -34,6 +35,8 @@ if (env.HTML_MINIFY !== 'false') {
 	plugins.push(htmlMinifyPlugin());
 }
 
+plugins.push(typografPlugin());
+
 export default {
 	root: 'src',
 	base: './',
@@ -49,7 +52,7 @@ export default {
 				api: 'modern-compiler',
 				loadPaths: [
 					'src',
-					'src/components',
+					'src/elements',
 					'src/styles/scss',
 					'src/styles/scss/vars',
 					'node_modules',
