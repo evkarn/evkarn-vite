@@ -3,6 +3,11 @@ import justValidate from 'just-validate';
 function validationForms() {
 	'use strict';
 
+	// Обработчик лежит рядом со страницей, поэтому путь относительный:
+	// абсолютный /mail-uni.php при выкладке в подпапку (example.ru/site/)
+	// ушёл бы в корень домена и отдавал 404
+	const MAIL_HANDLER = 'mail-uni.php';
+
 	// СЛОВАРЬ ПРАВИЛ ПО ТИПАМ ПОЛЕЙ
 	const fieldRulesMap = {
 		'text': () => [
@@ -21,7 +26,7 @@ function validationForms() {
 				rule: 'function',
 				validator: function () {
 					const input = formElement.querySelector(fieldSelector);
-					
+
 					if (!input) return false;
 
 					// берём значение поля и считаем цифры
@@ -57,7 +62,6 @@ function validationForms() {
 	// УНИВЕРСАЛЬНАЯ ИНИЦИАЛИЗАЦИЯ
 	formsConfig.forEach((config) => {
 		const formElement = document.querySelector(config.selector);
-		const submitBtn = document?.querySelector('.form__button');
 
 		if (!formElement) return;
 
@@ -74,6 +78,19 @@ function validationForms() {
 				console.warn(`Неизвестный тип поля: ${field.type} в форме ${config.selector}`);
 			}
 		});
+
+		// Обработка отправки почтового сообщения
+		const submitBtn = document?.querySelector('.form__button');
+
+		// Адрес обработчика: action формы (или data-endpoint) относительно страницы
+		const formAction = formElement.getAttribute('action');
+
+		const endpoint = new URL(
+			config.endpoint ||
+			formElement.getAttribute('data-endpoint') ||
+			(formAction && formAction !== '#' ? formAction : MAIL_HANDLER),
+			document.baseURI,
+		);
 
 		// Вспомогательная функция: показать сообщение об успешной отправке или ошибке
 		function showMessage(type, text) {
@@ -115,13 +132,26 @@ function validationForms() {
 
 			const formData = new FormData(formElement);
 
-			fetch('/mail-uni.php', {
+			fetch(endpoint, {
 				method: 'POST',
 				body: formData,
 				headers: { 'X-Requested-With': 'XMLHttpRequest' },
 			})
 
 				.then(async response => {
+					if (!response.ok) {
+						const text = await response.text();
+
+						console.error(
+							`Сервер вернул ${response.status}:`,
+							text.substring(0, 200),
+						);
+
+						throw new Error(
+							`Сервер вернул некорректный ответ (${response.status})`,
+						);
+					}
+
 					const contentType = response.headers.get('content-type');
 
 					if (!contentType || !contentType.includes('application/json')) {

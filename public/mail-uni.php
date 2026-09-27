@@ -1,15 +1,15 @@
 <?php
 // Подключение PHPMailer
-require './assets/files/php-mailer/PHPMailer.php';
-require './assets/files/php-mailer/SMTP.php';
-require './assets/files/php-mailer/Exception.php';
+require __DIR__ . '/assets/files/php-mailer/PHPMailer.php';
+require __DIR__ . '/assets/files/php-mailer/SMTP.php';
+require __DIR__ . '/assets/files/php-mailer/Exception.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 // Подключение конфигурации SMTP (переменные $smtpHost, $fromName и др. берутся отсюда)
-require '../config.php';
+require __DIR__ . '/config.php';
 
 // Заголовок JSON-ответа
 header('Content-Type: application/json; charset=utf-8');
