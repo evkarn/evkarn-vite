@@ -5,9 +5,9 @@ import ttf2woff2 from 'ttf2woff2';
 
 // Standalone-скрипт (вне Vite): конвертация шрифтов и генерация _fonts-faces.scss.
 //
-// 1. Каждый .ttf из src/assets/fonts/ → .woff2 в public/assets/fonts/
-//    (public/ отдаётся как есть в dev и копируется в dist сборкой).
-// 2. По списку .woff2 из public/assets/fonts/ генерируется
+// 1. Каждый .ttf из assets/fonts/ → .woff2 в src/assets/fonts/
+//    (исходники не перезаписываются, результат лежит внутри root Vite).
+// 2. По списку .woff2 из src/assets/fonts/ генерируется
 //    src/styles/scss/fonts/_fonts-faces.scss:
 //    вариативные шрифты (VariableFont/VF) → format('woff2-variations')
 //    + format('woff2') tech('variations'), обычные → вес/стиль из имени файла.
@@ -17,8 +17,8 @@ import ttf2woff2 from 'ttf2woff2';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, '..');
 
-const sourceDir = path.join(rootDir, 'src', 'assets', 'fonts');
-const fontsDir = path.join(rootDir, 'public', 'assets', 'fonts');
+const sourceDir = path.join(rootDir, 'assets', 'fonts');
+const fontsDir = path.join(rootDir, 'src', 'assets', 'fonts');
 const fontsFaces = path.join(
 	rootDir,
 	'src',
@@ -83,7 +83,7 @@ function staticFontFace(fontName, file, weight, style) {
 	].join('\n');
 }
 
-/** Генерация _fonts-faces.scss по .woff2 файлам в public/assets/fonts/ */
+/** Генерация _fonts-faces.scss по .woff2 файлам в src/assets/fonts/ */
 function generateFontsFaces(fontsFiles) {
 	const blocks = [];
 
@@ -116,7 +116,7 @@ function generateFontsFaces(fontsFiles) {
 	return true;
 }
 
-/** Конвертация всех .ttf из src/assets/fonts/ в .woff2 в public/assets/fonts/ */
+/** Конвертация всех .ttf из assets/fonts/ в .woff2 в src/assets/fonts/ */
 function convertFonts() {
 	if (!fs.existsSync(sourceDir)) {
 		console.log('❌ Директория со шрифтами не найдена:', sourceDir);

@@ -14,10 +14,10 @@ import { optimize } from 'svgo';
 
 // Vite-плагин для статичных SVG-иконок (аналог gulp-svgmin).
 //
-// Для каждого файла src/assets/svg/static/** создать в public/assets/svg/static/
+// Для каждого файла assets/svg/static/** создаёт в src/assets/svg/static/
 // оптимизированную копию (SVGO, multipass, viewBox сохраняется), сохраняя
-// структуру подпапок. URL-структура /assets/svg/static/... сохраняется:
-// public/ отдаётся Vite как есть в dev и копируется в dist при сборке.
+// структуру подпапок. Исходники в assets/ остаются нетронутыми, результат
+// лежит внутри root — Vite переносит его в dist по ссылкам из разметки.
 //
 // Инкрементальность по mtime: иконка переобрабатывается только если выходного
 // файла нет или он старше исходника. В dev — watch на src/assets/svg/static/
@@ -33,8 +33,8 @@ function formatFileSize(bytes) {
 
 export function svgIconsPlugin({
 	root,
-	srcDir = 'src/assets/svg/static',
-	outDir = 'public/assets/svg/static',
+	srcDir = 'assets/svg/static',
+	outDir = 'src/assets/svg/static',
 	svgoOptions = {
 		multipass: true,
 		plugins: [
@@ -126,7 +126,7 @@ export function svgIconsPlugin({
 			}
 
 			console.log(
-				`[svg-icons] обработано: ${optimized}/${files.length} (${Date.now() - start}ms) -> public/assets/svg/static/`,
+				`[svg-icons] обработано: ${optimized}/${files.length} (${Date.now() - start}ms) -> ${outDir}/`,
 			);
 		})();
 

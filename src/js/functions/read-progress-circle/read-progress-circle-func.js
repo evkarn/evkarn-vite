@@ -13,7 +13,7 @@ export function readProgressCircle() {
 
 	const circle = document.querySelector('.circle-block__progress');
 
-	const progressAnimation() {
+	const progressAnimation = () => {
 		let scrollTop = window.scrollY;
 
 		let windowHeight = window.innerHeight;
@@ -24,7 +24,7 @@ export function readProgressCircle() {
 			(scrollTop / (siteHeight - windowHeight)) * 100,
 		);
 
-		line.style.width = `${percentageProgress}%`;
+		circle.style.strokeWidth = `${percentageProgress}%`;
 
 		let radius = circle.getAttribute('r');
 

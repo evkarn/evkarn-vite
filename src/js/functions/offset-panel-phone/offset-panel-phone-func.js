@@ -1,7 +1,7 @@
 export function offsetPanelPhone() {
 	'use strict';
 
-	const calcHeight() {
+	const calcHeight = () => {
 		let verticalHeight = window.innerHeight;
 
 		document.documentElement.style.setProperty(

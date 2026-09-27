@@ -1,11 +1,11 @@
 export function timerCountdown() {
 	const timerBlock = document?.querySelector('[data-timer-countdown-parent]');
 
-	const finish = document?.querySelector(
-		'[data-timer-countdown-finish]',
-	).textContent;
-
 	if (timerBlock) {
+		const finish = document
+			.querySelector('[data-timer-countdown-finish]')
+			.textContent;
+
 		const newYear = new Date(`${finish}`);
 
 		const daysVal = document.querySelector('[data-days-val]');
@@ -34,7 +34,7 @@ export function timerCountdown() {
 			];
 		}
 
-		const timeCount() {
+		const timeCount = () => {
 			let now = new Date();
 
 			let leftUntil = newYear - now;

@@ -14,18 +14,18 @@ import SVGSpriter from 'svg-sprite';
 
 // Vite-плагин для SVG-спрайта.
 //
-// Для всех файлов src/assets/svg/sprite/** создаёт stack-спрайт
-// public/assets/svg/sprite/sprite.svg. Из иконок вырезаются fill/stroke/style —
+// Для всех файлов assets/svg/sprite/** создаёт stack-спрайт
+// src/assets/svg/sprite/sprite.svg. Из иконок вырезаются fill/stroke/style —
 // цвет задаётся через CSS (currentColor).
 //
 // Инкрементальность по mtime: спрайт перегенерируется только если хоть один
-// исходник новее существующего sprite.svg. В dev — watch на
-// src/assets/svg/sprite/ с cooldown-дедупликацией.
+// исходник новее существующего sprite.svg. В dev — watch на assets/svg/sprite/
+// с cooldown-дедупликацией.
 
 export function svgSpritePlugin({
 	root,
-	srcDir = 'src/assets/svg/sprite',
-	outDir = 'public/assets/svg/sprite',
+	srcDir = 'assets/svg/sprite',
+	outDir = 'src/assets/svg/sprite',
 	filename = 'sprite.svg',
 	createExample = false,
 	svgoOptions = {
@@ -131,7 +131,7 @@ export function svgSpritePlugin({
 						}
 
 						console.log(
-							`[svg-sprite] обработано: ${files.length}/${files.length} (${Date.now() - start}ms) -> public/assets/svg/sprite/`,
+							`[svg-sprite] обработано: ${files.length}/${files.length} (${Date.now() - start}ms) -> ${outDir}/`,
 						);
 						resolveCompile();
 					} catch (err) {

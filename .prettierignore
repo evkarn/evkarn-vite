@@ -15,6 +15,9 @@ dist/
 public/
 temp/
 
+# Исходники ассетов (jpg/svg/ttf/php) — парсеров нет, проверять нечего
+assets/
+
 package-lock.json
 
 src/

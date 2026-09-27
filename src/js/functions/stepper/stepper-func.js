@@ -10,14 +10,6 @@ export function stepper() {
 		}
 	}
 
-	const buttonDisabled() {
-		if (count == 1) {
-			stepperButtonDown.disabled = true;
-		} else {
-			stepperButtonDown.disabled = false;
-		}
-	};
-
 	if (steppers.length > 0) {
 		steppers.forEach((stepper) => {
 			stepper.addEventListener('click', (e) => {
@@ -33,11 +25,8 @@ export function stepper() {
 
 				let count = stepperInput.value;
 
-				const isNotApple() {
-					if (!/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-						return false;
-					}
-					return true;
+				const buttonDisabled = () => {
+					stepperButtonDown.disabled = count == 1;
 				};
 
 				stepperInput.addEventListener('keyup', (e) => {

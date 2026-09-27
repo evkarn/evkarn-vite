@@ -226,7 +226,6 @@
  * Важно: этот код загружает Метрику ТОЛЬКО после нажатия кнопки согласия в окошке согласия с обработкой cookies!
  */
 
-<script>
 document.addEventListener('DOMContentLoaded', function () {
     // Флаг, чтобы предотвратить повторную инициализацию при множественных кликах
     let isMetrikaInitialized = false;
@@ -304,4 +303,3 @@ document.addEventListener('DOMContentLoaded', function () {
         console.warn("Кнопка согласия не найдена. Проверьте селектор.");
     }
 });
-</script>

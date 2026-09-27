@@ -14,9 +14,15 @@ _site/
 *.dylib
 *.zip
 
+# Ассеты, сгенерированные плагинами из assets/ (в git не храним)
+src/assets/
+
 # Секреты (данные FTP/SSH для деплоя)
 .env
 .env.local
+
+# SMTP-доступы для отправки писем (шаблон — public/config.example.php)
+public/config.php
 
 # Кэш и временные файлы
 .cache/

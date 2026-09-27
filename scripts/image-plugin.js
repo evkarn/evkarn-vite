@@ -8,17 +8,18 @@ import sharp from 'sharp';
 
 // Vite-плагин для картинок (аналог gulp-imgMin).
 //
-// Для каждого файла src/assets/images/** создаёт в public/assets/images/:
+// Для каждого файла assets/images/** создаёт в src/assets/images/:
 //   1. оптимизированный оригинал (jpg/png/webp/avif — пересборка через sharp,
 //      gif/tiff/bmp/ico и прочее — копия как есть);
 //   2. копию .webp (quality 80);
 //   3. копию .avif (quality 80).
 //
-// URL-структура /assets/images/... сохраняется: public/ отдаётся Vite как есть
-// в dev и копируется в dist при сборке.
+// Исходники лежат в assets/ вне root Vite и никогда не перезаписываются.
+// Результат — в src/assets/ внутри root: Vite находит файлы по ссылкам из
+// разметки и переносит их в dist с сохранением структуры (assetFileNames).
 //
 // Инкрементальность по mtime: файл переобрабатывается только если какого-то
-// из целевых выходных файлов нет или он старше исходника (как в copy-images.mjs).
+// из целевых выходных файлов нет или он старше исходника.
 // В dev — watch на src/assets/images/ с cooldown-дедупликацией.
 
 const WEBP_QUALITY = 80;
@@ -41,8 +42,8 @@ const COPY_AS_IS = new Set(['.gif', '.tif', '.tiff', '.bmp', '.ico']);
 
 export function imagePlugin({
 	root,
-	srcDir = 'src/assets/images',
-	outDir = 'public/assets/images',
+	srcDir = 'assets/images',
+	outDir = 'src/assets/images',
 } = {}) {
 	const srcAbs = join(root, srcDir);
 	const outAbs = join(root, outDir);
@@ -126,7 +127,7 @@ export function imagePlugin({
 			}
 
 			console.log(
-				`[image-plugin] обработано: ${converted}/${files.length} (${Date.now() - start}ms) -> public/assets/images/`,
+				`[image-plugin] обработано: ${converted}/${files.length} (${Date.now() - start}ms) -> ${outDir}/`,
 			);
 		})();
 

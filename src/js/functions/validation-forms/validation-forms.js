@@ -1,32 +1,19 @@
 import justValidate from 'just-validate';
-import IMask from 'imask';
 
 function validationForms() {
 	'use strict';
 
-	// ==========================================
-	// 1. БАЗОВЫЕ ПРАВИЛА
-	// ==========================================
-
-	const nameRules = [
-		{ rule: 'required', value: true, errorMessage: 'Введите имя' },
-		{ rule: 'minLength', value: 3, errorMessage: 'Минимум 3 символа' },
-		{ rule: 'maxLength', value: 30, errorMessage: 'Максимум 30 символов' },
-	];
-
-	const emailRules = [
-		{ rule: 'required', value: true, errorMessage: 'E-mail обязателен' },
-		{ rule: 'email', value: true, errorMessage: 'Введите корректный Email' },
-	];
-
-	// ==========================================
-	// 2. СЛОВАРЬ ПРАВИЛ ПО ТИПАМ ПОЛЕЙ
-	// ==========================================
-
+	// СЛОВАРЬ ПРАВИЛ ПО ТИПАМ ПОЛЕЙ
 	const fieldRulesMap = {
-		'text': () => nameRules,
+		'text': () => [
+			{ rule: 'required', value: true, errorMessage: 'Введите имя' },
+			{ rule: 'minLength', value: 3, errorMessage: 'Минимум 3 символа' },
+		],
 
-		'email': () => emailRules,
+		'email': () => [
+			{ rule: 'required', value: true, errorMessage: 'E-mail обязателен' },
+			{ rule: 'email', value: true, errorMessage: 'Введите корректный Email' },
+		],
 
 		'tel': (formElement, fieldSelector) => [
 			{ rule: 'required', value: true, errorMessage: 'Телефон обязателен' },
@@ -34,10 +21,11 @@ function validationForms() {
 				rule: 'function',
 				validator: function () {
 					const input = formElement.querySelector(fieldSelector);
+					
 					if (!input) return false;
 
-					const maskInstance = IMask.getInstance(input);
-					const phone = maskInstance ? maskInstance.unmaskedValue : '';
+					// берём значение поля и считаем цифры
+					const phone = input.value.replace(/\D/g, '');
 
 					return phone.length === 10;
 				},
@@ -45,7 +33,6 @@ function validationForms() {
 			},
 		],
 
-		// ✨ НОВОЕ: Правило для чекбокса согласия
 		'checkbox': () => [
 			{
 				rule: 'required',
@@ -55,52 +42,23 @@ function validationForms() {
 		],
 	};
 
-	// ==========================================
-	// 3. КОНФИГУРАЦИЯ ВСЕХ ФОРМ
-	// ==========================================
-
+	// КОНФИГУРАЦИЯ ВСЕХ ФОРМ (новые формы добавляются ниже, как вложенный в массив объект)
 	const formsConfig = [
 		{
-			selector: '.sale__form',
+			selector: '.contact-us__form',
 			fields: [
-				{ type: 'text', selector: '.form__input--name' },
-				{ type: 'tel', selector: '.form__input--tel' },
-				// Добавляем чекбокс туда, где он нужен
-				{ type: 'checkbox', selector: '.form__input--agreement' },
-			],
-		},
-		{
-			selector: '.modal-calculation__form',
-			fields: [
-				{ type: 'text', selector: '.form__input--name' },
-				{ type: 'tel', selector: '.form__input--tel' },
-				{ type: 'checkbox', selector: '.form__input--agreement' },
-			],
-		},
-		{
-			selector: '.form--callback',
-			fields: [
-				{ type: 'text', selector: '.form__input--name' },
-				{ type: 'tel', selector: '.form__input--tel' },
-				{ type: 'checkbox', selector: '.form__input--agreement' },
-			],
-		},
-		{
-			selector: '.site-footer__form',
-			fields: [
-				{ type: 'email', selector: '.form__input--email' },
-				// В футере чекбокс часто тоже нужен, добавляется одной строкой:
-				// { type: 'checkbox', selector: '.form__input--agreement' },
+				{ type: 'text', selector: '.input.input--name' },
+				{ type: 'email', selector: '.input.input--email' },
+				{ type: 'checkbox', selector: '.checkbox-input' },
 			],
 		},
 	];
 
-	// ==========================================
-	// 4. УНИВЕРСАЛЬНАЯ ИНИЦИАЛИЗАЦИЯ
-	// ==========================================
-
+	// УНИВЕРСАЛЬНАЯ ИНИЦИАЛИЗАЦИЯ
 	formsConfig.forEach((config) => {
 		const formElement = document.querySelector(config.selector);
+		const submitBtn = document?.querySelector('.form__button');
+
 		if (!formElement) return;
 
 		const validator = new justValidate(config.selector);
@@ -110,12 +68,119 @@ function validationForms() {
 
 			if (getRules) {
 				const rules = getRules(formElement, field.selector);
+
 				validator.addField(field.selector, rules);
 			} else {
 				console.warn(`Неизвестный тип поля: ${field.type} в форме ${config.selector}`);
 			}
 		});
+
+		// Вспомогательная функция: показать сообщение об успешной отправке или ошибке
+		function showMessage(type, text) {
+			// Удаляем старое сообщение, если есть
+			const oldMsg = formElement.querySelector('.form__message');
+
+			if (oldMsg) oldMsg.remove();
+
+			// Создаём новое
+			const messageEl = document.createElement('div');
+
+			messageEl.className = `form__message form__message--${type} flex-center`;
+
+			messageEl.innerHTML = `<p>${text}</p>`;
+
+			// Вставляем после кнопки
+			submitBtn.after(messageEl);
+
+			// Авто-скрытие через 7 секунд (для успеха)
+			if (type === 'succes') {
+				setTimeout(() => {
+					messageEl.remove();
+				}, 7000);
+			}
+		}
+
+		//Успешная валидация — отправляем
+		validator.onSuccess(event => {
+			event.preventDefault()
+
+			console.log('Валидация пройдена, отправка...');
+
+			// Блокируем кнопку
+			const originalText = submitBtn.innerText;
+
+			submitBtn.disabled = true;
+			submitBtn.innerText = 'Отправка...';
+			submitBtn.style.opacity = '0.7';
+
+			const formData = new FormData(formElement);
+
+			fetch('/mail-uni.php', {
+				method: 'POST',
+				body: formData,
+				headers: { 'X-Requested-With': 'XMLHttpRequest' },
+			})
+
+				.then(async response => {
+					const contentType = response.headers.get('content-type');
+
+					if (!contentType || !contentType.includes('application/json')) {
+						const text = await response.text();
+
+						console.error(
+							'Server returned non-JSON:',
+							text.substring(0, 200),
+						);
+
+						throw new Error('Сервер вернул некорректный ответ');
+					}
+					return response.json();
+				})
+
+				.then(result => {
+					if (result.success) {
+						// Успех
+						showMessage('succes', 'Заявка успешно отправлена!');
+
+						formElement.reset();
+					} else {
+						// Ошибка от сервера
+						showMessage(
+							'error',
+							'Ошибка отправки сообщения! Приносим извинения — попробуйте повторить чуть позже или позвоните нам по номеру: <a class="state-accent underline" href="tel:+70000000000">+7 (000) 000-00-00</a>.',
+						);
+					}
+				})
+
+				.catch(error => {
+					console.error('Fetch error:', error);
+
+					// Ошибка соединения
+					showMessage(
+						'error',
+						'Ошибка отправки сообщения! Приносим извинения — попробуйте повторить чуть позже или позвоните нам по номеру: <a class="state-accent underline" href="tel:+70000000000">+7 (000) 000-00-00</a>.',
+					);
+				})
+
+				.finally(() => {
+					submitBtn.disabled = false;
+					submitBtn.innerText = originalText;
+					submitBtn.style.opacity = '1';
+				});
+		});
+
+		// Ошибка валидации (опционально)
+		validator.onFail(fields => {
+			console.log('Валидация не пройдена:', fields);
+		});
+
+		// Очистка сообщения при начале ввода
+		formElement.addEventListener('input', () => {
+			const msg = formElement.querySelector('.form__message');
+
+			if (msg) msg.remove();
+		});
 	});
-}
+};
 
 export default validationForms();

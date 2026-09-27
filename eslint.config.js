@@ -29,7 +29,9 @@ const ignores = {
 	ignores: [
 		'dist/**',
 		'public/**',
+		'assets/**',
 		'temp/**',
+		'src/assets/**',
 		'src/js/**',
 		'!src/js/scripts.js',
 	],
