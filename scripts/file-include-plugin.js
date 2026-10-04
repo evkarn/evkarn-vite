@@ -14,6 +14,10 @@ const PARAM_RE = /@([A-Za-z_][A-Za-z0-9_]*)/g;
 
 const PRE_CODE_RE = /<(pre|code)(\s[^>]*)?>[\s\S]*?<\/\1>/gi;
 
+const BACKSLASH = String.fromCharCode(92);
+
+const NEWLINES_RE = new RegExp(`[\\r\\n\\t]+`, 'g');
+
 // Блоки <pre>/<code> временно прячем, чтобы @include/@param внутри них не обрабатывались.
 function escapeCodeAndPre(html) {
 	const placeholders = [];
@@ -40,11 +44,57 @@ function substituteParams(content, context) {
 	});
 }
 
+/**
+ * Заменяет реальные переводы строк и табы внутри строковых литералов на пробел.
+ * Нужен потому, что в @include нельзя писать многострочный JSON:
+ * перенос строки внутри "..." делает его невалидным и роняет JSON.parse.
+ */
+function normalizeJsonStrings(raw) {
+	let result = '';
+	let quote = null;
+
+	for (let i = 0; i < raw.length; i++) {
+		const char = raw[i];
+
+		if (quote === null) {
+			if (char === '"') quote = char;
+			result += char;
+			continue;
+		}
+
+		if (char === BACKSLASH) {
+			result += char;
+			if (i + 1 < raw.length) result += raw[++i];
+			continue;
+		}
+
+		if (char === quote) {
+			quote = null;
+			result += char;
+			continue;
+		}
+
+		result += NEWLINES_RE.test(char) ? ' ' : char;
+	}
+
+	return result;
+}
+
 function parseParams(raw) {
 	if (!raw) return {};
 
-	const cleaned = raw.replace(/,(\s*[}\]])/g, '$1');
-	return JSON.parse(cleaned);
+	const cleaned = normalizeJsonStrings(raw.replace(/,(\s*[}\]])/g, '$1'));
+
+	try {
+		return JSON.parse(cleaned);
+	} catch (error) {
+		throw new Error(
+			`[vite:file-include] не удалось распарсить параметры @include: ${error.message}\n` +
+				`Исходное значение:\n${raw}\n` +
+				'Подсказка: перенос строки внутри JSON-строки недопустим, ' +
+				'перенесите значение целиком в одну строку или используйте \\n.',
+		);
+	}
 }
 
 function resolveOrThrow(sourcePath, root, target) {

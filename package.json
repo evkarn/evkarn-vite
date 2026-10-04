@@ -1,6 +1,6 @@
 {
 	"name": "evkarn-vite",
-	"version": "2.0.0",
+	"version": "2.1.0",
 	"description": "Vite-сборка для вёрстки сайтов: SCSS, HTML-включения, спрайты, картинки WebP/AVIF, деплой",
 	"type": "module",
 	"scripts": {
