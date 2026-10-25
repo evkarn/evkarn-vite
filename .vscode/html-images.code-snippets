@@ -4,7 +4,7 @@
 		"prefix": "img",
 		"scope": "html, php, njk, md",
 		"body": [
-			"<img class=\"$1__img\" src=\"assets/images/$2.webp\" width=\"$3\" height=\"$4\" alt=\"$5\" loading=\"lazy\" decoding=\"async\">",
+			"<img class=\"$1__img\" src=\"/assets/images/$2.webp\" width=\"$3\" height=\"$4\" alt=\"$5\" loading=\"lazy\" decoding=\"async\">",
 		],
 	},
 
@@ -12,7 +12,7 @@
 		"prefix": "img-svg",
 		"scope": "html, php, njk, md",
 		"body": [
-			"<img class=\"$1__img\" src=\"assets/svg/$2.svg\" width=\"$3\" height=\"$4\" alt=\"$5\" loading=\"lazy\" decoding=\"async\">",
+			"<img class=\"$1__img\" src=\"/assets/svg/static/$2.svg\" width=\"$3\" height=\"$4\" alt=\"$5\" loading=\"lazy\" decoding=\"async\">",
 		],
 	},
 
@@ -20,7 +20,7 @@
 		"prefix": "img@2x",
 		"scope": "html, php, njk, md",
 		"body": [
-			"<img class=\"$1__img\" src=\"assets/images/$2.webp\" srcset=\"assets/images/$2@2x.webp 2x\" width=\"$3\" height=\"$4\" alt=\"$5\" loading=\"lazy\" decoding=\"async\">",
+			"<img class=\"$1__img\" src=\"/assets/images/$2.webp\" srcset=\"/assets/images/$2@2x.webp 2x\" width=\"$3\" height=\"$4\" alt=\"$5\" loading=\"lazy\" decoding=\"async\">",
 		],
 	},
 	"Picture tag with .webp": {
@@ -28,9 +28,9 @@
 		"scope": "html, php, njk, md",
 		"body": [
 			"<picture class=\"$1__picture\">",
-			"\t<source srcset=\"assets/images/$2.webp\" type=\"image/webp\">",
+			"\t<source srcset=\"/assets/images/$2.webp\" type=\"image/webp\">",
 			"",
-			"\t<img class=\"$1__img\" src=\"assets/images/$2.jpg\" width=\"$3\" height=\"$4\" alt=\"$5\" loading=\"lazy\" decoding=\"async\">",
+			"\t<img class=\"$1__img\" src=\"/assets/images/$2.jpg\" width=\"$3\" height=\"$4\" alt=\"$5\" loading=\"lazy\" decoding=\"async\">",
 			"</picture>",
 		],
 	},
@@ -40,9 +40,9 @@
 		"scope": "html, php, njk, md",
 		"body": [
 			"<picture class=\"$1__picture\">",
-			"\t<source srcset=\"assets/images/$2.webp, assets/images/$2@2x.webp 2x\" type=\"image/webp\">",
+			"\t<source srcset=\"/assets/images/$2.webp, /assets/images/$2@2x.webp 2x\" type=\"image/webp\">",
 			"",
-			"\t<img class=\"$1__img\" src=\"assets/images/$2.jpg\" srcset=\"assets/images/$2@2x.jpg 2x\" width=\"$3\" height=\"$4\" alt=\"$5\" loading=\"lazy\" decoding=\"async\">",
+			"\t<img class=\"$1__img\" src=\"/assets/images/$2.jpg\" srcset=\"/assets/images/$2@2x.jpg 2x\" width=\"$3\" height=\"$4\" alt=\"$5\" loading=\"lazy\" decoding=\"async\">",
 			"</picture>",
 		],
 	},
@@ -52,11 +52,11 @@
 		"scope": "html, php, njk, md",
 		"body": [
 			"<picture class=\"__picture\">",
-			"\t<source srcset=\"assets/images/$1.webp\" type=\"image/webp\">",
+			"\t<source srcset=\"/assets/images/$1.webp\" type=\"image/webp\">",
 			"",
-			"\t<source srcset=\"assets/images/$1.avif\" type=\"image/avif\">",
+			"\t<source srcset=\"/assets/images/$1.avif\" type=\"image/avif\">",
 			"",
-			"\t<img class=\"$2__img\" src=\"assets/images/$1.jpg\" width=\"$3\" height=\"$4\" alt=\"$6\" loading=\"lazy\" decoding=\"async\">",
+			"\t<img class=\"$2__img\" src=\"/assets/images/$1.jpg\" width=\"$3\" height=\"$4\" alt=\"$6\" loading=\"lazy\" decoding=\"async\">",
 			"</picture>",
 		],
 	},
@@ -66,11 +66,11 @@
 		"scope": "html, php, njk, md",
 		"body": [
 			"<picture class=\"$1__picture\">",
-			"\t<source srcset=\"assets/images/$2.webp, assets/images/$2@2x.webp 2x\" type=\"image/webp\">",
+			"\t<source srcset=\"/assets/images/$2.webp, /assets/images/$2@2x.webp 2x\" type=\"image/webp\">",
 			"",
-			"\t<source srcset=\"assets/images/$2.avif, assets/images/$2@2x.avif 2x\" type=\"image/avif\">",
+			"\t<source srcset=\"/assets/images/$2.avif, /assets/images/$2@2x.avif 2x\" type=\"image/avif\">",
 			"",
-			"\t<img class=\"$1__img\" src=\"assets/images/$2.jpg\" srcset=\"assets/images/$2@2x.jpg 2x\" width=\"$3\" height=\"$4\" alt=\"$5\" loading=\"lazy\" decoding=\"async\">",
+			"\t<img class=\"$1__img\" src=\"/assets/images/$2.jpg\" srcset=\"/assets/images/$2@2x.jpg 2x\" width=\"$3\" height=\"$4\" alt=\"$5\" loading=\"lazy\" decoding=\"async\">",
 			"</picture>",
 		],
 	},
@@ -101,7 +101,7 @@
 		"prefix": "img-svg-abs",
 		"scope": "html, php, njk, md",
 		"body": [
-			"<img class=\"$1__img\" src=\"/assets/svg/$2.svg\" width=\"$3\" height=\"$4\" alt=\"$5\" loading=\"lazy\" decoding=\"async\">",
+			"<img class=\"$1__img\" src=\"/assets/svg/static/$2.svg\" width=\"$3\" height=\"$4\" alt=\"$5\" loading=\"lazy\" decoding=\"async\">",
 		],
 	},
 

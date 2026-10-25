@@ -12,15 +12,15 @@ import { glob } from 'glob';
 
 import { optimize } from 'svgo';
 
-// Vite-плагин для статичных SVG-иконок (аналог gulp-svgmin).
+// Vite-плагин для статичных SVG (аналог gulp-svgmin).
 //
 // Для каждого файла assets/svg/static/** создаёт в src/assets/svg/static/
 // оптимизированную копию (SVGO, multipass, viewBox сохраняется), сохраняя
 // структуру подпапок. Исходники в assets/ остаются нетронутыми, результат
 // лежит внутри root — Vite переносит его в dist по ссылкам из разметки.
 //
-// Инкрементальность по mtime: иконка переобрабатывается только если выходного
-// файла нет или он старше исходника. В dev — watch на src/assets/svg/static/
+// Инкрементальность по mtime: файл переобрабатывается только если выходного
+// файла нет или он старше исходника. В dev — watch на assets/svg/static/
 // с cooldown-дедупликацией.
 
 const SKIP_FILES = new Set(['.gitkeep', '.DS_Store', 'Thumbs.db']);
@@ -31,7 +31,7 @@ function formatFileSize(bytes) {
 	return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
 }
 
-export function svgIconsPlugin({
+export function svgStaticPlugin({
 	root,
 	srcDir = 'assets/svg/static',
 	outDir = 'src/assets/svg/static',
@@ -39,8 +39,12 @@ export function svgIconsPlugin({
 		multipass: true,
 		plugins: [
 			{
-				name: 'removeViewBox',
-				active: false, // Оставляем viewBox
+				name: 'preset-default',
+				params: {
+					overrides: {
+						removeViewBox: false, // Оставляем viewBox
+					},
+				},
 			},
 		],
 	},
@@ -80,12 +84,12 @@ export function svgIconsPlugin({
 				optimizedContent = result.data;
 			} else {
 				console.warn(
-					`[svg-icons] SVGO вернул пустой результат для ${rel}, используем исходный`,
+					`[svg-static] SVGO вернул пустой результат для ${rel}, используем исходный`,
 				);
 			}
 		} catch (error) {
 			console.warn(
-				`[svg-icons] ошибка SVGO для ${rel}: ${error.message}, используем исходный`,
+				`[svg-static] ошибка SVGO для ${rel}: ${error.message}, используем исходный`,
 			);
 		}
 
@@ -97,7 +101,7 @@ export function svgIconsPlugin({
 			originalSize > 0 ? ((saved / originalSize) * 100).toFixed(1) : '0';
 
 		console.log(
-			`[svg-icons] • ${rel}: ${formatFileSize(originalSize)} → ${formatFileSize(optimizedSize)} (${percent}%)`,
+			`[svg-static] • ${rel}: ${formatFileSize(originalSize)} → ${formatFileSize(optimizedSize)} (${percent}%)`,
 		);
 
 		return true;
@@ -116,7 +120,7 @@ export function svgIconsPlugin({
 			});
 
 			if (files.length === 0) {
-				console.log('[svg-icons] нет SVG иконок для обработки');
+				console.log('[svg-static] нет SVG файлов для обработки');
 				return;
 			}
 
@@ -126,7 +130,7 @@ export function svgIconsPlugin({
 			}
 
 			console.log(
-				`[svg-icons] обработано: ${optimized}/${files.length} (${Date.now() - start}ms) -> ${outDir}/`,
+				`[svg-static] обработано: ${optimized}/${files.length} (${Date.now() - start}ms) -> ${outDir}/`,
 			);
 		})();
 
@@ -150,7 +154,7 @@ export function svgIconsPlugin({
 	}
 
 	return {
-		name: 'evkarn-svg-icons-plugin',
+		name: 'evkarn-svg-static-plugin',
 		async buildStart() {
 			if (this.meta.watchMode) return;
 			await run();

@@ -54,7 +54,7 @@ src/                   # корень Vite (root: 'src')
 dist/                  # результат сборки (outDir '../dist')
 scripts/               # плагины сборки + standalone-скрипты
   file-include-plugin.js, normalize-asset-urls.js   # разбор HTML: @include/@loop, ссылки на ассеты
-  image-plugin.js, svg-sprite.js, svg-icons.js      # assets/ → src/assets/
+  image-plugin.js, svg-sprite.js, svg-static.js      # assets/ → src/assets/
   html-minify-plugin.js, typograf-plugin.js         # постобработка HTML
   convert-fonts.mjs, deploy-{zip,ftp,ssh}.mjs       # standalone: шрифты, выгрузка сборки
   list-js-snippets.mjs                             # standalone: список папок src/js/functions
@@ -142,7 +142,7 @@ npm run js-snippets -- --write   # обновить таблицу ниже
 fileIncludePlugin       разворачивает @include/@loop
   → normalizeAssetUrls  assets/... → /assets/... (только после include!)
   → imagePlugin         assets/images/** → src/assets/images/** (+ webp/avif)
-  → svgIconsPlugin      assets/svg/static/** → src/assets/svg/static/**
+  → svgStaticPlugin      assets/svg/static/** → src/assets/svg/static/**
   → svgSpritePlugin     assets/svg/sprite/** → src/assets/svg/sprite/sprite.svg
   → htmlMinifyPlugin    опционально, отключается HTML_MINIFY=false
   → typografPlugin      последним, после минификации

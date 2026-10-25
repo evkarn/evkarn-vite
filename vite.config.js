@@ -6,7 +6,7 @@ import { loadEnv } from 'vite';
 import { fileIncludePlugin } from './scripts/file-include-plugin.js';
 import { normalizeAssetUrlsPlugin } from './scripts/normalize-asset-urls.js';
 import { imagePlugin } from './scripts/image-plugin.js';
-import { svgIconsPlugin } from './scripts/svg-icons.js';
+import { svgStaticPlugin } from './scripts/svg-static.js';
 import { svgSpritePlugin } from './scripts/svg-sprite.js';
 import { htmlMinifyPlugin } from './scripts/html-minify-plugin.js';
 import { typografPlugin } from './scripts/typograf-plugin.js';
@@ -95,7 +95,7 @@ const plugins = [
 	// @include, до того как Vite начнёт резолвить ассеты.
 	normalizeAssetUrlsPlugin(),
 	imagePlugin({ root: rootDir }),
-	svgIconsPlugin({ root: rootDir }),
+	svgStaticPlugin({ root: rootDir }),
 	svgSpritePlugin({ root: rootDir }),
 ];
 
